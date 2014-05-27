@@ -59,7 +59,7 @@ void SendtoNAVCOMP(char* Databuff,uint16_t* ADCbuff,char* time_ms,uint16_t NBcou
 	Databuff[24]=(uint8_t)(((uint16_t)(Range_Laser*6553.5)& 0xFF00)>>8);
 
 	/**************packing ranging radio solution status**********************/
-	//Databuff[26]=Radio_buff[6];
+	Databuff[26]=Radio_buff[6];
 
 	/*********packing radio filtered range standard deviation uint16 (mm units)*******/
 	Databuff[27]=Radio_buff[5];
@@ -89,7 +89,7 @@ void SendtoNAVCOMP(char* Databuff,uint16_t* ADCbuff,char* time_ms,uint16_t NBcou
 	/************sending data out********************************/
 	for (i=0;i<Databuff_size;i++){
 		write(NAVserial,&Databuff[i],1);
-		write(debug_Serial,&Databuff[i],1);
+		//write(debug_Serial,&Databuff[i],1);
 	}
 
 }

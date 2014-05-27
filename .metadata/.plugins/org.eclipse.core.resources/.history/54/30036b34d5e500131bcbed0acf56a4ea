@@ -129,14 +129,14 @@ void NAVcompData(void *){
 
 					checksum=sum%255;
 
-					//if(checksum==Navcomp_in_buff[31]){
+					if(checksum==Navcomp_in_buff[31]){
 						dYaw = double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
-					//}
-					//serviceWatchDog();
+					}
 
 				}//second if
 
 		}//first if*/
+		//printf("fuck me\n");
 	}//while
 
 }//process NAVcompData
@@ -255,7 +255,7 @@ void UserMain( void* pd ){
 	EnableTaskMonitor();
 	EnableSmartTraps();
 
-	//serviceWatchDog();
+	serviceWatchDog();
 
 	//Starting the Code
 	iprintf("\n\n\n..................Starting Sensor Interface Board.....................\n\n\n");
@@ -338,7 +338,7 @@ void UserMain( void* pd ){
 	DSPIInit(1,2000000,16,0x01,0x01,1,1,0,0,0);//initializing SPI
 
 	initTIMERS(timer2);
-	//enableWatchDog( 1, 0x001F );//0x001C
+	enableWatchDog( 1, 0x001F );//0x001C
 	while(1){
 
 		TotalTime=timer1->readTime();
@@ -380,9 +380,9 @@ void UserMain( void* pd ){
 
 		if(FiftyHzflag==1){
 			laser_range=ReadLaser(fdLaser);
-			//uint32_t Range=(uint32_t)F_range_buff[0]*16777216+(uint32_t)F_range_buff[1]*65536+(uint32_t)F_range_buff[2]*256+(uint32_t)F_range_buff[3];
+			uint32_t Range=(uint32_t)F_range_buff[0]*16777216+(uint32_t)F_range_buff[1]*65536+(uint32_t)F_range_buff[2]*256+(uint32_t)F_range_buff[3];
 
-			//printf("%zu,%u,%u,%u\n",Range,Ant_config,(unsigned char)radio_in_buff[12],(uint16_t)radio_in_buff[32]*256+(uint16_t)radio_in_buff[33]);
+			printf("%zu,%u,%u,%u\n",Range,Ant_config,(unsigned char)radio_in_buff[12],(uint16_t)radio_in_buff[32]*256+(uint16_t)radio_in_buff[33]);
 			StartAD();
 			 while (!ADDone()){}
 			asm("nop");

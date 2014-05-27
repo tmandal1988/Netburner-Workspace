@@ -90,10 +90,10 @@ uint8_t FiveHzcount=0;
 int fdNAVcomp=0;static char Navcomp_in_buff[32]={23};
 
 /*********Service Watchdog function**************/
-void serviceWatchDog(){
+/*void serviceWatchDog(){
 	sim2.scm.cwsr = 0x55;
 	sim2.scm.cwsr = 0xAA;
-}
+}*/
 /************************Task to receive data from Nav Comp******************/
 void NAVcompData(void *){
 	uint8_t i=0;
@@ -129,14 +129,14 @@ void NAVcompData(void *){
 
 					checksum=sum%255;
 
-					//if(checksum==Navcomp_in_buff[31]){
+					if(checksum==Navcomp_in_buff[31]){
 						dYaw = double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
-					//}
-					//serviceWatchDog();
+					}
 
 				}//second if
 
 		}//first if*/
+		//printf("fuck me\n");
 	}//while
 
 }//process NAVcompData
@@ -223,7 +223,7 @@ void initTIMERS(HiResTimer* timer2){
 }
 
 /******Enable Watchdog function***********************************/
-int enableWatchDog( bool readOnly, int timeoutCycles ){
+/*int enableWatchDog( bool readOnly, int timeoutCycles ){
 	unsigned short mask = 0;
 
 
@@ -242,7 +242,7 @@ int enableWatchDog( bool readOnly, int timeoutCycles ){
 	sim2.scm.cwcr = mask;
 
 	return 0;
-}
+}*/
 
 
 ///////////////////////////////////MAIN FUNCTION//////////////////////////////////////////////
@@ -255,13 +255,11 @@ void UserMain( void* pd ){
 	EnableTaskMonitor();
 	EnableSmartTraps();
 
-	//serviceWatchDog();
-
 	//Starting the Code
 	iprintf("\n\n\n..................Starting Sensor Interface Board.....................\n\n\n");
 
 
-
+	//serviceWatchDog();
 	//Local Variables
 	/***********Defining Interrupt Timers*****************/
 	HiResTimer* timer2=0;//50 Hz Interrupt Timer
@@ -284,7 +282,6 @@ void UserMain( void* pd ){
 	/***********Radio control Radiocount and loop counter i********************/
 	uint8_t Radiocount3=0,Ant_config=0;
 	unsigned char* radio_in_buff=0;
-	uint16_t CRME=0;
 
 	/*********Laser Rangefinder Variables***************/
 	float laser_range=0;
@@ -345,7 +342,7 @@ void UserMain( void* pd ){
 		//First if statement to command host radio to get ranging data from 101 guest with antenna A
 		if(FiveHzflag==1 && Radiocount3==0){
 			radio_in_buff=ReadRadio(RCM_SEND_RANGE_REQUESTA1,fdRadio,sizeof(RCM_SEND_RANGE_REQUESTA1));
-			CRME=(uint16_t)radio_in_buff[28]*256+(uint16_t)radio_in_buff[29];
+			uint16_t CRME=(uint16_t)radio_in_buff[28]*256+(uint16_t)radio_in_buff[29];
 			if((unsigned char)radio_in_buff[12]==0 && CRME<60){
 				F_range_buff[0]=radio_in_buff[24];
 				F_range_buff[1]=radio_in_buff[25];
@@ -380,9 +377,9 @@ void UserMain( void* pd ){
 
 		if(FiftyHzflag==1){
 			laser_range=ReadLaser(fdLaser);
-			//uint32_t Range=(uint32_t)F_range_buff[0]*16777216+(uint32_t)F_range_buff[1]*65536+(uint32_t)F_range_buff[2]*256+(uint32_t)F_range_buff[3];
+			uint32_t Range=(uint32_t)F_range_buff[0]*16777216+(uint32_t)F_range_buff[1]*65536+(uint32_t)F_range_buff[2]*256+(uint32_t)F_range_buff[3];
 
-			//printf("%zu,%u,%u,%u\n",Range,Ant_config,(unsigned char)radio_in_buff[12],(uint16_t)radio_in_buff[32]*256+(uint16_t)radio_in_buff[33]);
+			printf("%zu,%u,%u,%u\n",Range,Ant_config,(unsigned char)radio_in_buff[12],(uint16_t)radio_in_buff[32]*256+(uint16_t)radio_in_buff[33]);
 			StartAD();
 			 while (!ADDone()){}
 			asm("nop");

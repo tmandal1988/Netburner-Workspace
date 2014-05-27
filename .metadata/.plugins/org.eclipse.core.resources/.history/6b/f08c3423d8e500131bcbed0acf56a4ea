@@ -132,7 +132,7 @@ void NAVcompData(void *){
 					//if(checksum==Navcomp_in_buff[31]){
 						dYaw = double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
 					//}
-					//serviceWatchDog();
+					serviceWatchDog();
 
 				}//second if
 
@@ -255,7 +255,7 @@ void UserMain( void* pd ){
 	EnableTaskMonitor();
 	EnableSmartTraps();
 
-	//serviceWatchDog();
+	serviceWatchDog();
 
 	//Starting the Code
 	iprintf("\n\n\n..................Starting Sensor Interface Board.....................\n\n\n");
@@ -338,7 +338,7 @@ void UserMain( void* pd ){
 	DSPIInit(1,2000000,16,0x01,0x01,1,1,0,0,0);//initializing SPI
 
 	initTIMERS(timer2);
-	//enableWatchDog( 1, 0x001F );//0x001C
+	enableWatchDog( 1, 0x001F );//0x001C
 	while(1){
 
 		TotalTime=timer1->readTime();
