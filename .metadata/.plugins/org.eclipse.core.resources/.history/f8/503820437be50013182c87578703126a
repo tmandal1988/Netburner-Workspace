@@ -89,28 +89,11 @@ uint8_t FiveHzcount=0;
 /*****File Descriptor for NAVcomp communication and receive buffer**************/
 int fdNAVcomp=0;static char Navcomp_in_buff[32]={23};
 
-/************Radio range buffer*********************/
-unsigned char *radio_in_buff1=0,*radio_in_buff2=0;
-
 /*********Service Watchdog function**************/
 /*void serviceWatchDog(){
 	sim2.scm.cwsr = 0x55;
 	sim2.scm.cwsr = 0xAA;
 }*/
-/***********************Task to receive data from Radio**********************/
-void RadioData(void *){
-	int fdRadio=0;
-	SerialClose(9);
-	fdRadio= OpenSerial( 9, 115200, 1, 8, eParityNone );
-	/************Ranging Radio Commands buffer************/
-	char RCM_SEND_RANGE_REQUESTA1[]={0xA5,0xA5,0x00,0x0D,0x00,0x03,0x00,0x01,0x00,0x00,0x00,0x65,0x00,0x00,0x00,0x01,0x00,0x45,0xF2};//Host Antenna A to 101
-	char RCM_SEND_RANGE_REQUESTA2[]={0xA5,0xA5,0x00,0x0D,0x00,0x03,0x00,0x02,0x00,0x00,0x00,0x66,0x00,0x00,0x00,0x01,0x00,0x3A,0xDD};//Host Antenna A to 102
-	while(1){
-		radio_in_buff1=ReadRadio(RCM_SEND_RANGE_REQUESTA1,fdRadio,sizeof(RCM_SEND_RANGE_REQUESTA1));
-		radio_in_buff2=ReadRadio(RCM_SEND_RANGE_REQUESTA2,fdRadio,sizeof(RCM_SEND_RANGE_REQUESTA2));
-	}//While Task
-
-}//RadioData Task
 /************************Task to receive data from Nav Comp******************/
 void NAVcompData(void *){
 	uint8_t i=0;
@@ -153,7 +136,7 @@ void NAVcompData(void *){
 				}//second if
 
 		}//first if*/
-
+		//printf("fuck me\n");
 	}//while
 
 }//process NAVcompData
@@ -283,23 +266,29 @@ void UserMain( void* pd ){
 
 
 
+	/************Ranging Radio Commands buffer************/
+	char RCM_SEND_RANGE_REQUESTA1[]={0xA5,0xA5,0x00,0x0D,0x00,0x03,0x00,0x01,0x00,0x00,0x00,0x65,0x00,0x00,0x00,0x01,0x00,0x45,0xF2};//Host Antenna A to 101
+	char RCM_SEND_RANGE_REQUESTA2[]={0xA5,0xA5,0x00,0x0D,0x00,0x03,0x00,0x02,0x00,0x00,0x00,0x66,0x00,0x00,0x00,0x01,0x00,0x3A,0xDD};//Host Antenna A to 102
+
 	/***********File Descriptor Variables****************/
-	int fdDebug=0,fdLaser=0;
+	int fdDebug=0,fdLaser=0,fdRadio=0;
 
 
 
-	//uint32_t Range=0;
+	unsigned char F_range_buff[4]={0};//Radio filtered range
 
 	/**********Radio Debug Variable*******************/
 	double TotalTime=0;	char time_ms[2]={0};
 	/***********Radio control Radiocount and loop counter i********************/
-	uint8_t Radiocount3=0;
+	uint8_t Radiocount3=0,Ant_config=0;
+	unsigned char* radio_in_buff=0;
 
 	/*********Laser Rangefinder Variables***************/
 	float laser_range=0;
 
 	/**********ADC channel Array***************************/
 	uint16_t ADC_channel[8] = {0};
+
 
 
 
@@ -312,14 +301,14 @@ void UserMain( void* pd ){
 	uint16_t netburner_counter=0;//netburner 16 bit counter
 
 
-	uint32_t Range=0;
+	//uint32_t Range=0;
 
 
 	//Creating Data Receiving task from the computer
-	OSSimpleTaskCreate(NAVcompData,MAIN_PRIO+2);
+	OSSimpleTaskCreate(NAVcompData,MAIN_PRIO+1);
 
 	//Creating Task to read ranging radio data
-	OSSimpleTaskCreate(RadioData,MAIN_PRIO+1);
+
 
 	//Initialize pins
 	initPINS();
@@ -330,8 +319,10 @@ void UserMain( void* pd ){
 	//Initializing Serial Ports
 	SerialClose(0);
 	SerialClose(7);
+	SerialClose(9);
 	SerialClose(8);
 
+	fdRadio= OpenSerial( 8, 115200, 1, 8, eParityNone );
 	fdDebug = OpenSerial( 0, 115200, 1, 8, eParityNone );
 	fdLaser = OpenSerial( 7, 115200, 1, 8, eParityNone );
 	fdNAVcomp = OpenSerial( 9, 115200, 1, 8, eParityNone );
@@ -350,7 +341,11 @@ void UserMain( void* pd ){
 		TotalTime=timer1->readTime();
 		//First if statement to command host radio to get ranging data from 101 guest with antenna A
 		if(FiveHzflag==1 && Radiocount3==0){
-
+			radio_in_buff=ReadRadio(RCM_SEND_RANGE_REQUESTA1,fdRadio,sizeof(RCM_SEND_RANGE_REQUESTA1));
+			F_range_buff[0]=radio_in_buff[24];
+			F_range_buff[1]=radio_in_buff[25];
+			F_range_buff[2]=radio_in_buff[26];
+			F_range_buff[3]=radio_in_buff[27];
 			Radiocount3=1;
 			Ant_config=100;
 			FiveHzflag=0;
@@ -359,6 +354,10 @@ void UserMain( void* pd ){
 		//second if statement to command host radio to get ranging data from 102 guest with antenna A
 		if(FiveHzflag==1 && Radiocount3==1){
 			radio_in_buff=ReadRadio(RCM_SEND_RANGE_REQUESTA2,fdRadio,sizeof(RCM_SEND_RANGE_REQUESTA2));
+			F_range_buff[0]=radio_in_buff[24];
+			F_range_buff[1]=radio_in_buff[25];
+			F_range_buff[2]=radio_in_buff[26];
+			F_range_buff[3]=radio_in_buff[27];
 			Radiocount3=0;
 			Ant_config=102;
 			FiveHzflag=0;
@@ -366,9 +365,9 @@ void UserMain( void* pd ){
 
 		if(FiftyHzflag==1){
 			laser_range=ReadLaser(fdLaser);
-			Range=(uint32_t)radio_in_buff[24]*16777216+(uint32_t)radio_in_buff[25]*65536+(uint32_t)radio_in_buff[26]*256+(uint32_t)radio_in_buff[27];
+			uint32_t Range=(uint32_t)F_range_buff[0]*16777216+(uint32_t)F_range_buff[1]*65536+(uint32_t)F_range_buff[2]*256+(uint32_t)F_range_buff[3];
 
-			//printf("%zu,%u,%u,%u\n",Range,Ant_config,(unsigned char)radio_in_buff[12],(uint16_t)radio_in_buff[32]*256+(uint16_t)radio_in_buff[33]);
+			printf("%zu,%u,%u,%u\n",Range,Ant_config,(unsigned char)radio_in_buff[12],(uint16_t)radio_in_buff[32]*256+(uint16_t)radio_in_buff[33]);
 			StartAD();
 			 while (!ADDone()){}
 			asm("nop");
@@ -377,7 +376,7 @@ void UserMain( void* pd ){
 			//printf("%d\n",ADC_channel[5]);
 			sprintf(time_ms,"%lf",TotalTime);
 			//send data to the computer
-			SendtoNAVCOMP(Navcomp_send_buff,ADC_channel,pilot_channel,time_ms,netburner_counter,laser_range,radio_in_buff,PanAngle,fdNAVcomp,fdDebug,sizeof(Navcomp_send_buff),Ant_config);
+			SendtoNAVCOMP(Navcomp_send_buff,ADC_channel,time_ms,netburner_counter,laser_range,F_range_buff,PanAngle,fdNAVcomp,fdDebug,sizeof(Navcomp_send_buff),Ant_config);
 			netburner_counter ++;
 			FiftyHzflag=0;
 			//printf("%g\n",error);//(uint16_t)GetADResult(0));

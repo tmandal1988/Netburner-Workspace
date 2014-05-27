@@ -346,6 +346,9 @@ void UserMain( void* pd ){
 			F_range_buff[1]=radio_in_buff[25];
 			F_range_buff[2]=radio_in_buff[26];
 			F_range_buff[3]=radio_in_buff[27];
+			F_range_buff[4]=radio_in_buff[32];
+			F_range_buff[5]=radio_in_buff[33];
+			F_range_buff[6]=radio_in_buff[12];
 			Radiocount3=1;
 			Ant_config=100;
 			FiveHzflag=0;
@@ -358,6 +361,9 @@ void UserMain( void* pd ){
 			F_range_buff[1]=radio_in_buff[25];
 			F_range_buff[2]=radio_in_buff[26];
 			F_range_buff[3]=radio_in_buff[27];
+			F_range_buff[4]=radio_in_buff[32];
+			F_range_buff[5]=radio_in_buff[33];
+			F_range_buff[6]=radio_in_buff[12];
 			Radiocount3=0;
 			Ant_config=102;
 			FiveHzflag=0;
