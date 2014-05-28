@@ -293,7 +293,7 @@ void UserMain( void* pd ){
 	EnableSmartTraps();
 
 	//Starting the Code
-	iprintf("\n\n\n..................Starting Sensor Interface Board.....................\n\n\n");
+	iprintf("\n\n\n..................Starting Sensor Interface Board Version 7.....................\n\n\n");
 
 
 	//serviceWatchDog();

@@ -16,7 +16,7 @@ unsigned char* ReadRadio(char* CommandBuff,int radioserial,int buff_size){
 
 	uint8_t i=0;
 	//unsigned short checksum=0;
-	static unsigned char in_buff[100]={1};
+	static unsigned char in_buff[100]={0};
 	char m=0;
 	int radio_timeout=100;
 	uint8_t loop_true=1;
@@ -84,12 +84,20 @@ unsigned char* ReadRadio(char* CommandBuff,int radioserial,int buff_size){
 		}
 
 
+		//checksum=crc16(in_buff,58);
+	//iprintf("checksum=%d,sent checksum=%d\n",checksum,(uint16_t)(in_buff[57]<<8)|(uint16_t)in_buff[58]);
+	//	if(checksum==((uint16_t)(in_buff[56]<<8)|(uint16_t)in_buff[57])){
+			//iprintf("yes\n");
+			if((unsigned char) in_buff[12]==0){
+				return in_buff;
+			}
+		//}
+
 		loop_true=0;
 	}
 
-	return in_buff;
 		//memset(in_buff,0,sizeof(in_buff));
-
+		return 0;
 		//PCM_ID=(uint32_t)((uint32_t)(radio_in_buff[8])*16777216+(uint32_t)(radio_in_buff[9])*65536+(uint32_t)(radio_in_buff[10])*256+(uint32_t)(radio_in_buff[11]));
 		//Range=(uint32_t)((uint32_t)(radio_in_buff[24])*16777216+(uint32_t)(radio_in_buff[25])*65536+(uint32_t)(radio_in_buff[26])*256+(uint32_t)(radio_in_buff[27]));
 		//TotalTime=timer1->readTime();
@@ -100,7 +108,7 @@ unsigned short crc16(unsigned char *buf, int len)
 {
  int i=4;
  unsigned short cksum = 0;
- unsigned short crc16_tab[] = {
+ static unsigned short crc16_tab[] = {
  0x0000, 0x1021, 0x2042, 0x3063, 0x4084, 0x50a5, 0x60c6, 0x70e7,
  0x8108, 0x9129, 0xa14a, 0xb16b, 0xc18c, 0xd1ad, 0xe1ce, 0xf1ef,
  0x1231, 0x0210, 0x3273, 0x2252, 0x52b5, 0x4294, 0x72f7, 0x62d6,
@@ -137,7 +145,7 @@ unsigned short crc16(unsigned char *buf, int len)
 
 
  for (i = 4; i<(len-2); i++) {
-	 cksum = crc16_tab[((cksum>>8) ^ *buf++) & 0xFF] ^ (cksum<< 8);
+ cksum = crc16_tab[((cksum>>8) ^ *buf++) & 0xFF] ^ (cksum<< 8);
  }
  return cksum;
 }

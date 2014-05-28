@@ -293,7 +293,7 @@ void UserMain( void* pd ){
 	EnableSmartTraps();
 
 	//Starting the Code
-	iprintf("\n\n\n..................Starting Sensor Interface Board.....................\n\n\n");
+	iprintf("\n\n\n..................Starting Sensor Interface Board Version 7.....................\n\n\n");
 
 
 	//serviceWatchDog();
@@ -395,7 +395,7 @@ void UserMain( void* pd ){
 			laser_range=ReadLaser(fdLaser);
 			Range=(uint32_t)radio_in_buff[24]*16777216+(uint32_t)radio_in_buff[25]*65536+(uint32_t)radio_in_buff[26]*256+(uint32_t)radio_in_buff[27];
 
-			printf("%zu,%u,%u,%u\n",Range,Ant_config,(unsigned char)radio_in_buff[12],(uint16_t)radio_in_buff[32]*256+(uint16_t)radio_in_buff[33]);
+			printf("%zu,%zu,%zu,%zu\n",Range,Ant_config,(unsigned char)radio_in_buff[12],(uint16_t)radio_in_buff[32]*256+(uint16_t)radio_in_buff[33]);
 			StartAD();
 			 while (!ADDone()){}
 			asm("nop");
