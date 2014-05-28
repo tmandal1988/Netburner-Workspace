@@ -10,87 +10,91 @@
 #include <serial.h>
 #include <iosys.h>
 #include <string.h>
+#include <ucos.h> //OS macros
 
 
 unsigned char* ReadRadio(char* CommandBuff,int radioserial,int buff_size){
 
-	uint8_t i=0;
+	uint16_t i=0;
 	//unsigned short checksum=0;
-	static unsigned char in_buff[100]={1};
+	static unsigned char in_buff[100]={0};
 	char m=0;
 	int radio_timeout=100;
-	uint8_t loop_true=1;
 
 
+	i=0;
+	for (i=0;i<buff_size;i++){
+		write(radioserial,&CommandBuff[i],1);//Sending ranging command to the host radio
+	}
 
-	loop_true=1;
-	while(loop_true==1){
-		i=0;
-		for (i=0;i<buff_size;i++){
-					write(radioserial,&CommandBuff[i],1);//Sending ranging command to the host radio
-		}
 
-		i=0;
+	radio_timeout=ReadWithTimeout(radioserial,&m,1,1);
+
+	if(radio_timeout==0 || radio_timeout==-1){
+		//printf("radio_timeout=%d\n",radio_timeout);
+		return 0;
+
+	}
+
+	//printf("m=%02x\n",(unsigned char)m);
+	//printf("radio_timeout1000=%d\n",radio_timeout);
+	if((unsigned char)m==0xA5){
+
 		radio_timeout=ReadWithTimeout(radioserial,&m,1,1);
-		in_buff[i]=m;
 		if(radio_timeout==0 || radio_timeout==-1)
-			break;
-		if((unsigned char)in_buff[0]==0xA5){//Checking for the headers
-			i++;
-			radio_timeout=ReadWithTimeout(radioserial,&m,1,1);
-			in_buff[i]=m;
-			if(radio_timeout==0 || radio_timeout==-1)
-				break;
-			if((unsigned char)in_buff[1]==0xA5){//Checking for the headers
-				i++;
-				for(i=2;i<14;i++){
+			return 0;
+		if((unsigned char)m==0xA5){
+			i=2;
+			for(i=2;i<14;i++){
+				radio_timeout=ReadWithTimeout(radioserial,&m,1,1);//Reading ranging command confirmation from the host radio
+				in_buff[i]=m;
+				if(radio_timeout==0 || radio_timeout==-1)
+					return 0;
+			}
+		}//inner header if
+
+	}//outer if
+
+	radio_timeout=ReadWithTimeout(radioserial,&m,1,1);
+	if(radio_timeout==0 || radio_timeout==-1)
+		return 0;
+	if((unsigned char)m==0xA5){
+		radio_timeout=ReadWithTimeout(radioserial,&m,1,1);
+		if(radio_timeout==0 || radio_timeout==-1)
+			return 0;
+		if((unsigned char)m==0xA5){
+			i=2;
+			for(i=2;i<6;i++){
+				radio_timeout=ReadWithTimeout(radioserial,&m,1,1);//Reading ranging command confirmation from the host radio
+				in_buff[i]=m;
+				if(radio_timeout==0 || radio_timeout==-1)
+					return 0;
+			}
+
+			if((unsigned char)in_buff[4]==0x02 && (unsigned char)in_buff[5]==0x01){
+				i=6;
+				for(i=6;i<58;i++){
 					radio_timeout=ReadWithTimeout(radioserial,&m,1,1);//Reading ranging command confirmation from the host radio
 					in_buff[i]=m;
 					if(radio_timeout==0 || radio_timeout==-1)
-						break;
+						return 0;
 				}
-			}
-		}
+			}//inner inner if
+		}//inner header if
 
-		i=0;
+	}//outer if
+
+
+	i=0;
+	for(i=0;i<256;i++){
 		radio_timeout=ReadWithTimeout(radioserial,&m,1,1);
-		in_buff[i]=m;
-		if(radio_timeout==0 || radio_timeout==-1)
+		if(radio_timeout==0 || radio_timeout==-1){
 			break;
-		if((unsigned char)in_buff[0]==0xA5){//Checking for the headers
-			i++;
-			radio_timeout=ReadWithTimeout(radioserial,&m,1,1);
-			in_buff[i]=m;
-			if(radio_timeout==0 || radio_timeout==-1)
-				break;
-			if((unsigned char)in_buff[1]==0xA5){//Checking for the headers
-				i++;
-				for(i=2;i<6;i++){
-					radio_timeout=ReadWithTimeout(radioserial,&m,1,1);//Reading the actual range data from the host radio
-					in_buff[i]=m;
-					if(radio_timeout==0 || radio_timeout==-1)
-						break;
-				}
-
-				if((unsigned char)in_buff[4]==0x02 && (unsigned char)in_buff[5]==0x01){
-					for(i=6;i<58;i++){
-						radio_timeout=ReadWithTimeout(radioserial,&m,1,1);//Reading the actual range data from the host radio
-						in_buff[i]=m;
-						if(radio_timeout==0 || radio_timeout==-1)
-							break;
-					}
-				}
-			}
 		}
-
-
-		loop_true=0;
 	}
 
 	return in_buff;
-		//memset(in_buff,0,sizeof(in_buff));
-
-		//PCM_ID=(uint32_t)((uint32_t)(radio_in_buff[8])*16777216+(uint32_t)(radio_in_buff[9])*65536+(uint32_t)(radio_in_buff[10])*256+(uint32_t)(radio_in_buff[11]));
+	//PCM_ID=(uint32_t)((uint32_t)(radio_in_buff[8])*16777216+(uint32_t)(radio_in_buff[9])*65536+(uint32_t)(radio_in_buff[10])*256+(uint32_t)(radio_in_buff[11]));
 		//Range=(uint32_t)((uint32_t)(radio_in_buff[24])*16777216+(uint32_t)(radio_in_buff[25])*65536+(uint32_t)(radio_in_buff[26])*256+(uint32_t)(radio_in_buff[27]));
 		//TotalTime=timer1->readTime();
 		//iprintf("\n Range = %dmm, Responder ID=%d, Responder Antenna=%d, Host Antenna=%d,Radiocount=%d Time=%g s",Range,PCM_ID,(radio_in_buff[13]&0xF0)/16,(radio_in_buff[13]&0x0F),Radiocount,TotalTime);

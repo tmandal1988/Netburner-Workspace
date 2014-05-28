@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void SendtoNAVCOMP(char* Databuff,uint16_t* ADCbuff,double* Pilotbuff,char* time_ms,uint16_t NBcounter,float Range_Laser,unsigned char* Radio_buff,int16_t GimbalPAN,int NAVserial,int debug_Serial,int Databuff_size,uint8_t Ant_config){
+void SendtoNAVCOMP(char* Databuff,uint16_t* ADCbuff,char* time_ms,uint16_t NBcounter,float Range_Laser,unsigned char* Radio_buff,int16_t GimbalPAN,int NAVserial,int debug_Serial,int Databuff_size,uint8_t Ant_config){
 
 	uint16_t checksum=0;
 	uint8_t i=0;
@@ -57,17 +57,13 @@ void SendtoNAVCOMP(char* Databuff,uint16_t* ADCbuff,double* Pilotbuff,char* time
 
 	Databuff[23]=(uint8_t)((uint16_t)(Range_Laser*6553.5)& 0x00FF);
 	Databuff[24]=(uint8_t)(((uint16_t)(Range_Laser*6553.5)& 0xFF00)>>8);
-	/****************packing receiver values*****************/
-	Databuff[25]=(uint8_t) 255*(Pilotbuff[0] -1000) / 1000;
-	Databuff[26]=(uint8_t) 255*(Pilotbuff[1] -1000) / 1000;
-	Databuff[27]=(uint8_t) 255*(Pilotbuff[2] -1000) / 1000;
-	Databuff[28]=(uint8_t) 255*(Pilotbuff[3] -1000) / 1000;
+
 
 	/**********packing radio ranging data*********************/
-	Databuff[29]=Radio_buff[27];
-	Databuff[30]=Radio_buff[26];
-	Databuff[31]=Radio_buff[25];
-	Databuff[32]=Radio_buff[24];
+	Databuff[29]=Radio_buff[3];
+	Databuff[30]=Radio_buff[2];
+	Databuff[31]=Radio_buff[1];
+	Databuff[32]=Radio_buff[0];
 
 	/*********packing radio antenna configuration*************/
 	Databuff[33]=Ant_config;
@@ -86,7 +82,7 @@ void SendtoNAVCOMP(char* Databuff,uint16_t* ADCbuff,double* Pilotbuff,char* time
 	/************sending data out********************************/
 	for (i=0;i<Databuff_size;i++){
 		write(NAVserial,&Databuff[i],1);
-		write(debug_Serial,&Databuff[i],1);
+		//write(debug_Serial,&Databuff[i],1);
 	}
 
 }
