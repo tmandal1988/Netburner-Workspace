@@ -3,7 +3,8 @@
  *
  *  Created on: May 30, 2014
  *      Author: Tanmay, Scott
- *      Modifications: Remote Pause
+ *      Modifications: Remote Pause, added the varying
+ *      angle for crank for grabber on May 30,2014
  */
 
 //Libraries to be included
@@ -66,6 +67,7 @@ HiResTimer* timer1;// Netburner ms timer
 uint8_t FiftyHzTaskFlag=0;
 int fdNavcomp=0,fdcrank=0,fdgrabber=0;
 uint8_t commandstatus=0;
+uint8_t anglestatus=0;
 uint8_t statestatus=0;
 uint8_t grab_interrupt = 0;
 char Navcomp_in_buff[16]={0};
@@ -167,7 +169,12 @@ void NAVcompData(void *){
 			}//second if
 		}//first if
 
-		commandstatus= Navcomp_in_buff[7];
+		commandstatus=(unsigned char) Navcomp_in_buff[7];
+
+		if((unsigned char)Navcomp_in_buff[8]>150)
+			anglestatus=150;
+		else
+			anglestatus=(unsigned char)Navcomp_in_buff[8];
 		//printf("Loop Navcomp\n");
 
 
@@ -219,7 +226,7 @@ void UserMain( void* pd ){
 	/***********Defining Interrupt Timers*****************/
 	HiResTimer* timer2=0;//50 Hz Interrupt Timer
 	int32_t IMU_data[6]={0};
-	char Navcomp_send_buff[64]={0},time_ms[2]={0},G[20]={0};
+	char Navcomp_send_buff[64]={0},time_ms[2]={0},G[20]={0},G_angle[20]={0};
 	uint16_t NB_counter=0,sum=0;
 	double TotalTime=0;
 	int fdDebug=0;
@@ -245,7 +252,7 @@ void UserMain( void* pd ){
 
 	OSSimpleTaskCreate(NAVcompData,MAIN_PRIO-1);
 
-	sprintf(G,"~ECHOF 1\r");
+	sprintf(G,"~ECHOF 1\r");//turning of the ECHO from ESC
 	i=0;
 	for (i=0;i<sizeof(G);i++){
 			write(fdcrank,&G[i],1);
@@ -305,7 +312,14 @@ void UserMain( void* pd ){
 				write(fdNavcomp,&Navcomp_send_buff[j],1);
 			}
 
-			sprintf(G,"!VAR 1 %d\r",commandstatus);
+			sprintf(G_angle,"!VAR 3 %hu\r",anglestatus);//setting the angle values
+			i=0;
+			for (i=0;i<sizeof(G_angle);i++){
+					write(fdcrank,&G_angle[i],1);
+					write(fdgrabber,&G_angle[i],1);
+			}
+
+			sprintf(G,"!VAR 1 %d\r",commandstatus);//setting the mode
 			i=0;
 			for (i=0;i<sizeof(G);i++){
 					write(fdcrank,&G[i],1);

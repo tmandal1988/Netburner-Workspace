@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;QuadIMU_NB2_v3/main.cpp&apos; to &apos;QUadIMU_NB2_v3.cpp&apos;" description="Rename resource &apos;main.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="main.cpp" name="QUadIMU_NB2_v3.cpp" stamp="1401482249782" updateReferences="true"/>
-</session>
