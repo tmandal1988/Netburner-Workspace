@@ -167,7 +167,6 @@ int16_t StartUpLaserScan(int Laserserial){
 	StartPan=(int16_t)(min_angle*10);
 
 
-
 	return StartPan;
 }///StartUpLaserScan function
 

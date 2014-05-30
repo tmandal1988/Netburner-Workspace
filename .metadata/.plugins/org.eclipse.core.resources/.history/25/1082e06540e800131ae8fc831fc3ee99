@@ -138,7 +138,7 @@ void NAVcompData(void *){
 
 					//if((uint8_t)checksum==(uint8_t)Navcomp_in_buff[31]){
 
-					if((unsigned char)Navcomp_in_buff[19]==0 && Scan_Status==1){
+					if((unsigned char)Navcomp_in_buff[19]==0){
 						//Pulse =12287-20.51*double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
 						dYaw  =double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
 						//printf("%g\n",dYaw);
@@ -208,7 +208,7 @@ void NAVcompData(void *){
 					}
 
 					else{
-						Start_PAN=StartUpLaserScan(fdLaser);
+						Start_PAN=StartUpLaserScan(fdLaser,&Scan_Status);
 					}
 					//serviceWatchDog();
 
@@ -353,13 +353,8 @@ void UserMain( void* pd ){
 	OSTimeDly(3*TICKS_PER_SECOND);
 	initTIMERS(timer2);
 	startup_timeout=ReadWithTimeout(fdNAVcomp,&m,1,2);
-	if(startup_timeout==-1 || startup_timeout==0){
-		Start_PAN=StartUpLaserScan(fdLaser);
-		Scan_Status=1;
-	}
-	else{
-		Scan_Status=1;
-	}
+	//if(startup_timeout==-1 || startup_timeout==0)
+		//Start_PAN=StartUpLaserScan(fdLaser,&Scan_Status);
 	/***********packing startup PAN angle*************************/
 	Navcomp_send_buff[37] = (uint8_t)((Start_PAN & 0xFF00)>>8);
 	Navcomp_send_buff[36] = (uint8_t)((Start_PAN & 0x00FF)>>8);

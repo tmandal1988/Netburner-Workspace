@@ -20,7 +20,7 @@
 
 
 
-int16_t StartUpLaserScan(int Laserserial){
+int16_t StartUpLaserScan(int Laserserial,uint8_t *Scan_Status){
 
 	uint8_t C_NUM=19,val_sol1=0,val_sol2=0,k=0;
 	uint8_t Laser_Num=20;
@@ -166,7 +166,7 @@ int16_t StartUpLaserScan(int Laserserial){
 
 	StartPan=(int16_t)(min_angle*10);
 
-
+	*Scan_Status=1;
 
 	return StartPan;
 }///StartUpLaserScan function
