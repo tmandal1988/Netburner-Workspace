@@ -1,33 +1,27 @@
 /*
  * Sensor_Interface_Board_v7.cpp
  *
- *  Created on: May 11, 2014
+ *  Created on: May 28, 2014
  *      Author: Tanmay
  *      This Code Gets
- *      1. Range Data from Ranging Radio through TTL UART8-Finished
- *      2. IMU Data through SPI1-Gimbal task
- *      3. Potentiometer data through ADC-Scott
- *      4. Communicate with mission and NAV computer via RS232 UART9-finished
- *      5. Control Gimbal Servo via PWM module B1(PWM2),A2(PWM0),A3(PWM1),B3(PWM3)-Boyi Hu, Scott
- *      6. Read Receiver Commands from IRQ7-finished
- *      7. Read Laser Rangefinder through TTL UART7-finished
+ *      1. Range Data from Ranging Radio through TTL UART8
+ *      2. Analog data through ADC-Scott
+ *      3. Communicate with mission and NAV computer via RS232 UART9-finished
+ *      5. Control PAN head using B1 PWM module-Scott
+ *   	6. Read Laser Rangefinder through TTL UART7-finished
  *
- *      Number of Interrupts 4
- *      1. External I`nterrupt to read Receiver commands-Tanmay
- *      2. 50 Hz Interrupt to read Laser rangefinder and send data packet to the computer-finished
+ *      Number of Interrupts 1
+ *      1. 50 Hz Interrupt to read Laser rangefinder and send data packet to the computer-finished
  *      	*It also has a counter which counts till 10 to simulate a 5 Hz Interrupt.-finished
- *		3. Watchdog interrupt.-finished
  *
- *      Number of Tasks  5
- *      1. Watchdog timer task-finished
- *      2. Main Task-finished
- *      3. Receive serial buffer from the Nav/Mission Computer-finished
- *      4. Gimbal Code-Gyro Part Finished
- *      5. Stepper Control Task for controlling Stepper Motor
+ *      Number of Tasks  2
+ *      1. Main Task-finished
+ *      2. Receive serial buffer from the Nav/Mission Computer-finished
  *
- *      Modified By: Scott Added ADC and Stepper Control
+ *      Modified By: Scott Added ADC
  *
- *      This code sends data irrespective of whether it is getting data from the computer or not. Firmware has not been tested for data integrity and noise issues
+ *      This code sends data irrespective of whether it is getting data from the computer or not.
+ *      Ranging Radio Comm-Debugged
  *
  *      Warning!!!!!: UART4 and UART0 won't work together when openserial macro is used
  *
@@ -73,8 +67,8 @@ extern "C"{
 }
 
 ///Gimbal PAN angle
-int16_t PanAngle=0;
-double dYaw=0;
+static int16_t PanAngle=0;
+
 
 
 //Global Variables
@@ -99,23 +93,28 @@ void NAVcompData(void *){
 	uint8_t i=0;
 	uint16_t sum=0;
 	uint8_t checksum=0;
-
-
-	//HiResTimer* timer = HiResTimer::getHiResTimer();
+	/**************PAN variable**************************/
+	static uint16_t Pulse = 12287;
+	uint16_t pwmr_comp=0;
+	double dYaw=0;
 
 	while(1){
+
 		i=0;
 
 		ReadWithTimeout(fdNAVcomp,&Navcomp_in_buff[i],1,1);
+		//printf("%d\n",stat);
 		i++;
 		if(Navcomp_in_buff[0]==0x41){
-			//printf("%g\n",dYaw);
+			//("%g\n",dYaw);
 			ReadWithTimeout(fdNAVcomp,&Navcomp_in_buff[i],1,1);
+
 			i++;
 			ReadWithTimeout(fdNAVcomp,&Navcomp_in_buff[i],1,1);
 			i++;
 			if(Navcomp_in_buff[1]==0x7A && Navcomp_in_buff[2]==0x07)
 				{	//ReadWithTimeout(fdNAVcomp,&Navcomp_in_buff[i],1,1);
+				//printf("here\n");
 					i=3;
 					while(i<32){
 						ReadWithTimeout(fdNAVcomp,&Navcomp_in_buff[i],1,4);
@@ -125,13 +124,80 @@ void NAVcompData(void *){
 					checksum=0;
 
 					for(i=3;i<(sizeof(Navcomp_in_buff)-1);i++)
-						sum+=Navcomp_in_buff[i];
+						sum +=Navcomp_in_buff[i];
 
-					checksum=sum%255;
+						checksum=(uint8_t)sum%255;
 
-					//if(checksum==Navcomp_in_buff[31]){
-						dYaw = double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
-					//}
+					if((uint8_t)checksum==(uint8_t)Navcomp_in_buff[31]){
+
+
+						//Pulse =12287-20.51*double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
+						dYaw  =double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
+						//printf("%g\n",dYaw);
+						StartAD();
+						 while (!ADDone()){}
+						asm("nop");
+
+						//dYaw=93;
+
+						uint16_t ServoPot = GetADResult(0);
+						////Servo PAN 1 numbers
+						Pulse=12287-dYaw*20.51;
+
+						if(Pulse<8594 || Pulse==8594)
+							sim1.mcpwm.sm[1].val[5]=8594;
+						if(Pulse>15980 || Pulse==15980)
+							sim1.mcpwm.sm[1].val[5]=15980;
+						else
+							sim1.mcpwm.sm[1].val[5]=Pulse;//PAN control
+
+						/*////Servo PAN 2 numbers
+						Pulse=12287-dYaw*20.14;
+
+						if(Pulse<8594 || Pulse==8310)
+							sim1.mcpwm.sm[1].val[5]=8310;
+						if(Pulse>15980 || Pulse==15560)
+							sim1.mcpwm.sm[1].val[5]=15560;
+						else
+							sim1.mcpwm.sm[1].val[5]=Pulse;//PAN control*/
+
+						double cYaw=(ServoPot-12885)/63;//PAN 1
+						//double cYaw=(ServoPot-14667)/63.05;//PAN 2
+
+						//Calibration PAN servo 1
+						//0-8594
+						//90-10440
+						//180-12287 Position in which PAN faces front
+						//270-14844
+						//360-15980
+
+						//Calibration pot PAN servo 1
+						//360=1564
+						//180=12885 //position in which PAN faces front
+						//270=7270
+						//90=18560
+						//0=24290
+
+						//Calibration PAN servo 2
+						//0-8310
+						//90-10440
+						//180-12287 Position in which PAN faces front
+						//270-13900
+						//360-15560
+
+						//Calibration pot PAN servo 2
+						//360=3264
+						//180=14667 //position in which PAN faces front
+						//270=8999
+						//90=20085
+						//0=25971
+
+						pwmr_comp=sim1.mcpwm.mcr;
+						sim1.mcpwm.mcr |=LDOK;
+
+						PanAngle = cYaw * 10;
+						//printf("%g\n",cYaw);
+					}
 					//serviceWatchDog();
 
 				}//second if
@@ -147,9 +213,7 @@ void NAVcompData(void *){
 /**********************50 Hz Task Function******************************/
 void FiftyHzTask(){
 
-	/**************PAN variable**************************/
-	static uint16_t Pulse = 12287;
-	uint16_t pwmr_comp=0;
+
 	FiftyHzflag=1;
 
 	/***********Five Hz Routine***************/
@@ -159,54 +223,6 @@ void FiftyHzTask(){
 		FiveHzcount=0;
 	}
 
-	StartAD();
-	 while (!ADDone()){}
-	asm("nop");
-
-	uint16_t ServoPot = GetADResult(0);
-
-	Pulse=12287-dYaw*20.51;
-
-	if(Pulse<8594 || Pulse==8594)
-		sim1.mcpwm.sm[1].val[5]=8594;
-	if(Pulse>15980 || Pulse==15980)
-		sim1.mcpwm.sm[1].val[5]=15980;
-	else
-		sim1.mcpwm.sm[1].val[5]=Pulse;//PAN control
-
-	//sim1.mcpwm.sm[3].val[3]=11719+20;//Roll Control
-	double cYaw=(ServoPot-12885)/63;
-	//printf("%g\n",IMU_data[5]);
-	//Error=dYaw-cYaw;
-
-	//sim1.mcpwm.sm[1].val[5]=12287;
-
-	//printf("cYawS=%d,cYawd=%g\n",ServoPot,cYaw);
-	//printf("%u\n",Pulse);
-
-		//Calibration PAN servo
-		//0-8594
-		//90-10440
-		//180-12287 Position in which PAN faces front
-		//270-14844
-		//360-15980
-
-	//Calibration pot 360=1564
-	//			  180=12885 //position in which PAN faces front
-	//			  270=7270
-	//			   90=18560
-	//	            0=24290
-
-	//printf("%g\n",Error);
-
-
-
-
-	pwmr_comp=sim1.mcpwm.mcr;
-	sim1.mcpwm.mcr |=LDOK;
-
-	PanAngle = cYaw * 10;
-	//printf("%g,%g,%g,%d\n",dYaw,fabs(Error),cYaw,Pulse);
 }
 
 
@@ -224,9 +240,8 @@ void initTIMERS(HiResTimer* timer2){
 
 /******Enable Watchdog function***********************************/
 int enableWatchDog( bool readOnly, int timeoutCycles ){
+
 	unsigned short mask = 0;
-
-
 
 	if ( readOnly )
 		mask |= 0x8000; // set RO bit 15
@@ -261,21 +276,17 @@ void UserMain( void* pd ){
 	iprintf("\n\n\n..................Starting Sensor Interface Board.....................\n\n\n");
 
 
-
 	//Local Variables
 	/***********Defining Interrupt Timers*****************/
 	HiResTimer* timer2=0;//50 Hz Interrupt Timer
-
-
+	char m=0;
 
 	/************Ranging Radio Commands buffer************/
 	char RCM_SEND_RANGE_REQUESTA1[]={0xA5,0xA5,0x00,0x0D,0x00,0x03,0x00,0x01,0x00,0x00,0x00,0x65,0x00,0x00,0x00,0x01,0x00,0x45,0xF2};//Host Antenna A to 101
 	char RCM_SEND_RANGE_REQUESTA2[]={0xA5,0xA5,0x00,0x0D,0x00,0x03,0x00,0x02,0x00,0x00,0x00,0x66,0x00,0x00,0x00,0x01,0x00,0x3A,0xDD};//Host Antenna A to 102
 
 	/***********File Descriptor Variables****************/
-	int fdDebug=0,fdLaser=0,fdRadio=0;
-
-
+	int fdDebug=0,fdLaser=0,fdRadio=0,startup_timeout=0;
 
 	unsigned char F_range_buff[4]={0};//Radio filtered range
 
@@ -287,14 +298,10 @@ void UserMain( void* pd ){
 	uint16_t CRME=0;
 
 	/*********Laser Rangefinder Variables***************/
-	float laser_range=0;
+	float laser_range=0;int16_t Start_PAN=0;
 
 	/**********ADC channel Array***************************/
 	uint16_t ADC_channel[8] = {0};
-
-
-
-
 
 	/**********Navcomp send buffer and other vriables**********************/
 	char Navcomp_send_buff[48]={0};
@@ -302,16 +309,6 @@ void UserMain( void* pd ){
 	Navcomp_send_buff[1]=0x7A;
 	Navcomp_send_buff[2]=0x05;
 	uint16_t netburner_counter=0;//netburner 16 bit counter
-
-
-	//uint32_t Range=0;
-
-
-	//Creating Data Receiving task from the computer
-	OSSimpleTaskCreate(NAVcompData,MAIN_PRIO+1);
-
-	//Creating Task to read ranging radio data
-
 
 	//Initialize pins
 	initPINS();
@@ -337,11 +334,24 @@ void UserMain( void* pd ){
 	//Start the Timers and init the DSPI
 	DSPIInit(1,2000000,16,0x01,0x01,1,1,0,0,0);//initializing SPI
 
+	//OSTimeDly(3*TICKS_PER_SECOND);
+	OSSimpleTaskCreate(NAVcompData,MAIN_PRIO+1);
 	initTIMERS(timer2);
+	startup_timeout=ReadWithTimeout(fdNAVcomp,&m,1,2);
+	//if(startup_timeout==-1 || startup_timeout==0)
+		//Start_PAN=StartUpLaserScan(fdLaser);
+	/***********packing startup PAN angle*************************/
+	Navcomp_send_buff[37] = (uint8_t)((Start_PAN & 0xFF00)>>8);
+	Navcomp_send_buff[36] = (uint8_t)((Start_PAN & 0x00FF)>>8);
 	//enableWatchDog( 1, 0x001F );//0x001C
+	//Creating Data Receiving task from the computer
+
+
+	J1[7]=0;
 	while(1){
 
 		TotalTime=timer1->readTime();
+
 		//First if statement to command host radio to get ranging data from 101 guest with antenna A
 		if(FiveHzflag==1 && Radiocount3==0){
 			radio_in_buff=ReadRadio(RCM_SEND_RANGE_REQUESTA1,fdRadio,sizeof(RCM_SEND_RANGE_REQUESTA1));
@@ -354,9 +364,9 @@ void UserMain( void* pd ){
 				F_range_buff[4]=radio_in_buff[32];
 				F_range_buff[5]=radio_in_buff[33];
 				F_range_buff[6]=radio_in_buff[12];
+				Ant_config=radio_in_buff[11];
 			}
 			Radiocount3=1;
-			Ant_config=100;
 			FiveHzflag=0;
 		}//first if bracket
 
@@ -371,15 +381,16 @@ void UserMain( void* pd ){
 				F_range_buff[3]=radio_in_buff[27];
 				F_range_buff[4]=radio_in_buff[32];
 				F_range_buff[5]=radio_in_buff[33];
+				Ant_config=radio_in_buff[11];;
 			}
-			//F_range_buff[6]=radio_in_buff[12];
 			Radiocount3=0;
-			Ant_config=102;
 			FiveHzflag=0;
 		}//second if bracket
 
 		if(FiftyHzflag==1){
 			laser_range=ReadLaser(fdLaser);
+			//printf("laser range=%g\n",laser_range);
+			//printf("laser range=%g\n",laser_range);
 			//uint32_t Range=(uint32_t)F_range_buff[0]*16777216+(uint32_t)F_range_buff[1]*65536+(uint32_t)F_range_buff[2]*256+(uint32_t)F_range_buff[3];
 
 			//printf("%zu,%u,%u,%u\n",Range,Ant_config,(unsigned char)radio_in_buff[12],(uint16_t)radio_in_buff[32]*256+(uint16_t)radio_in_buff[33]);
@@ -388,22 +399,16 @@ void UserMain( void* pd ){
 			asm("nop");
 			for (int i = 0; i < 8; i++)
 			ADC_channel[i] = (unsigned short int)(1000 * (((double)GetADResult(i)) * 3.3 / (32768.0)));
-			//printf("%d\n",ADC_channel[5]);
 			sprintf(time_ms,"%lf",TotalTime);
 			//send data to the computer
 			SendtoNAVCOMP(Navcomp_send_buff,ADC_channel,time_ms,netburner_counter,laser_range,F_range_buff,PanAngle,fdNAVcomp,fdDebug,sizeof(Navcomp_send_buff),Ant_config);
 			netburner_counter ++;
 			FiftyHzflag=0;
-			//printf("%g\n",error);//(uint16_t)GetADResult(0));
-
 
 			//serviceWatchDog();//
 		}//FiftyHzflag bracket
 
-
-
-
-	}//While loop Bracket
+	}//Main While loop Bracket
 
 }//Main Loop Bracket
 

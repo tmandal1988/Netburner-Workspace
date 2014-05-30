@@ -44,26 +44,9 @@ void initPINS(){
 	J2[33].function(0);
 
 	//PWM Pins
-	J2[35].function(2);//PWM0 A2  1
-	J2[31].function(2);//PWM1 A3  2
 	J2[40].function(2);//PWM2 B1  3
-	J2[19].function(2);//PWM3 B3  4
 
 	//Configuring PWM registers
-	//Submodule 0
-	sim1.mcpwm.sm[0].cr2=CR2;
-	sim1.mcpwm.sm[0].cr1=CR1;
-	sim1.mcpwm.sm[0].ocr=OCR;
-	sim1.mcpwm.sm[0].dismap=DISMAP;
-
-	//Edge Aligned PWM
-	sim1.mcpwm.sm[0].init=P_INIT;
-	sim1.mcpwm.sm[0].val[1]=P_MAX; //MAX count for the submodule counter. After reload with INIT
-	sim1.mcpwm.sm[0].val[2]=P_START; //Count value to set PWM23 high
-	sim1.mcpwm.sm[0].val[3]=P_END;   //Count value to set PWM23 low
-	sim1.mcpwm.sm[0].val[4]=P_START; //Count value to set PWM45 high
-	sim1.mcpwm.sm[0].val[5]=P_END;   //Count value to set PWM45 low
-
 	//Submodule 1
 	sim1.mcpwm.sm[1].cr2=CR2;
 	sim1.mcpwm.sm[1].cr1=CR1;
@@ -73,39 +56,8 @@ void initPINS(){
 	//Edge Aligned PWM
 	sim1.mcpwm.sm[1].init=P_INIT;
 	sim1.mcpwm.sm[1].val[1]=P_MAX;
-	sim1.mcpwm.sm[1].val[2]=P_START;
-	sim1.mcpwm.sm[1].val[3]=P_END;
 	sim1.mcpwm.sm[1].val[4]=P_START;
 	sim1.mcpwm.sm[1].val[5]=P_END;
-
-	//Submodule 2
-	sim1.mcpwm.sm[2].cr2=CR2;
-	sim1.mcpwm.sm[2].cr1=CR1;
-	sim1.mcpwm.sm[2].ocr=OCR;
-	sim1.mcpwm.sm[2].dismap=DISMAP;
-
-	//Edge Aligned PWM
-	sim1.mcpwm.sm[2].init=P_INIT;
-	sim1.mcpwm.sm[2].val[1]=P_MAX;
-	sim1.mcpwm.sm[2].val[2]=P_START;
-	sim1.mcpwm.sm[2].val[3]=P_END;
-	sim1.mcpwm.sm[2].val[4]=P_START;
-	sim1.mcpwm.sm[2].val[5]=P_END;
-
-	//Submodule 3
-	sim1.mcpwm.sm[3].cr2=CR2;
-	sim1.mcpwm.sm[3].cr1=CR1;
-	sim1.mcpwm.sm[3].ocr=OCR;
-
-	sim1.mcpwm.sm[3].dismap=DISMAP;
-
-	//Edge Aligned PWM
-	sim1.mcpwm.sm[3].init=P_INIT;
-	sim1.mcpwm.sm[3].val[1]=P_MAX;
-	sim1.mcpwm.sm[3].val[2]=P_START;
-	sim1.mcpwm.sm[3].val[3]=P_END;
-	sim1.mcpwm.sm[3].val[4]=P_START;
-	sim1.mcpwm.sm[3].val[5]=P_END;
 
 	//Enabling PWM outputs
 	sim1.mcpwm.outen=OUTEN;
