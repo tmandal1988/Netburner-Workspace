@@ -983,3 +983,82 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.core.resources 2 10035 2014-05-27 16:21:56.295
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2014-05-30 15:38:50.924 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\Tanmay\Desktop\Scott_Git\Netburner-Workspace
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-05-30 15:38:52.437
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-05-30 15:40:44.399
+!MESSAGE Indexed 'QuadIMU_NB1_ver2.5' (1 sources, 74 headers) in 2.04 sec: 3,953 declarations; 3,450 references; 14 unresolved inclusions; 3 syntax errors; 55 unresolved names (0.74%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-05-30 15:40:45.522
+!MESSAGE Indexed 'QuadIMU_NB1_v2.6' (2 sources, 75 headers) in 1.04 sec: 4,051 declarations; 3,512 references; 14 unresolved inclusions; 3 syntax errors; 55 unresolved names (0.72%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-05-30 15:40:46.364
+!MESSAGE Indexed 'QuadIMU_NB2_ver2' (2 sources, 75 headers) in 0.83 sec: 3,951 declarations; 3,466 references; 14 unresolved inclusions; 3 syntax errors; 55 unresolved names (0.74%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-05-30 15:51:12.227
+!MESSAGE Indexed 'QuadIMU_NB1_v2.7' (1 sources, 61 headers) in 0.48 sec: 1,881 declarations; 1,505 references; 13 unresolved inclusions; 2 syntax errors; 25 unresolved names (0.73%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-05-30 16:18:23.570
+!MESSAGE Indexed 'QuadIMU_NB2_v3' (1 sources, 61 headers) in 0.45 sec: 1,881 declarations; 1,505 references; 13 unresolved inclusions; 2 syntax errors; 25 unresolved names (0.73%)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-05-30 18:06:03.103
+!MESSAGE An internal error occurred during: "Launching QuadIMU_NB1_v2.7".
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(Unknown Source)
+	at nbeclipse.tools.autoupdate.AutoUpdateDlg.ParseCommandLine(AutoUpdateDlg.java:40)
+	at nbeclipse.tools.autoupdate.AutoUpdateDlg.<init>(AutoUpdateDlg.java:119)
+	at nbeclipse.core.launch.NBLaunchConfiguration.finalLaunchCheck(NBLaunchConfiguration.java:345)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:835)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-05-30 18:07:01.166
+!MESSAGE An internal error occurred during: "Launching QuadIMU_NB1_v2.7".
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(Unknown Source)
+	at nbeclipse.tools.autoupdate.AutoUpdateDlg.ParseCommandLine(AutoUpdateDlg.java:40)
+	at nbeclipse.tools.autoupdate.AutoUpdateDlg.<init>(AutoUpdateDlg.java:119)
+	at nbeclipse.core.launch.NBLaunchConfiguration.finalLaunchCheck(NBLaunchConfiguration.java:345)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:835)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2014-05-31 11:15:07.089 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-05-31 11:15:09.444
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2014-05-31 11:39:41.349 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-05-31 11:39:43.392
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2014-05-31 12:46:39.429 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-05-31 12:46:43.126
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

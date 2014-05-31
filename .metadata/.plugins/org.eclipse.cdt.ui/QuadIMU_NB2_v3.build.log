@@ -1,0 +1,35 @@
+
+**** Rebuild of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 81 bytes
+Result counts = 73 total_ends :37
+39 bytes out of 64 original encode out of 81 total original 
+Processing /index.htm 81 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029be4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169956 bytes into 100983 bytes
+Code CheckSum= f9b89815
+Struct CheckSum= c8988fde
+S records output with a base address of c0040000
+S records output with a final address of c0058a8f
+About to write S7...
+******************************Build summary ******************************
+Used 101007 bytes of 33292288 available flash (0.30%)
+Used 650712 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 3635  ms.  

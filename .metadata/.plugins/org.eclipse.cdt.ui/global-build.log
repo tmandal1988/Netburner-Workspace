@@ -4372,3 +4372,1602 @@ Used 662216 bytes of 67108095 available ram (0.99%)
 NNDK release tag version:2.6.4
 Build complete for project Sensor_Interface_Board
 Time consumed: 1016  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Laser_rangefinder.o ..\Laser_rangefinder.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Ranging_Radio.o ..\Ranging_Radio.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o SIB_SendtoNAVCOMP.o ..\SIB_SendtoNAVCOMP.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o SIB_initPINS.o ..\SIB_initPINS.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002c6c4 
+Block size= 176K
+Execution starts at 40000400 
+compressed 180932 bytes into 108539 bytes
+Code CheckSum= 7fa3afe1
+Struct CheckSum= 42ad2fae
+S records output with a base address of c0040000
+S records output with a final address of c005a813
+About to write S7...
+******************************Build summary ******************************
+Used 108563 bytes of 33292288 available flash (0.33%)
+Used 662072 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.3
+Build complete for project Sensor_Interface_Board
+Time consumed: 3884  ms.  
+
+**** Rebuild of configuration Release for project QuadIMU_NB1_v2.6 ****
+
+**** Internal Builder is used for build               ****
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 83 bytes
+Result counts = 73 total_ends :37
+39 bytes out of 66 original encode out of 83 total original 
+Processing /index.htm 83 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.6 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.6 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.6.o ..\QuadIMU_NB1_v2.6.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.6.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.6.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.6.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.6.elf --strip-all --output-target=srec QuadIMU_NB1_v2.6.s19
+compcode QuadIMU_NB1_v2.6.s19 QuadIMU_NB1_v2.6_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029754 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168788 bytes into 100358 bytes
+Code CheckSum= 39dd7b31
+Struct CheckSum= 8873b3c3
+S records output with a base address of c0040000
+S records output with a final address of c005881e
+About to write S7...
+******************************Build summary ******************************
+Used 100382 bytes of 33292288 available flash (0.30%)
+Used 641320 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.6
+Time consumed: 2090  ms.  
+
+**** Rebuild of configuration Release for project QuadIMU_NB1_ver2.5 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_ver2.5 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_ver2.5.o ..\QuadIMU_NB1_ver2.5.cpp
+m68k-elf-g++ QuadIMU_NB1_ver2.5.o -Wl,-Map=QuadIMU_NB1_ver2.5.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_ver2.5.elf
+m68k-elf-objcopy QuadIMU_NB1_ver2.5.elf --strip-all --output-target=srec QuadIMU_NB1_ver2.5.s19
+compcode QuadIMU_NB1_ver2.5.s19 QuadIMU_NB1_ver2.5_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400292f4 
+Block size= 163K
+Execution starts at 40000400 
+compressed 167668 bytes into 99605 bytes
+Code CheckSum= 41d0baa6
+Struct CheckSum= 80807b9f
+S records output with a base address of c0040000
+S records output with a final address of c005852d
+About to write S7...
+******************************Build summary ******************************
+Used 99629 bytes of 33292288 available flash (0.30%)
+Used 640200 bytes of 67108095 available ram (0.95%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_ver2.5
+Time consumed: 1482  ms.  
+
+**** Rebuild of configuration Release for project QuadIMU_NB2_ver2 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_ver2 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUADIMU_NB2_initPINS.o ..\QUADIMU_NB2_initPINS.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_ver2 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB2_ver2.o ..\QuadIMU_NB2_ver2.cpp
+m68k-elf-g++ QuadIMU_NB2_ver2.o QUADIMU_NB2_initPINS.o -Wl,-Map=QuadIMU_NB2_ver2.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_ver2.elf
+m68k-elf-objcopy QuadIMU_NB2_ver2.elf --strip-all --output-target=srec QuadIMU_NB2_ver2.s19
+compcode QuadIMU_NB2_ver2.s19 QuadIMU_NB2_ver2_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029754 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168788 bytes into 100123 bytes
+Code CheckSum= 29a1e190
+Struct CheckSum= 98af4e4f
+S records output with a base address of c0040000
+S records output with a final address of c0058733
+About to write S7...
+******************************Build summary ******************************
+Used 100147 bytes of 33292288 available flash (0.30%)
+Used 649544 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_ver2
+Time consumed: 1810  ms.  
+
+**** Rebuild of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 83 bytes
+Result counts = 73 total_ends :37
+39 bytes out of 66 original encode out of 83 total original 
+Processing /index.htm 83 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40023cc4 
+Block size= 142K
+Execution starts at 40000400 
+compressed 145604 bytes into 86501 bytes
+Code CheckSum= 61e476e5
+Struct CheckSum= 606d48c0
+S records output with a base address of c0040000
+S records output with a final address of c00551fd
+About to write S7...
+******************************Build summary ******************************
+Used 86525 bytes of 33292288 available flash (0.26%)
+Used 636232 bytes of 67108095 available ram (0.95%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 1669  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o main.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+main.o: In function `UserMain':
+C:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7\Release/..\main.cpp:18: multiple definition of `UserMain'
+QuadIMU_NB1_v2.7.o:C:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7\Release/..\QuadIMU_NB1_v2.7.cpp:18: first defined here
+main.o:(.data+0x0): multiple definition of `AppName'
+QuadIMU_NB1_v2.7.o:(.data+0x0): first defined here
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 733  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029754 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168788 bytes into 100358 bytes
+Code CheckSum= 39de7b31
+Struct CheckSum= 8872b3c3
+S records output with a base address of c0040000
+S records output with a final address of c005881e
+About to write S7...
+******************************Build summary ******************************
+Used 100382 bytes of 33292288 available flash (0.30%)
+Used 641320 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 1170  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029774 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168820 bytes into 100494 bytes
+Code CheckSum= 962cfc35
+Struct CheckSum= 2c243217
+S records output with a base address of c0040000
+S records output with a final address of c00588a6
+About to write S7...
+******************************Build summary ******************************
+Used 100518 bytes of 33292288 available flash (0.30%)
+Used 641352 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 1357  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029774 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168820 bytes into 100494 bytes
+Code CheckSum= 962cfc35
+Struct CheckSum= 2c243217
+S records output with a base address of c0040000
+S records output with a final address of c00588a6
+About to write S7...
+******************************Build summary ******************************
+Used 100518 bytes of 33292288 available flash (0.30%)
+Used 641352 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 1513  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400297c4 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168900 bytes into 100550 bytes
+Code CheckSum= fb613bf6
+Struct CheckSum= c6eff1ce
+S records output with a base address of c0040000
+S records output with a final address of c00588de
+About to write S7...
+******************************Build summary ******************************
+Used 100574 bytes of 33292288 available flash (0.30%)
+Used 641432 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 1217  ms.  
+
+**** Rebuild of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 81 bytes
+Result counts = 73 total_ends :37
+39 bytes out of 64 original encode out of 81 total original 
+Processing /index.htm 81 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40023cc4 
+Block size= 142K
+Execution starts at 40000400 
+compressed 145604 bytes into 86496 bytes
+Code CheckSum= 877de7d8
+Struct CheckSum= 3ad3d7d2
+S records output with a base address of c0040000
+S records output with a final address of c00551f8
+About to write S7...
+******************************Build summary ******************************
+Used 86520 bytes of 33292288 available flash (0.26%)
+Used 636232 bytes of 67108095 available ram (0.95%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1810  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400297c4 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168900 bytes into 100586 bytes
+Code CheckSum= dc386223
+Struct CheckSum= e618cb7d
+S records output with a base address of c0040000
+S records output with a final address of c0058902
+About to write S7...
+******************************Build summary ******************************
+Used 100610 bytes of 33292288 available flash (0.30%)
+Used 641432 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 1248  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400297c4 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168900 bytes into 100594 bytes
+Code CheckSum= dc176218
+Struct CheckSum= e639cb80
+S records output with a base address of c0040000
+S records output with a final address of c005890a
+About to write S7...
+******************************Build summary ******************************
+Used 100618 bytes of 33292288 available flash (0.30%)
+Used 641432 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 1279  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400297c4 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168900 bytes into 100590 bytes
+Code CheckSum= dc0c6218
+Struct CheckSum= e644cb84
+S records output with a base address of c0040000
+S records output with a final address of c0058906
+About to write S7...
+******************************Build summary ******************************
+Used 100614 bytes of 33292288 available flash (0.30%)
+Used 641432 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 1217  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+..\main.cpp:35:34: error: QUADIMU_NB2_initPINS.h: No such file or directory
+..\main.cpp: In function 'void UserMain(void*)':
+..\main.cpp:179: error: 'initPINS' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 453  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp:35:34: error: QUADIMU_NB2_initPINS.h: No such file or directory
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:179: error: 'initPINS' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 406  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp:35:34: error: QUADIMU_NB2_initPINS.h: No such file or directory
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:179: error: 'initPINS' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 375  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029a14 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169492 bytes into 100753 bytes
+Code CheckSum= ace140da
+Struct CheckSum= 156fe9cf
+S records output with a base address of c0040000
+S records output with a final address of c00589a9
+About to write S7...
+******************************Build summary ******************************
+Used 100777 bytes of 33292288 available flash (0.30%)
+Used 650248 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1185  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400297d4 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168916 bytes into 100591 bytes
+Code CheckSum= 2552dfdc
+Struct CheckSum= 9cfe4daf
+S records output with a base address of c0040000
+S records output with a final address of c0058907
+About to write S7...
+******************************Build summary ******************************
+Used 100615 bytes of 33292288 available flash (0.30%)
+Used 641448 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 1248  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void initPINS()':
+..\QUadIMU_NB2_v3.cpp:118: error: 'class PinIO' has no member named 'functon'
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:212: error: 'EdgeportISR' was not declared in this scope
+..\QUadIMU_NB2_v3.cpp:212: error: 'SetPinIrq' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 390  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:212: error: 'EdgeportISR' was not declared in this scope
+..\QUadIMU_NB2_v3.cpp:212: error: 'SetPinIrq' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 327  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:213: error: 'EdgeportISR' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 406  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029a24 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169508 bytes into 100685 bytes
+Code CheckSum= 86977a3a
+Struct CheckSum= 3bb9b0a3
+S records output with a base address of c0040000
+S records output with a final address of c0058965
+About to write S7...
+******************************Build summary ******************************
+Used 100709 bytes of 33292288 available flash (0.30%)
+Used 650264 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 2137  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400297c4 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168900 bytes into 100547 bytes
+Code CheckSum= fb353beb
+Struct CheckSum= c71bf1dc
+S records output with a base address of c0040000
+S records output with a final address of c00588db
+About to write S7...
+******************************Build summary ******************************
+Used 100571 bytes of 33292288 available flash (0.30%)
+Used 641432 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 1232  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:316: error: 'pause_interrupt' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 406  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:323: error: 'grab_interupt' was not declared in this scope
+..\QUadIMU_NB2_v3.cpp:325: error: expected primary-expression before '%' token
+Build error occurred, build is stopped
+Time consumed: 390  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:323: error: 'grab_interupt' was not declared in this scope
+..\QUadIMU_NB2_v3.cpp:325: error: lvalue required as left operand of assignment
+Build error occurred, build is stopped
+Time consumed: 327  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:325: error: lvalue required as left operand of assignment
+Build error occurred, build is stopped
+Time consumed: 374  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029ba4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169892 bytes into 100830 bytes
+Code CheckSum= 7b798471
+Struct CheckSum= 46d7a45b
+S records output with a base address of c0040000
+S records output with a final address of c00589f6
+About to write S7...
+******************************Build summary ******************************
+Used 100854 bytes of 33292288 available flash (0.30%)
+Used 650648 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1217  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB1_v2.7
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB1_v2.7
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB1_v2.7
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400297c4 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168900 bytes into 100587 bytes
+Code CheckSum= 7417403b
+Struct CheckSum= 4e39ed64
+S records output with a base address of c0040000
+S records output with a final address of c0058903
+About to write S7...
+******************************Build summary ******************************
+Used 100611 bytes of 33292288 available flash (0.30%)
+Used 641432 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 1623  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB1_v2.7
+
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB1_v2.7
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029b94 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169876 bytes into 100817 bytes
+Code CheckSum= d922cc73
+Struct CheckSum= e92e5c76
+S records output with a base address of c0040000
+S records output with a final address of c00589e9
+About to write S7...
+******************************Build summary ******************************
+Used 100841 bytes of 33292288 available flash (0.30%)
+Used 650632 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1310  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029ba4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169892 bytes into 100830 bytes
+Code CheckSum= 7b798471
+Struct CheckSum= 46d7a45b
+S records output with a base address of c0040000
+S records output with a final address of c00589f6
+About to write S7...
+******************************Build summary ******************************
+Used 100854 bytes of 33292288 available flash (0.30%)
+Used 650648 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1295  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:333: error: expected `;' before '}' token
+Build error occurred, build is stopped
+Time consumed: 468  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029bf4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169972 bytes into 100905 bytes
+Code CheckSum= bde20468
+Struct CheckSum= 46f23c9
+S records output with a base address of c0040000
+S records output with a final address of c0058a41
+About to write S7...
+******************************Build summary ******************************
+Used 100929 bytes of 33292288 available flash (0.30%)
+Used 650728 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1389  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029bf4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169972 bytes into 100905 bytes
+Code CheckSum= bde20468
+Struct CheckSum= 46f23c9
+S records output with a base address of c0040000
+S records output with a final address of c0058a41
+About to write S7...
+******************************Build summary ******************************
+Used 100929 bytes of 33292288 available flash (0.30%)
+Used 650728 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1701  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029bd4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169940 bytes into 100888 bytes
+Code CheckSum= e19ee031
+Struct CheckSum= e0b24831
+S records output with a base address of c0040000
+S records output with a final address of c0058a30
+About to write S7...
+******************************Build summary ******************************
+Used 100912 bytes of 33292288 available flash (0.30%)
+Used 650696 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1435  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029b24 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169764 bytes into 100918 bytes
+Code CheckSum= b55ad677
+Struct CheckSum= cf6527d
+S records output with a base address of c0040000
+S records output with a final address of c0058a4e
+About to write S7...
+******************************Build summary ******************************
+Used 100942 bytes of 33292288 available flash (0.30%)
+Used 650520 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1497  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029be4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169956 bytes into 101006 bytes
+Code CheckSum= e4485ce7
+Struct CheckSum= de08caf5
+S records output with a base address of c0040000
+S records output with a final address of c0058aa6
+About to write S7...
+******************************Build summary ******************************
+Used 101030 bytes of 33292288 available flash (0.30%)
+Used 650712 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1358  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029be4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169956 bytes into 101040 bytes
+Code CheckSum= 2310cfbc
+Struct CheckSum= 9f4057fe
+S records output with a base address of c0040000
+S records output with a final address of c0058ac8
+About to write S7...
+******************************Build summary ******************************
+Used 101064 bytes of 33292288 available flash (0.30%)
+Used 650712 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1170  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:259: error: expected `;' before 'Navcomp_send_buff'
+..\QUadIMU_NB2_v3.cpp:223: warning: unused variable 'NB_counter'
+..\QUadIMU_NB2_v3.cpp:224: warning: unused variable 'TotalTime'
+..\QUadIMU_NB2_v3.cpp:228: warning: unused variable 'IMU_command'
+..\QUadIMU_NB2_v3.cpp: At global scope:
+..\QUadIMU_NB2_v3.cpp:330: error: expected declaration before '}' token
+Build error occurred, build is stopped
+Time consumed: 422  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:223: warning: unused variable 'NB_counter'
+..\QUadIMU_NB2_v3.cpp:224: warning: unused variable 'TotalTime'
+..\QUadIMU_NB2_v3.cpp:228: warning: unused variable 'IMU_command'
+..\QUadIMU_NB2_v3.cpp: At global scope:
+..\QUadIMU_NB2_v3.cpp:330: error: expected declaration before '}' token
+Build error occurred, build is stopped
+Time consumed: 405  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029c04 
+Block size= 166K
+Execution starts at 40000400 
+compressed 169988 bytes into 101027 bytes
+Code CheckSum= f5ed20a9
+Struct CheckSum= cc6406fe
+S records output with a base address of c0040000
+S records output with a final address of c0058abb
+About to write S7...
+******************************Build summary ******************************
+Used 101051 bytes of 33292288 available flash (0.30%)
+Used 650744 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1685  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:344: warning: format '%g' expects type 'double', but argument 2 has type 'int'
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029c04 
+Block size= 166K
+Execution starts at 40000400 
+compressed 169988 bytes into 101027 bytes
+Code CheckSum= f5eb20a9
+Struct CheckSum= cc6606fe
+S records output with a base address of c0040000
+S records output with a final address of c0058abb
+About to write S7...
+******************************Build summary ******************************
+Used 101051 bytes of 33292288 available flash (0.30%)
+Used 650744 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1404  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029c04 
+Block size= 166K
+Execution starts at 40000400 
+compressed 169988 bytes into 101040 bytes
+Code CheckSum= dc201021
+Struct CheckSum= e6311779
+S records output with a base address of c0040000
+S records output with a final address of c0058ac8
+About to write S7...
+******************************Build summary ******************************
+Used 101064 bytes of 33292288 available flash (0.30%)
+Used 650744 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1560  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029c04 
+Block size= 166K
+Execution starts at 40000400 
+compressed 169988 bytes into 101040 bytes
+Code CheckSum= dc201021
+Struct CheckSum= e6311779
+S records output with a base address of c0040000
+S records output with a final address of c0058ac8
+About to write S7...
+******************************Build summary ******************************
+Used 101064 bytes of 33292288 available flash (0.30%)
+Used 650744 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1467  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:344: warning: unknown conversion type character 'b' in format
+..\QUadIMU_NB2_v3.cpp:344: warning: too many arguments for format
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029c04 
+Block size= 166K
+Execution starts at 40000400 
+compressed 169988 bytes into 101027 bytes
+Code CheckSum= f5e620a9
+Struct CheckSum= cc6b06fe
+S records output with a base address of c0040000
+S records output with a final address of c0058abb
+About to write S7...
+******************************Build summary ******************************
+Used 101051 bytes of 33292288 available flash (0.30%)
+Used 650744 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1388  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029b44 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169796 bytes into 100876 bytes
+Code CheckSum= d47a823e
+Struct CheckSum= edd6a6c0
+S records output with a base address of c0040000
+S records output with a final address of c0058a24
+About to write S7...
+******************************Build summary ******************************
+Used 100900 bytes of 33292288 available flash (0.30%)
+Used 650552 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1341  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029b54 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169812 bytes into 100954 bytes
+Code CheckSum= f562799a
+Struct CheckSum= cceeaf06
+S records output with a base address of c0040000
+S records output with a final address of c0058a72
+About to write S7...
+******************************Build summary ******************************
+Used 100978 bytes of 33292288 available flash (0.30%)
+Used 650568 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1357  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029b64 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169828 bytes into 100990 bytes
+Code CheckSum= 5ee1a548
+Struct CheckSum= 636f8324
+S records output with a base address of c0040000
+S records output with a final address of c0058a96
+About to write S7...
+******************************Build summary ******************************
+Used 101014 bytes of 33292288 available flash (0.30%)
+Used 650584 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1248  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029b44 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169796 bytes into 100871 bytes
+Code CheckSum= dc313244
+Struct CheckSum= e61ff6bf
+S records output with a base address of c0040000
+S records output with a final address of c0058a1f
+About to write S7...
+******************************Build summary ******************************
+Used 100895 bytes of 33292288 available flash (0.30%)
+Used 650552 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1263  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029b04 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169732 bytes into 100894 bytes
+Code CheckSum= 177264a3
+Struct CheckSum= aadec489
+S records output with a base address of c0040000
+S records output with a final address of c0058a36
+About to write S7...
+******************************Build summary ******************************
+Used 100918 bytes of 33292288 available flash (0.30%)
+Used 650488 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1529  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:321: error: expected primary-expression before '/' token
+Build error occurred, build is stopped
+Time consumed: 390  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:321: error: expected primary-expression before '/' token
+Build error occurred, build is stopped
+Time consumed: 359  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029bc4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169924 bytes into 100862 bytes
+Code CheckSum= 6ca01954
+Struct CheckSum= 55b10f38
+S records output with a base address of c0040000
+S records output with a final address of c0058a16
+About to write S7...
+******************************Build summary ******************************
+Used 100886 bytes of 33292288 available flash (0.30%)
+Used 650680 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1529  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Rebuild of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 83 bytes
+Result counts = 73 total_ends :37
+39 bytes out of 66 original encode out of 83 total original 
+Processing /index.htm 83 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400297c4 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168900 bytes into 100587 bytes
+Code CheckSum= 7417403b
+Struct CheckSum= 4e39ed64
+S records output with a base address of c0040000
+S records output with a final address of c0058903
+About to write S7...
+******************************Build summary ******************************
+Used 100611 bytes of 33292288 available flash (0.30%)
+Used 641432 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 7769  ms.  
+
+**** Rebuild of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 81 bytes
+Result counts = 73 total_ends :37
+39 bytes out of 64 original encode out of 81 total original 
+Processing /index.htm 81 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029bc4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169924 bytes into 100862 bytes
+Code CheckSum= 6ca01954
+Struct CheckSum= 55b10f38
+S records output with a base address of c0040000
+S records output with a final address of c0058a16
+About to write S7...
+******************************Build summary ******************************
+Used 100886 bytes of 33292288 available flash (0.30%)
+Used 650680 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 2044  ms.  
+
+**** Rebuild of configuration Release for project QuadIMU_NB2_ver2 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_ver2 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB2_ver2.o ..\QuadIMU_NB2_ver2.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_ver2 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUADIMU_NB2_initPINS.o ..\QUADIMU_NB2_initPINS.cpp
+m68k-elf-g++ QuadIMU_NB2_ver2.o QUADIMU_NB2_initPINS.o -Wl,-Map=QuadIMU_NB2_ver2.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_ver2.elf
+m68k-elf-objcopy QuadIMU_NB2_ver2.elf --strip-all --output-target=srec QuadIMU_NB2_ver2.s19
+compcode QuadIMU_NB2_ver2.s19 QuadIMU_NB2_ver2_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029754 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168788 bytes into 100123 bytes
+Code CheckSum= 29a1e190
+Struct CheckSum= 98af4e4f
+S records output with a base address of c0040000
+S records output with a final address of c0058733
+About to write S7...
+******************************Build summary ******************************
+Used 100147 bytes of 33292288 available flash (0.30%)
+Used 649544 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_ver2
+Time consumed: 1810  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029bb4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169908 bytes into 101007 bytes
+Code CheckSum= bb94e2b8
+Struct CheckSum= 6bc4553
+S records output with a base address of c0040000
+S records output with a final address of c0058aa7
+About to write S7...
+******************************Build summary ******************************
+Used 101031 bytes of 33292288 available flash (0.30%)
+Used 650664 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1435  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029bb4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169908 bytes into 101007 bytes
+Code CheckSum= bb8ee2b8
+Struct CheckSum= 6c24553
+S records output with a base address of c0040000
+S records output with a final address of c0058aa7
+About to write S7...
+******************************Build summary ******************************
+Used 101031 bytes of 33292288 available flash (0.30%)
+Used 650664 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1373  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Rebuild of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 83 bytes
+Result counts = 73 total_ends :37
+39 bytes out of 66 original encode out of 83 total original 
+Processing /index.htm 83 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400297c4 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168900 bytes into 100587 bytes
+Code CheckSum= 7417403b
+Struct CheckSum= 4e39ed64
+S records output with a base address of c0040000
+S records output with a final address of c0058903
+About to write S7...
+******************************Build summary ******************************
+Used 100611 bytes of 33292288 available flash (0.30%)
+Used 641432 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 13151  ms.  
+
+**** Rebuild of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 81 bytes
+Result counts = 73 total_ends :37
+39 bytes out of 64 original encode out of 81 total original 
+Processing /index.htm 81 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029bb4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169908 bytes into 101007 bytes
+Code CheckSum= bb8ee2b8
+Struct CheckSum= 6c24553
+S records output with a base address of c0040000
+S records output with a final address of c0058aa7
+About to write S7...
+******************************Build summary ******************************
+Used 101031 bytes of 33292288 available flash (0.30%)
+Used 650664 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1934  ms.  
+
+**** Rebuild of configuration Release for project QuadIMU_NB2_ver2 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_ver2 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUADIMU_NB2_initPINS.o ..\QUADIMU_NB2_initPINS.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_ver2 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB2_ver2.o ..\QuadIMU_NB2_ver2.cpp
+m68k-elf-g++ QuadIMU_NB2_ver2.o QUADIMU_NB2_initPINS.o -Wl,-Map=QuadIMU_NB2_ver2.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_ver2.elf
+m68k-elf-objcopy QuadIMU_NB2_ver2.elf --strip-all --output-target=srec QuadIMU_NB2_ver2.s19
+compcode QuadIMU_NB2_ver2.s19 QuadIMU_NB2_ver2_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029754 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168788 bytes into 100123 bytes
+Code CheckSum= 29a1e190
+Struct CheckSum= 98af4e4f
+S records output with a base address of c0040000
+S records output with a final address of c0058733
+About to write S7...
+******************************Build summary ******************************
+Used 100147 bytes of 33292288 available flash (0.30%)
+Used 649544 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_ver2
+Time consumed: 2512  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029be4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169956 bytes into 100983 bytes
+Code CheckSum= f9b89815
+Struct CheckSum= c8988fde
+S records output with a base address of c0040000
+S records output with a final address of c0058a8f
+About to write S7...
+******************************Build summary ******************************
+Used 101007 bytes of 33292288 available flash (0.30%)
+Used 650712 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 2823  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Rebuild of configuration Release for project QuadIMU_NB1_v2.7 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 83 bytes
+Result counts = 73 total_ends :37
+39 bytes out of 66 original encode out of 83 total original 
+Processing /index.htm 83 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
+m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
+compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400297c4 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168900 bytes into 100587 bytes
+Code CheckSum= 7417403b
+Struct CheckSum= 4e39ed64
+S records output with a base address of c0040000
+S records output with a final address of c0058903
+About to write S7...
+******************************Build summary ******************************
+Used 100611 bytes of 33292288 available flash (0.30%)
+Used 641432 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB1_v2.7
+Time consumed: 7457  ms.  
+
+**** Rebuild of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 81 bytes
+Result counts = 73 total_ends :37
+39 bytes out of 64 original encode out of 81 total original 
+Processing /index.htm 81 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029be4 
+Block size= 165K
+Execution starts at 40000400 
+compressed 169956 bytes into 100983 bytes
+Code CheckSum= f9b89815
+Struct CheckSum= c8988fde
+S records output with a base address of c0040000
+S records output with a final address of c0058a8f
+About to write S7...
+******************************Build summary ******************************
+Used 101007 bytes of 33292288 available flash (0.30%)
+Used 650712 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 3635  ms.  
+
+**** Rebuild of configuration Release for project QuadIMU_NB2_ver2 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_ver2 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUADIMU_NB2_initPINS.o ..\QUADIMU_NB2_initPINS.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\QuadIMU_NB2_ver2 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB2_ver2.o ..\QuadIMU_NB2_ver2.cpp
+m68k-elf-g++ QuadIMU_NB2_ver2.o QUADIMU_NB2_initPINS.o -Wl,-Map=QuadIMU_NB2_ver2.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_ver2.elf
+m68k-elf-objcopy QuadIMU_NB2_ver2.elf --strip-all --output-target=srec QuadIMU_NB2_ver2.s19
+compcode QuadIMU_NB2_ver2.s19 QuadIMU_NB2_ver2_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029754 
+Block size= 164K
+Execution starts at 40000400 
+compressed 168788 bytes into 100123 bytes
+Code CheckSum= 29a1e190
+Struct CheckSum= 98af4e4f
+S records output with a base address of c0040000
+S records output with a final address of c0058733
+About to write S7...
+******************************Build summary ******************************
+Used 100147 bytes of 33292288 available flash (0.30%)
+Used 649544 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.3
+Build complete for project QuadIMU_NB2_ver2
+Time consumed: 3525  ms.  
