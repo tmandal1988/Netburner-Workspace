@@ -46,10 +46,6 @@ int16_t StartUpLaserScan(int Laserserial){
 
 	while(i<C_NUM){
 
-		/*if(Pause Activated){
-			Startpan=11110;
-			return Startpan;
-		}*/
 		dYawS=-180+i*20;
 		Pulse=12287-dYawS*20.51;
 
@@ -115,11 +111,6 @@ int16_t StartUpLaserScan(int Laserserial){
 	k=0;
 	i=-5;
 	while(i<6){
-
-		/*if(Pause Activated){
-			Startpan=11110;
-			return Startpan;
-		}*/
 		dYawS=min_angle+i*5;
 		Pulse=12287-dYawS*20.51;
 		if(Pulse<8594 || Pulse==8594)
@@ -178,7 +169,7 @@ int16_t StartUpLaserScan(int Laserserial){
 	}
 
 	if(min_dist==999){
-		StartPan=11110;
+		StartPan=1111;
 	}
 
 	return StartPan;

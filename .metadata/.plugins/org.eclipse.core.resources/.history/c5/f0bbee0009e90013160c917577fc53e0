@@ -143,11 +143,11 @@ void MIScompData(void *){
 					if((unsigned char)Navcomp_in_buffMIS[19]==1){
 						Scan_Complete=0;
 						Start_PAN=StartUpLaserScan(fdLaser);
-						if(Start_PAN!=11110)
+						if(Start_PAN!=1111)
 							Scan_Status=1;
 						else{
 							Scan_Status=0;
-							Start_PAN=11110;
+							Start_PAN=1111;
 						}
 						Scan_Complete=1;
 					}
@@ -416,7 +416,7 @@ void UserMain( void* pd ){
 	startup_timeout=ReadWithTimeout(fdNAVcomp,&m,1,2);
 	if(startup_timeout==-1 || startup_timeout==0){
 		Start_PAN=StartUpLaserScan(fdLaser);
-		if(Start_PAN!=11110)
+		if(Start_PAN!=1111)
 			Scan_Status=1;
 		else
 			Scan_Status=0;
@@ -424,7 +424,7 @@ void UserMain( void* pd ){
 
 	else{
 		Scan_Status=0;
-		Start_PAN=11110;
+		Start_PAN=1111;
 	}
 
 	Scan_Complete=1;

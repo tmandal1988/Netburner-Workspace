@@ -314,7 +314,7 @@ void UserMain( void* pd ){
 			}
 
 			sprintf(G_angle,"!VAR 3 %d\r",anglestatus);//setting the angle values
-		//	printf("%s\n",G);
+			printf("%s\n",G);
 			i=0;
 			for (i=0;i<sizeof(G_angle);i++){
 					write(fdcrank,&G_angle[i],1);
