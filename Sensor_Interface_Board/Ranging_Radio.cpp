@@ -20,7 +20,7 @@ unsigned char* ReadRadio(char* CommandBuff,int radioserial,int buff_size){
 	static unsigned char in_buff[100]={0};
 	char m=0;
 	int radio_timeout=100;
-
+	memset(in_buff,1,sizeof(in_buff));
 
 	i=0;
 	for (i=0;i<buff_size;i++){

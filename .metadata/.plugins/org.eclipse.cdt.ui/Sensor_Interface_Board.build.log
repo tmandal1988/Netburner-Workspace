@@ -2,6 +2,7 @@
 **** Build of configuration Release for project Sensor_Interface_Board ****
 
 **** Internal Builder is used for build               ****
+<<<<<<< HEAD
 m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Laser_rangefinder.o ..\Laser_rangefinder.cpp
 m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Ranging_Radio.o ..\Ranging_Radio.cpp
 m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Scott_Git\Netburner-WorkSpace\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o SIB_SendtoNAVCOMP.o ..\SIB_SendtoNAVCOMP.cpp
@@ -26,3 +27,6 @@ Used 662072 bytes of 67108095 available ram (0.99%)
 NNDK release tag version:2.6.3
 Build complete for project Sensor_Interface_Board
 Time consumed: 3884  ms.  
+=======
+Nothing to build for Sensor_Interface_Board
+>>>>>>> 9f2be9041e2cafd1f468cb2a99e5f6039987dfcf

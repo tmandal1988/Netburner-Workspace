@@ -983,6 +983,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.core.resources 2 10035 2014-05-27 16:21:56.295
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+<<<<<<< HEAD
 !SESSION 2014-05-30 15:38:50.924 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=1.7.0_51
@@ -1056,9 +1057,18 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 !SESSION 2014-05-31 12:46:39.429 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=1.7.0_51
+=======
+!SESSION 2014-05-27 17:10:25.467 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_55
+>>>>>>> 9f2be9041e2cafd1f468cb2a99e5f6039987dfcf
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
 Command-line arguments:  -os win32 -ws win32 -arch x86
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.core.resources 2 10035 2014-05-31 12:46:43.126
+=======
+!ENTRY org.eclipse.core.resources 2 10035 2014-05-27 17:10:33.265
+>>>>>>> 9f2be9041e2cafd1f468cb2a99e5f6039987dfcf
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
