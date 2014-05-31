@@ -7,18 +7,18 @@ m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Rang
 m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
 compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
 Block starts at 40000400 
-Block ends at 4002ce84 
-Block size= 178K
+Block ends at 4002d104 
+Block size= 179K
 Execution starts at 40000400 
-compressed 182916 bytes into 109412 bytes
-Code CheckSum= c0c82e21
-Struct CheckSum= 188a645
+compressed 183556 bytes into 109794 bytes
+Code CheckSum= 12218406
+Struct CheckSum= b02f4c62
 S records output with a base address of c0040000
-S records output with a final address of c005ab7c
+S records output with a final address of c005acfa
 About to write S7...
 ******************************Build summary ******************************
-Used 109436 bytes of 33292288 available flash (0.33%)
-Used 664024 bytes of 67108095 available ram (0.99%)
+Used 109818 bytes of 33292288 available flash (0.33%)
+Used 672856 bytes of 67108095 available ram (1.00%)
 NNDK release tag version:2.6.4
 Build complete for project Sensor_Interface_Board
-Time consumed: 1000  ms.  
+Time consumed: 1032  ms.  

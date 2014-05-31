@@ -92,7 +92,7 @@ void SendtoNAVCOMP(char* Databuff,uint16_t* ADCbuff,char* time_ms,uint16_t NBcou
 	for (i=0;i<Databuff_size;i++){
 		write(NAVserial,&Databuff[i],1);
 		//printf("Hi\n");
-		//write(debug_Serial,&Databuff[i],1);
+		write(debug_Serial,&Databuff[i],1);
 	}
 
 }

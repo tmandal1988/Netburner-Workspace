@@ -67,7 +67,7 @@ int16_t StartUpLaserScan(int Laserserial){
 		}//While loop to read Laser_Num number of data
 
 		avg_dist=sum/Laser_Num;
-		if(avg_dist>1.8 || avg_dist==1.8)
+		if(avg_dist>1.8 || avg_dist==1.8 || avg_dist==0.2 || avg_dist<0.2)
 			c_dist[i]=999;
 		else
 			c_dist[i]=avg_dist;
@@ -152,21 +152,25 @@ int16_t StartUpLaserScan(int Laserserial){
 
 	}
 
-	dYawS=min_angle;
-	Pulse=12287-dYawS*20.51;
-	if(Pulse<8594 || Pulse==8594)
-		sim1.mcpwm.sm[1].val[5]=8594;
-	if(Pulse>15980 || Pulse==15980)
-		sim1.mcpwm.sm[1].val[5]=15980;
-	else
-		sim1.mcpwm.sm[1].val[5]=Pulse;//PAN control
+	if(min_dist!=999){
+		dYawS=min_angle;
+		Pulse=12287-dYawS*20.51;
+		if(Pulse<8594 || Pulse==8594)
+			sim1.mcpwm.sm[1].val[5]=8594;
+		if(Pulse>15980 || Pulse==15980)
+			sim1.mcpwm.sm[1].val[5]=15980;
+		else
+			sim1.mcpwm.sm[1].val[5]=Pulse;//PAN control
 
-	pwmr_comp=sim1.mcpwm.mcr;
-	sim1.mcpwm.mcr |=LDOK;
+		pwmr_comp=sim1.mcpwm.mcr;
+		sim1.mcpwm.mcr |=LDOK;
 
-	StartPan=(int16_t)(min_angle*10);
+		StartPan=(int16_t)(min_angle*10);
+	}
 
-
+	if(min_dist==999){
+		StartPan=1111;
+	}
 
 	return StartPan;
 }///StartUpLaserScan function

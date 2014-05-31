@@ -1,0 +1,362 @@
+/*
+ * QuadIMU_NB2_ver3.cpp
+ *
+ *  Created on: May 30, 2014
+ *      Author: Tanmay, Scott
+ *      Modifications: Remote Pause, added the varying
+ *      angle for crank for grabber on May 30,2014
+ */
+
+//Libraries to be included
+#include "predef.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <basictypes.h> //Defines basic data types
+#include <ucos.h> //OS macros
+#include <ctype.h>
+#include <startnet.h>
+#include <autoupdate.h> //Automatic update via ethernet cable
+#include <dhcpclient.h>
+#include <taskmon.h>
+#include <smarttrap.h>
+#include <sim.h>
+#include <pins.h>
+#include <ucosmcfc.h>
+#include <pinconstant.h>
+#include <HiResTimer.h> //Timer Utility
+#include <utils.h>
+#include <constants.h>
+#include <cfinter.h> //Needed for interrupt
+#include <math.h>
+#include <serial.h> //Serial macro definitions
+#include <dspi.h>	//SPI macro definition
+#include <sim5441X.h>  //on-chip register definitions/
+#include <ethernet.h>
+#include <iosys.h>
+#include <bsp.h> //needed for ForceReboot()
+#include <pin_irq.h>
+
+extern "C"{
+	void UserMain( void * pd);
+	void SetIntc( int intc, long func, int source, int level);
+}
+
+//IMU Commands:Send values corresponding to the data needed
+#define xghigh 0x12
+#define xglow  0x10
+#define yghigh 0x16
+#define yglow  0x14
+#define zghigh 0x1A
+#define	zglow  0x18
+#define	xahigh 0x1E
+#define xalow  0x1C
+#define	yahigh 0x22
+#define	yalow  0x20
+#define	zahigh 0x26
+#define	zalow  0x24
+#define	xm     0x28
+#define	ym     0x2A
+#define	zm     0x2C
+#define	barhigh 0x30
+#define	barlow  0x2E
+
+//Global Variables
+/****Millisecond Timer Variables*****/
+HiResTimer* timer1;// Netburner ms timer
+
+uint8_t FiftyHzTaskFlag=0;
+int fdNavcomp=0,fdcrank=0,fdgrabber=0;
+uint8_t commandstatus=0;
+uint8_t anglestatus=0;
+uint8_t statestatus=0;
+uint8_t grab_interrupt = 0;
+char Navcomp_in_buff[16]={0};
+
+
+
+//IMU Commands:Send values corresponding to the data needed
+#define xghigh 0x12
+#define xglow  0x10
+#define yghigh 0x16
+#define yglow  0x14
+#define zghigh 0x1A
+#define	zglow  0x18
+#define	xahigh 0x1E
+#define xalow  0x1C
+#define	yahigh 0x22
+#define	yalow  0x20
+#define	zahigh 0x26
+#define	zalow  0x24
+#define	xm     0x28
+#define	ym     0x2A
+#define	zm     0x2C
+#define	barhigh 0x30
+#define	barlow  0x2E
+
+void initPINS(){
+
+	//Defining the Serial Pins
+	J2[3].function(3);//UART0_RX For Debugging
+	J2[4].function(3);//UART0_TX
+
+	J2[19].function(3);//UART 2 for grabber
+	J2[31].function(3);
+
+	J2[41].function(2);//UART9_RX for Crank
+	J2[44].function(2);//UART9_TX
+
+	J2[16].function(2);//UART7 for communicating with Navcomp
+	J2[20].function(2);
+
+	//IMU 4
+	J2[21].function(1);//SPI3 Input
+	J2[22].function(1);//SPI3 Out
+	J2[23].function(1);//SPI3 chip select 0
+	J2[24].function(1);//SPI3 clock
+
+	//IMU 3
+	J2[27].function(1);//SPI1 Input
+	J2[28].function(1);//SPI1 Out
+	J2[30].function(1);//SPI1 chip select 0
+	J2[25].function(1);//SPI1 clock
+
+	J2[45].function(0);//Remote Pause
+	J2[45] = 0;
+}
+
+
+void FiftyHzTask(){
+	FiftyHzTaskFlag=1;
+	J2[48] = J2[48]^1;
+}
+
+void initDSPI(){
+	DSPIInit(3,2000000,16,0x01,1,1,1,0,0,0);//initializing SPI IMU4
+	DSPIInit(1,2000000,16,0x01,1,1,1,0,0,0);//initializing SPI IMU3
+}
+
+/*******************function to initialize Timers*********************/
+void initTIMERS(HiResTimer* timer2){
+	timer1=HiResTimer::getHiResTimer(1);
+	timer1->init();
+	timer1->start();
+
+	timer2=HiResTimer::getHiResTimer(0);
+	timer2->setInterruptFunction(FiftyHzTask);
+	timer2->init(0.02);
+	timer2->start();
+}
+
+void NAVcompData(void *){
+	uint8_t i=0;
+	char G1[20];
+	sprintf(G1,"?VAR 4\r");
+	char m1;
+	char buff1[100]={0};
+	while(1){
+		//iprintf("\n%d\n",commandstatus);
+		i=0;
+		ReadWithTimeout(fdNavcomp,&Navcomp_in_buff[i],1,4);
+		i++;
+		if(Navcomp_in_buff[0]==0x41){
+			ReadWithTimeout(fdNavcomp,&Navcomp_in_buff[i],1,4);
+			i++;
+			if(Navcomp_in_buff[1]==0x7A){
+				//iprintf("found header\n");
+			for(i=2;i<16;i++){
+				ReadWithTimeout(fdNavcomp,&Navcomp_in_buff[i],1,4);
+				}//for loop
+			}//second if
+		}//first if
+
+		commandstatus=(unsigned char) Navcomp_in_buff[7];
+
+		if((unsigned char)Navcomp_in_buff[8]>150)
+			anglestatus=150;
+		else
+			anglestatus=(unsigned char)Navcomp_in_buff[8];
+		//printf("Loop Navcomp\n");
+
+
+
+		i=0;
+		for (i=0;i<sizeof(G1);i++){
+			write(fdcrank,&G1[i],1);
+		}
+
+		m1=0;
+		i=0;
+		while(m1 != 0x3D && i<20){
+			ReadWithTimeout(fdcrank,&m1,1,4);
+			i++;
+			//iprintf("loop 2\n");
+
+		}
+
+		m1=0;
+		i=0;
+		while(m1!=0x0D && i<20){
+			read(fdcrank,&m1,1);
+			buff1[i]=m1;
+			i++;
+			//iprintf("loop 3\n");
+		}
+
+		m1=atoi(buff1);
+		if(m1==91 || m1==97 || m1==89)
+			statestatus=m1;
+		iprintf("%d,%d\n",statestatus,anglestatus);
+
+	}//NAVcompData Process While loop
+}//NAVcompData Process
+
+void UserMain( void* pd ){
+	/////Usual Routine
+
+	InitializeStack();
+	OSChangePrio( MAIN_PRIO );
+	EnableAutoUpdate();
+	EnableTaskMonitor();
+	EnableSmartTraps();
+
+	initPINS();
+	initDSPI();
+
+	//Local Variables
+	/***********Defining Interrupt Timers*****************/
+	HiResTimer* timer2=0;//50 Hz Interrupt Timer
+	int32_t IMU_data[6]={0};
+	char Navcomp_send_buff[64]={0},time_ms[2]={0},G[20]={0},G_angle[20]={0};
+	uint16_t NB_counter=0,sum=0;
+	double TotalTime=0;
+	int fdDebug=0;
+	uint8_t i=0;
+
+	BYTE IMU_command[24]={xahigh,0,xalow,0,yahigh,0,yalow,0,zahigh,0,zalow,0,xghigh,0,xglow,0,yghigh,0,yglow,0,zghigh,0,zglow,0};
+	BYTE IMU3_raw[24]={0};//IMU 3
+	BYTE IMU4_raw[24]={0};//IMU 4
+
+	Navcomp_send_buff[0] = 0x41;
+	Navcomp_send_buff[1] = 0x7A;
+	Navcomp_send_buff[2] = 0x04;
+
+	SerialClose(0);
+	SerialClose(2);
+	SerialClose(7);
+	SerialClose(9);
+
+	fdNavcomp=OpenSerial(7,115200,1,8,eParityNone);
+	fdcrank=OpenSerial(9,115200,1,8,eParityNone);
+	fdgrabber=OpenSerial(2,115200,1,8,eParityNone);
+	fdDebug=OpenSerial(0,115200,1,8,eParityNone);
+
+	OSSimpleTaskCreate(NAVcompData,MAIN_PRIO-1);
+
+	sprintf(G,"~ECHOF 1\r");//turning of the ECHO from ESC
+	i=0;
+	for (i=0;i<sizeof(G);i++){
+			write(fdcrank,&G[i],1);
+			write(fdgrabber,&G[i],1);
+	}
+
+	initTIMERS(timer2);
+	while(1){
+		OSTimeDly(2);
+		if (FiftyHzTaskFlag==1){
+			DSPIStart(1,IMU_command,IMU3_raw,24,NULL);//IMU3
+			while(!DSPIdone(1)){/*iprintf("DSPI1done state=%s\n",(DSPIdone(1))?"true":"false");*/};
+
+			//iprintf("....................................................................\n");
+
+			DSPIStart(3,IMU_command,IMU4_raw,24,NULL);//IMU3
+			while(!DSPIdone(3)){/*iprintf("DSPI3done state=%s\n",(DSPIdone(3))?"true":"false");*/};
+
+			//packaging NB counter
+			Navcomp_send_buff[4]=(uint8_t)((NB_counter & 0xFF00)>>8);
+			Navcomp_send_buff[3]=(uint8_t)(NB_counter & 0x00FF);
+			NB_counter++;
+
+			//getting time in ms
+			TotalTime=timer2->readTime();
+			sprintf(time_ms,"%lf",TotalTime);
+			Navcomp_send_buff[6]=time_ms[0];
+			Navcomp_send_buff[5]=time_ms[1];
+
+			IMU_data[0]=(((int32_t)IMU3_raw[2]<<24|(int32_t)IMU3_raw[3]<<16|(int32_t)IMU3_raw[4]<<8|(int32_t)IMU3_raw[5])-((int32_t)IMU4_raw[2]<<24|(int32_t)IMU4_raw[3]<<16|(int32_t)IMU4_raw[4]<<8|(int32_t)IMU4_raw[5]))/2;//X-Accel
+			IMU_data[1]=(((int32_t)IMU3_raw[6]<<24|(int32_t)IMU3_raw[7]<<16|(int32_t)IMU3_raw[8]<<8|(int32_t)IMU3_raw[9])-((int32_t)IMU4_raw[6]<<24|(int32_t)IMU4_raw[7]<<16|(int32_t)IMU4_raw[8]<<8|(int32_t)IMU4_raw[9]))/2;//Y-Accel
+			IMU_data[2]=(((int32_t)IMU3_raw[10]<<24|(int32_t)IMU3_raw[11]<<16|(int32_t)IMU3_raw[12]<<8|(int32_t)IMU3_raw[13])+((int32_t)IMU4_raw[10]<<24|(int32_t)IMU4_raw[11]<<16|(int32_t)IMU4_raw[12]<<8|(int32_t)IMU4_raw[13]))/2;//Z-Accel
+			IMU_data[3]=(((int32_t)IMU3_raw[14]<<24|(int32_t)IMU3_raw[15]<<16|(int32_t)IMU3_raw[16]<<8|(int32_t)IMU3_raw[17])-((int32_t)IMU4_raw[14]<<24|(int32_t)IMU4_raw[15]<<16|(int32_t)IMU4_raw[16]<<8|(int32_t)IMU4_raw[17]))/2;//X-Gyro
+			IMU_data[4]=(((int32_t)IMU3_raw[18]<<24|(int32_t)IMU3_raw[19]<<16|(int32_t)IMU3_raw[20]<<8|(int32_t)IMU3_raw[21])-((int32_t)IMU4_raw[18]<<24|(int32_t)IMU4_raw[19]<<16|(int32_t)IMU4_raw[20]<<8|(int32_t)IMU4_raw[21]))/2;//Y-Gyro
+			IMU_data[5]=(((int32_t)IMU3_raw[22]<<24|(int32_t)IMU3_raw[23]<<16|(int32_t)IMU3_raw[0]<<8|(int32_t)IMU3_raw[1])+((int32_t)IMU4_raw[22]<<24|(int32_t)IMU4_raw[23]<<16|(int32_t)IMU4_raw[0]<<8|(int32_t)IMU4_raw[1]))/2;//Z-Gyro
+
+			i=0;
+			for(i=0;i<6;i++){
+				Navcomp_send_buff[4*i+10]=(BYTE)((uint32_t)(IMU_data[i] & 0xFF000000)>>24);
+				Navcomp_send_buff[4*i+9]=(BYTE)((uint32_t)(IMU_data[i] & 0x00FF0000)>>16);
+				Navcomp_send_buff[4*i+8]=(BYTE)((uint32_t)(IMU_data[i] & 0x0000FF00)>>8);
+				Navcomp_send_buff[4*i+7]=(BYTE)((uint32_t)(IMU_data[i] & 0x000000FF));
+
+			}
+
+			Navcomp_send_buff[47]=statestatus;
+			//Calculating checksum
+			sum=0;
+			i=0;
+			for(i=3;i<63;i++){
+				sum +=Navcomp_send_buff[i];
+			}
+
+			Navcomp_send_buff[63]=(uint8_t)(sum % 256);
+
+			for(uint8_t j=0;j<sizeof(Navcomp_send_buff);j++){
+				write(fdNavcomp,&Navcomp_send_buff[j],1);
+			}
+
+			sprintf(G_angle,"!VAR 3 %hu\r",anglestatus);//setting the angle values
+			printf("%s\n",G_angle);
+			i=0;
+			for (i=0;i<sizeof(G_angle);i++){
+					write(fdcrank,&G_angle[i],1);
+					write(fdgrabber,&G_angle[i],1);
+			}
+
+			sprintf(G,"!VAR 1 %d\r",commandstatus);//setting the mode
+			i=0;
+			for (i=0;i<sizeof(G);i++){
+					write(fdcrank,&G[i],1);
+					write(fdgrabber,&G[i],1);
+			}
+
+			//Remote Pause
+
+			if (J2[45].read() == 1 && grab_interrupt == 0){
+				sprintf(G,"!EX\r");
+				i=0;
+				for (i=0;i<sizeof(G);i++){
+						write(fdcrank,&G[i],1);
+						if (statestatus != 91)
+							write(fdgrabber,&G[i],1);
+				}
+				//printf("pause on\n");
+				grab_interrupt = 1;
+			}
+			if (J2[45].read() == 0 && grab_interrupt == 1){
+				sprintf(G,"!MG\r");
+				i=0;
+				for (i=0;i<sizeof(G);i++){
+						write(fdcrank,&G[i],1);
+						write(fdgrabber,&G[i],1);
+				}
+				//printf("pause off\n");
+				grab_interrupt = 0;
+			}
+
+
+
+			//printf("Value:%f MSB:%d LSB:%d\n",0.00025*((int16_t)((uint16_t)send_buff[18]*256 + (uint16_t)send_buff[17])),(uint8_t)send_buff[18],(uint8_t) send_buff[17]);
+
+			FiftyHzTaskFlag=0;
+		}//FiftyHz if
+	}//Main While lop
+}//Main
+

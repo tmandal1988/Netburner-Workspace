@@ -205,7 +205,7 @@ void NAVcompData(void *){
 		m1=atoi(buff1);
 		if(m1==91 || m1==97 || m1==89)
 			statestatus=m1;
-		iprintf("%d\n",statestatus);
+		//iprintf("%d,%d\n",statestatus,anglestatus);
 
 	}//NAVcompData Process While loop
 }//NAVcompData Process
@@ -262,6 +262,13 @@ void UserMain( void* pd ){
 	initTIMERS(timer2);
 	while(1){
 		OSTimeDly(2);
+		sprintf(G_angle,"!VAR 3 %d\r",anglestatus);//setting the angle values
+		printf("%s\n",G);
+		i=0;
+		for (i=0;i<sizeof(G_angle);i++){
+				write(fdcrank,&G_angle[i],1);
+				write(fdgrabber,&G_angle[i],1);
+		}
 		if (FiftyHzTaskFlag==1){
 			DSPIStart(1,IMU_command,IMU3_raw,24,NULL);//IMU3
 			while(!DSPIdone(1)){/*iprintf("DSPI1done state=%s\n",(DSPIdone(1))?"true":"false");*/};
@@ -310,13 +317,6 @@ void UserMain( void* pd ){
 
 			for(uint8_t j=0;j<sizeof(Navcomp_send_buff);j++){
 				write(fdNavcomp,&Navcomp_send_buff[j],1);
-			}
-
-			sprintf(G_angle,"!VAR 3 %hu\r",anglestatus);//setting the angle values
-			i=0;
-			for (i=0;i<sizeof(G_angle);i++){
-					write(fdcrank,&G_angle[i],1);
-					write(fdgrabber,&G_angle[i],1);
 			}
 
 			sprintf(G,"!VAR 1 %d\r",commandstatus);//setting the mode

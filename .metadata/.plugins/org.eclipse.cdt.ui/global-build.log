@@ -655,3 +655,1045 @@ Used 664024 bytes of 67108095 available ram (0.99%)
 NNDK release tag version:2.6.4
 Build complete for project Sensor_Interface_Board
 Time consumed: 1000  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Sensor_Interface_Board
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002ce94 
+Block size= 178K
+Execution starts at 40000400 
+compressed 182932 bytes into 109597 bytes
+Code CheckSum= 9bf83b09
+Struct CheckSum= 26589894
+S records output with a base address of c0040000
+S records output with a final address of c005ac35
+About to write S7...
+******************************Build summary ******************************
+Used 109621 bytes of 33292288 available flash (0.33%)
+Used 664040 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 4203  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Sensor_Interface_Board
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002ce94 
+Block size= 178K
+Execution starts at 40000400 
+compressed 182932 bytes into 109602 bytes
+Code CheckSum= 9bf80b09
+Struct CheckSum= 2658c88f
+S records output with a base address of c0040000
+S records output with a final address of c005ac3a
+About to write S7...
+******************************Build summary ******************************
+Used 109626 bytes of 33292288 available flash (0.33%)
+Used 664040 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 1125  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002cea4 
+Block size= 178K
+Execution starts at 40000400 
+compressed 182948 bytes into 109512 bytes
+Code CheckSum= e5173eb4
+Struct CheckSum= dd39952e
+S records output with a base address of c0040000
+S records output with a final address of c005abe0
+About to write S7...
+******************************Build summary ******************************
+Used 109536 bytes of 33292288 available flash (0.33%)
+Used 664056 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 1844  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Laser_rangefinder.o ..\Laser_rangefinder.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002ced4 
+Block size= 178K
+Execution starts at 40000400 
+compressed 182996 bytes into 109518 bytes
+Code CheckSum= c4f0e0fb
+Struct CheckSum= fd5ff2b1
+S records output with a base address of c0040000
+S records output with a final address of c005abe6
+About to write S7...
+******************************Build summary ******************************
+Used 109542 bytes of 33292288 available flash (0.33%)
+Used 664104 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 797  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002ce54 
+Block size= 178K
+Execution starts at 40000400 
+compressed 182868 bytes into 109509 bytes
+Code CheckSum= 47014782
+Struct CheckSum= 7b4f8cb3
+S records output with a base address of c0040000
+S records output with a final address of c005abdd
+About to write S7...
+******************************Build summary ******************************
+Used 109533 bytes of 33292288 available flash (0.33%)
+Used 663976 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 1063  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Sensor_Interface_Board
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002cec4 
+Block size= 178K
+Execution starts at 40000400 
+compressed 182980 bytes into 109419 bytes
+Code CheckSum= 4fe5371b
+Struct CheckSum= 726b9d04
+S records output with a base address of c0040000
+S records output with a final address of c005ab83
+About to write S7...
+******************************Build summary ******************************
+Used 109443 bytes of 33292288 available flash (0.33%)
+Used 664088 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 2047  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002ced4 
+Block size= 178K
+Execution starts at 40000400 
+compressed 182996 bytes into 109521 bytes
+Code CheckSum= 32bd6041
+Struct CheckSum= 8f937368
+S records output with a base address of c0040000
+S records output with a final address of c005abe9
+About to write S7...
+******************************Build summary ******************************
+Used 109545 bytes of 33292288 available flash (0.33%)
+Used 664104 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 1797  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002cef4 
+Block size= 178K
+Execution starts at 40000400 
+compressed 183028 bytes into 109521 bytes
+Code CheckSum= cf32ef74
+Struct CheckSum= f31de415
+S records output with a base address of c0040000
+S records output with a final address of c005abe9
+About to write S7...
+******************************Build summary ******************************
+Used 109545 bytes of 33292288 available flash (0.33%)
+Used 664136 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 906  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Sensor_Interface_Board
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+..\Sensor_Interface_Board_v7.cpp: In function 'void NAVcompData(void*)':
+..\Sensor_Interface_Board_v7.cpp:141: error: 'Scan_complete' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 516  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+..\Sensor_Interface_Board_v7.cpp: In function 'void NAVcompData(void*)':
+..\Sensor_Interface_Board_v7.cpp:141: error: 'Scan_complete' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 250  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+..\Sensor_Interface_Board_v7.cpp: In function 'void NAVcompData(void*)':
+..\Sensor_Interface_Board_v7.cpp:141: error: 'Scan_complete' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 250  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002ced4 
+Block size= 178K
+Execution starts at 40000400 
+compressed 182996 bytes into 109505 bytes
+Code CheckSum= a68af8bb
+Struct CheckSum= 1bc5dafe
+S records output with a base address of c0040000
+S records output with a final address of c005abd9
+About to write S7...
+******************************Build summary ******************************
+Used 109529 bytes of 33292288 available flash (0.33%)
+Used 664104 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 1047  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Laser_rangefinder.o ..\Laser_rangefinder.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002cf24 
+Block size= 178K
+Execution starts at 40000400 
+compressed 183076 bytes into 109538 bytes
+Code CheckSum= d088c91b
+Struct CheckSum= f1c80a2d
+S records output with a base address of c0040000
+S records output with a final address of c005abfa
+About to write S7...
+******************************Build summary ******************************
+Used 109562 bytes of 33292288 available flash (0.33%)
+Used 664184 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 1672  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Sensor_Interface_Board
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d84 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170372 bytes into 101210 bytes
+Code CheckSum= 76a3f8b3
+Struct CheckSum= 4bad2cbd
+S records output with a base address of c0040000
+S records output with a final address of c0058b72
+About to write S7...
+******************************Build summary ******************************
+Used 101234 bytes of 33292288 available flash (0.30%)
+Used 651128 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 922  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o SIB_SendtoNAVCOMP.o ..\SIB_SendtoNAVCOMP.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002cf34 
+Block size= 178K
+Execution starts at 40000400 
+compressed 183092 bytes into 109559 bytes
+Code CheckSum= 6aaa2820
+Struct CheckSum= 57a6ab03
+S records output with a base address of c0040000
+S records output with a final address of c005ac0f
+About to write S7...
+******************************Build summary ******************************
+Used 109583 bytes of 33292288 available flash (0.33%)
+Used 664200 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 797  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Sensor_Interface_Board
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Sensor_Interface_Board
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+..\QUadIMU_NB2_v3.cpp: In function 'void UserMain(void*)':
+..\QUadIMU_NB2_v3.cpp:317: error: expected `;' before 'i'
+..\QUadIMU_NB2_v3.cpp:317: warning: statement is a reference, not call, to function 'printf'
+..\QUadIMU_NB2_v3.cpp:317: warning: statement has no effect
+Build error occurred, build is stopped
+Time consumed: 516  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d94 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170388 bytes into 101228 bytes
+Code CheckSum= 4247cc8a
+Struct CheckSum= 800958c4
+S records output with a base address of c0040000
+S records output with a final address of c0058b84
+About to write S7...
+******************************Build summary ******************************
+Used 101252 bytes of 33292288 available flash (0.30%)
+Used 651144 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1922  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Sensor_Interface_Board
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d94 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170388 bytes into 101228 bytes
+Code CheckSum= 4247cc8a
+Struct CheckSum= 800958c4
+S records output with a base address of c0040000
+S records output with a final address of c0058b84
+About to write S7...
+******************************Build summary ******************************
+Used 101252 bytes of 33292288 available flash (0.30%)
+Used 651144 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1781  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d84 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170372 bytes into 101239 bytes
+Code CheckSum= cb1192f8
+Struct CheckSum= f73f925b
+S records output with a base address of c0040000
+S records output with a final address of c0058b8f
+About to write S7...
+******************************Build summary ******************************
+Used 101263 bytes of 33292288 available flash (0.30%)
+Used 651128 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1828  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d74 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170356 bytes into 101282 bytes
+Code CheckSum= fa9f53bf
+Struct CheckSum= c7b1d179
+S records output with a base address of c0040000
+S records output with a final address of c0058bba
+About to write S7...
+******************************Build summary ******************************
+Used 101306 bytes of 33292288 available flash (0.30%)
+Used 651112 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1860  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d74 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170356 bytes into 101281 bytes
+Code CheckSum= fa9f53bb
+Struct CheckSum= c7b1d17e
+S records output with a base address of c0040000
+S records output with a final address of c0058bb9
+About to write S7...
+******************************Build summary ******************************
+Used 101305 bytes of 33292288 available flash (0.30%)
+Used 651112 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1953  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d74 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170356 bytes into 101276 bytes
+Code CheckSum= 229c447c
+Struct CheckSum= 9fb4e0c2
+S records output with a base address of c0040000
+S records output with a final address of c0058bb4
+About to write S7...
+******************************Build summary ******************************
+Used 101300 bytes of 33292288 available flash (0.30%)
+Used 651112 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1875  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d74 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170356 bytes into 101278 bytes
+Code CheckSum= 22a1447c
+Struct CheckSum= 9fafe0c0
+S records output with a base address of c0040000
+S records output with a final address of c0058bb6
+About to write S7...
+******************************Build summary ******************************
+Used 101302 bytes of 33292288 available flash (0.30%)
+Used 651112 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1797  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d74 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170356 bytes into 101276 bytes
+Code CheckSum= 229d447c
+Struct CheckSum= 9fb3e0c2
+S records output with a base address of c0040000
+S records output with a final address of c0058bb4
+About to write S7...
+******************************Build summary ******************************
+Used 101300 bytes of 33292288 available flash (0.30%)
+Used 651112 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 1797  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002cf34 
+Block size= 178K
+Execution starts at 40000400 
+compressed 183092 bytes into 109565 bytes
+Code CheckSum= 6aac2822
+Struct CheckSum= 57a4aafb
+S records output with a base address of c0040000
+S records output with a final address of c005ac15
+About to write S7...
+******************************Build summary ******************************
+Used 109589 bytes of 33292288 available flash (0.33%)
+Used 664200 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 984  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002cf34 
+Block size= 178K
+Execution starts at 40000400 
+compressed 183092 bytes into 109563 bytes
+Code CheckSum= 6aad2823
+Struct CheckSum= 57a3aafc
+S records output with a base address of c0040000
+S records output with a final address of c005ac13
+About to write S7...
+******************************Build summary ******************************
+Used 109587 bytes of 33292288 available flash (0.33%)
+Used 664200 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 953  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+..\Sensor_Interface_Board_v7.cpp: In function 'void UserMain(void*)':
+..\Sensor_Interface_Board_v7.cpp:380: error: 'Navcomp_Send_buff' was not declared in this scope
+..\Sensor_Interface_Board_v7.cpp:381: error: expected primary-expression before '{' token
+..\Sensor_Interface_Board_v7.cpp:381: error: expected `;' before '{' token
+Build error occurred, build is stopped
+Time consumed: 266  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+..\Sensor_Interface_Board_v7.cpp: In function 'void UserMain(void*)':
+..\Sensor_Interface_Board_v7.cpp:380: error: 'Navcomp_Send_buff' was not declared in this scope
+..\Sensor_Interface_Board_v7.cpp:381: error: expected primary-expression before '{' token
+..\Sensor_Interface_Board_v7.cpp:381: error: expected `;' before '{' token
+Build error occurred, build is stopped
+Time consumed: 266  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+..\Sensor_Interface_Board_v7.cpp: In function 'void UserMain(void*)':
+..\Sensor_Interface_Board_v7.cpp:380: error: 'Navcomp_Send_buff' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 266  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002cf94 
+Block size= 178K
+Execution starts at 40000400 
+compressed 183188 bytes into 109604 bytes
+Code CheckSum= a048b597
+Struct CheckSum= 22081cff
+S records output with a base address of c0040000
+S records output with a final address of c005ac3c
+About to write S7...
+******************************Build summary ******************************
+Used 109628 bytes of 33292288 available flash (0.33%)
+Used 664296 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 1031  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Sensor_Interface_Board
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d84 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170372 bytes into 101239 bytes
+Code CheckSum= cb1192f8
+Struct CheckSum= f73f925b
+S records output with a base address of c0040000
+S records output with a final address of c0058b8f
+About to write S7...
+******************************Build summary ******************************
+Used 101263 bytes of 33292288 available flash (0.30%)
+Used 651128 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 828  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d34 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170292 bytes into 101191 bytes
+Code CheckSum= 66e1891a
+Struct CheckSum= 5b6f9cb9
+S records output with a base address of c0040000
+S records output with a final address of c0058b5f
+About to write S7...
+******************************Build summary ******************************
+Used 101215 bytes of 33292288 available flash (0.30%)
+Used 651048 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 891  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d34 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170292 bytes into 101191 bytes
+Code CheckSum= 66e1891a
+Struct CheckSum= 5b6f9cb9
+S records output with a base address of c0040000
+S records output with a final address of c0058b5f
+About to write S7...
+******************************Build summary ******************************
+Used 101215 bytes of 33292288 available flash (0.30%)
+Used 651048 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 922  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d34 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170292 bytes into 101183 bytes
+Code CheckSum= 21cab6a5
+Struct CheckSum= a0866f36
+S records output with a base address of c0040000
+S records output with a final address of c0058b57
+About to write S7...
+******************************Build summary ******************************
+Used 101207 bytes of 33292288 available flash (0.30%)
+Used 651048 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 859  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d34 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170292 bytes into 101180 bytes
+Code CheckSum= 21c6b6a5
+Struct CheckSum= a08a6f39
+S records output with a base address of c0040000
+S records output with a final address of c0058b54
+About to write S7...
+******************************Build summary ******************************
+Used 101204 bytes of 33292288 available flash (0.30%)
+Used 651048 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 859  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d34 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170292 bytes into 101191 bytes
+Code CheckSum= 66e1891a
+Struct CheckSum= 5b6f9cb9
+S records output with a base address of c0040000
+S records output with a final address of c0058b5f
+About to write S7...
+******************************Build summary ******************************
+Used 101215 bytes of 33292288 available flash (0.30%)
+Used 651048 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 906  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB2_v3 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QUadIMU_NB2_v3.o ..\QUadIMU_NB2_v3.cpp
+m68k-elf-g++ QUadIMU_NB2_v3.o htmldata.o -Wl,-Map=QuadIMU_NB2_v3.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB2_v3.elf
+m68k-elf-objcopy QuadIMU_NB2_v3.elf --strip-all --output-target=srec QuadIMU_NB2_v3.s19
+compcode QuadIMU_NB2_v3.s19 QuadIMU_NB2_v3_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029d84 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170372 bytes into 101186 bytes
+Code CheckSum= 162a739f
+Struct CheckSum= ac26b1e9
+S records output with a base address of c0040000
+S records output with a final address of c0058b5a
+About to write S7...
+******************************Build summary ******************************
+Used 101210 bytes of 33292288 available flash (0.30%)
+Used 651128 bytes of 67108095 available ram (0.97%)
+NNDK release tag version:2.6.4
+Build complete for project QuadIMU_NB2_v3
+Time consumed: 980  ms.  
+
+**** Build of configuration Release for project QuadIMU_NB2_v3 ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for QuadIMU_NB2_v3
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+..\Sensor_Interface_Board_v7.cpp: In function 'void UserMain(void*)':
+..\Sensor_Interface_Board_v7.cpp:385: error: 'MIScompData' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 266  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+..\Sensor_Interface_Board_v7.cpp: In function 'void MIScompData(void*)':
+..\Sensor_Interface_Board_v7.cpp:109: warning: unused variable 'Pulse'
+..\Sensor_Interface_Board_v7.cpp:110: warning: unused variable 'pwmr_comp'
+..\Sensor_Interface_Board_v7.cpp:111: warning: unused variable 'dYaw'
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002d154 
+Block size= 179K
+Execution starts at 40000400 
+compressed 183636 bytes into 109736 bytes
+Code CheckSum= b883c7c
+Struct CheckSum= b6c893d6
+S records output with a base address of c0040000
+S records output with a final address of c005acc0
+About to write S7...
+******************************Build summary ******************************
+Used 109760 bytes of 33292288 available flash (0.33%)
+Used 672936 bytes of 67108095 available ram (1.00%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 1125  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002d154 
+Block size= 179K
+Execution starts at 40000400 
+compressed 183636 bytes into 109736 bytes
+Code CheckSum= b883c7c
+Struct CheckSum= b6c893d6
+S records output with a base address of c0040000
+S records output with a final address of c005acc0
+About to write S7...
+******************************Build summary ******************************
+Used 109760 bytes of 33292288 available flash (0.33%)
+Used 672936 bytes of 67108095 available ram (1.00%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 969  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+..\Sensor_Interface_Board_v7.cpp: In function 'void MIScompData(void*)':
+..\Sensor_Interface_Board_v7.cpp:113: error: 'fddebug' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 265  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002d0e4 
+Block size= 179K
+Execution starts at 40000400 
+compressed 183524 bytes into 109737 bytes
+Code CheckSum= c834fd18
+Struct CheckSum= fa1bd3a9
+S records output with a base address of c0040000
+S records output with a final address of c005acc1
+About to write S7...
+******************************Build summary ******************************
+Used 109761 bytes of 33292288 available flash (0.33%)
+Used 672824 bytes of 67108095 available ram (1.00%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 953  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+..\Sensor_Interface_Board_v7.cpp: In function 'void MIScompData(void*)':
+..\Sensor_Interface_Board_v7.cpp:113: error: 'Navcomp_in_buffMIS' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 250  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+..\Sensor_Interface_Board_v7.cpp:89: error: redefinition of 'char Navcomp_in_buff [32]'
+..\Sensor_Interface_Board_v7.cpp:86: error: 'char Navcomp_in_buff [32]' previously defined here
+..\Sensor_Interface_Board_v7.cpp: In function 'void MIScompData(void*)':
+..\Sensor_Interface_Board_v7.cpp:116: error: 'Navcomp_in_buffMIS' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 265  ms.  
+
+**** Build of configuration Release for project Sensor_Interface_Board ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v7.o ..\Sensor_Interface_Board_v7.cpp
+m68k-elf-g++ Sensor_Interface_Board_v7.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oSensor_Interface_Board.elf
+m68k-elf-objcopy Sensor_Interface_Board.elf --strip-all --output-target=srec Sensor_Interface_Board.s19
+compcode Sensor_Interface_Board.s19 Sensor_Interface_Board_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002d104 
+Block size= 179K
+Execution starts at 40000400 
+compressed 183556 bytes into 109794 bytes
+Code CheckSum= 12218406
+Struct CheckSum= b02f4c62
+S records output with a base address of c0040000
+S records output with a final address of c005acfa
+About to write S7...
+******************************Build summary ******************************
+Used 109818 bytes of 33292288 available flash (0.33%)
+Used 672856 bytes of 67108095 available ram (1.00%)
+NNDK release tag version:2.6.4
+Build complete for project Sensor_Interface_Board
+Time consumed: 1032  ms.  
