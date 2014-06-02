@@ -7,18 +7,18 @@ m68k-elf-g++ QuadIMU_NB1_ver2.5.o -Wl,-Map=QuadIMU_NB1_ver2.5.map -mcpu=5206e -W
 m68k-elf-objcopy QuadIMU_NB1_ver2.5.elf --strip-all --output-target=srec QuadIMU_NB1_ver2.5.s19
 compcode QuadIMU_NB1_ver2.5.s19 QuadIMU_NB1_ver2.5_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
 Block starts at 40000400 
-Block ends at 40029394 
-Block size= 163K
+Block ends at 40029b54 
+Block size= 165K
 Execution starts at 40000400 
-compressed 167828 bytes into 99643 bytes
-Code CheckSum= a4ff5faf
-Struct CheckSum= 1d51d5d0
+compressed 169812 bytes into 100979 bytes
+Code CheckSum= f18b86a9
+Struct CheckSum= d0c5a1de
 S records output with a base address of c0040000
-S records output with a final address of c0058553
+S records output with a final address of c0058a8b
 About to write S7...
 ******************************Build summary ******************************
-Used 99667 bytes of 33292288 available flash (0.30%)
-Used 640360 bytes of 67108095 available ram (0.95%)
-NNDK release tag version:2.6.4
+Used 101003 bytes of 33292288 available flash (0.30%)
+Used 642376 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.6
 Build complete for project QuadIMU_NB1_ver2.5
-Time consumed: 1000  ms.  
+Time consumed: 891  ms.  

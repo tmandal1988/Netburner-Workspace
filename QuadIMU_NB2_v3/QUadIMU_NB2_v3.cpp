@@ -210,7 +210,8 @@ void UserMain( void* pd ){
 	uint16_t NB_counter=0,sum=0;
 	double TotalTime=0;
 	int fdDebug=0;
-	uint8_t i=0;
+	uint8_t i=0,k=0,j=0;
+	uint32_t IMU3_sum=0,IMU4_sum=0,IMU3_sump=0,IMU4_sump=0;
 
 	BYTE IMU_command[24]={xahigh,0,xalow,0,yahigh,0,yalow,0,zahigh,0,zalow,0,xghigh,0,xglow,0,yghigh,0,yglow,0,zghigh,0,zglow,0};
 	BYTE IMU3_raw[24]={0};//IMU 3
@@ -243,15 +244,76 @@ void UserMain( void* pd ){
 	while(1){
 		TotalTime=timer2->readTime();
 
+		if(FiftyHzTaskFlag==0){
+
+			k=0;
+			IMU_data[0]=0;
+			IMU_data[1]=0;
+			IMU_data[2]=0;
+			IMU_data[3]=0;
+			IMU_data[4]=0;
+			IMU_data[5]=0;
+			while(k<20){
+				DSPIStart(1,IMU_command,IMU3_raw,24,NULL);//IMU3
+				while(!DSPIdone(1)){/*iprintf("DSPI1done state=%s\n",(DSPIdone(1))?"true":"false");*/};
+
+				//iprintf("....................................................................\n");
+
+				DSPIStart(3,IMU_command,IMU4_raw,24,NULL);//IMU3
+				while(!DSPIdone(3)){/*iprintf("DSPI3done state=%s\n",(DSPIdone(3))?"true":"false");*/};
+
+				j=0;
+				IMU3_sum=0;IMU4_sum=0;
+				for(j=0;j<24;j++){
+					IMU3_sum+=IMU3_raw[j];
+					IMU4_sum+=IMU4_raw[j];
+				}
+
+				if(IMU3_sum!=IMU3_sump && IMU4_sum!=IMU4_sump){
+					IMU_data[0]+=(((int32_t)IMU3_raw[2]<<24|(int32_t)IMU3_raw[3]<<16|(int32_t)IMU3_raw[4]<<8|(int32_t)IMU3_raw[5])-((int32_t)IMU4_raw[2]<<24|(int32_t)IMU4_raw[3]<<16|(int32_t)IMU4_raw[4]<<8|(int32_t)IMU4_raw[5]))/2;//X-Accel
+					IMU_data[1]+=(((int32_t)IMU3_raw[6]<<24|(int32_t)IMU3_raw[7]<<16|(int32_t)IMU3_raw[8]<<8|(int32_t)IMU3_raw[9])-((int32_t)IMU4_raw[6]<<24|(int32_t)IMU4_raw[7]<<16|(int32_t)IMU4_raw[8]<<8|(int32_t)IMU4_raw[9]))/2;//Y-Accel
+					IMU_data[2]+=(((int32_t)IMU3_raw[10]<<24|(int32_t)IMU3_raw[11]<<16|(int32_t)IMU3_raw[12]<<8|(int32_t)IMU3_raw[13])+((int32_t)IMU4_raw[10]<<24|(int32_t)IMU4_raw[11]<<16|(int32_t)IMU4_raw[12]<<8|(int32_t)IMU4_raw[13]))/2;//Z-Accel
+					IMU_data[3]+=(((int32_t)IMU3_raw[14]<<24|(int32_t)IMU3_raw[15]<<16|(int32_t)IMU3_raw[16]<<8|(int32_t)IMU3_raw[17])-((int32_t)IMU4_raw[14]<<24|(int32_t)IMU4_raw[15]<<16|(int32_t)IMU4_raw[16]<<8|(int32_t)IMU4_raw[17]))/2;//X-Gyro
+					IMU_data[4]+=(((int32_t)IMU3_raw[18]<<24|(int32_t)IMU3_raw[19]<<16|(int32_t)IMU3_raw[20]<<8|(int32_t)IMU3_raw[21])-((int32_t)IMU4_raw[18]<<24|(int32_t)IMU4_raw[19]<<16|(int32_t)IMU4_raw[20]<<8|(int32_t)IMU4_raw[21]))/2;//Y-Gyro
+					IMU_data[5]+=(((int32_t)IMU3_raw[22]<<24|(int32_t)IMU3_raw[23]<<16|(int32_t)IMU3_raw[0]<<8|(int32_t)IMU3_raw[1])+((int32_t)IMU4_raw[22]<<24|(int32_t)IMU4_raw[23]<<16|(int32_t)IMU4_raw[0]<<8|(int32_t)IMU4_raw[1]))/2;//Z-Gyro
+
+				}
+
+				else{
+					if(IMU3_sum==IMU3_sump){
+						IMU_data[0]+=((int32_t)IMU3_raw[2]<<24|(int32_t)IMU3_raw[3]<<16|(int32_t)IMU3_raw[4]<<8|(int32_t)IMU3_raw[5]);//X-Accel
+						IMU_data[1]+=((int32_t)IMU3_raw[6]<<24|(int32_t)IMU3_raw[7]<<16|(int32_t)IMU3_raw[8]<<8|(int32_t)IMU3_raw[9]);//Y-Accel
+						IMU_data[2]+=((int32_t)IMU3_raw[10]<<24|(int32_t)IMU3_raw[11]<<16|(int32_t)IMU3_raw[12]<<8|(int32_t)IMU3_raw[13]);//Z-Accel
+						IMU_data[3]+=((int32_t)IMU3_raw[14]<<24|(int32_t)IMU3_raw[15]<<16|(int32_t)IMU3_raw[16]<<8|(int32_t)IMU3_raw[17]);//X-Gyro
+						IMU_data[4]+=((int32_t)IMU3_raw[18]<<24|(int32_t)IMU3_raw[19]<<16|(int32_t)IMU3_raw[20]<<8|(int32_t)IMU3_raw[21]);//Y-Gyro
+						IMU_data[5]+=((int32_t)IMU3_raw[22]<<24|(int32_t)IMU3_raw[23]<<16|(int32_t)IMU3_raw[0]<<8|(int32_t)IMU3_raw[1]);//Z-Gyro
+					}
+
+					if(IMU4_sum==IMU4_sump){
+						IMU_data[0]+=-((int32_t)IMU4_raw[2]<<24|(int32_t)IMU4_raw[3]<<16|(int32_t)IMU4_raw[4]<<8|(int32_t)IMU4_raw[5]);//X-Accel
+						IMU_data[1]+=-((int32_t)IMU4_raw[6]<<24|(int32_t)IMU4_raw[7]<<16|(int32_t)IMU4_raw[8]<<8|(int32_t)IMU4_raw[9]);//Y-Accel
+						IMU_data[2]+=((int32_t)IMU4_raw[10]<<24|(int32_t)IMU4_raw[11]<<16|(int32_t)IMU4_raw[12]<<8|(int32_t)IMU4_raw[13]);//Z-Accel
+						IMU_data[3]+=-((int32_t)IMU4_raw[14]<<24|(int32_t)IMU4_raw[15]<<16|(int32_t)IMU4_raw[16]<<8|(int32_t)IMU4_raw[17]);//X-Gyro
+						IMU_data[4]+=-((int32_t)IMU4_raw[18]<<24|(int32_t)IMU4_raw[19]<<16|(int32_t)IMU4_raw[20]<<8|(int32_t)IMU4_raw[21]);//Y-Gyro
+						IMU_data[5]+=((int32_t)IMU4_raw[22]<<24|(int32_t)IMU4_raw[23]<<16|(int32_t)IMU4_raw[0]<<8|(int32_t)IMU4_raw[1]);//Z-Gyro
+					}
+				}
+
+				IMU3_sump=IMU3_sum;
+				IMU4_sump=IMU4_sum;
+			}
+
+			IMU_data[0]=IMU_data[0]/20;
+			IMU_data[1]=IMU_data[1]/20;
+			IMU_data[2]=IMU_data[2]/20;
+			IMU_data[3]=IMU_data[3]/20;
+			IMU_data[4]=IMU_data[4]/20;
+			IMU_data[5]=IMU_data[5]/20;
+
+
+		}//IMU averaging if
+
 		if (FiftyHzTaskFlag==1){
-			DSPIStart(1,IMU_command,IMU3_raw,24,NULL);//IMU3
-			while(!DSPIdone(1)){/*iprintf("DSPI1done state=%s\n",(DSPIdone(1))?"true":"false");*/};
-
-			//iprintf("....................................................................\n");
-
-			DSPIStart(3,IMU_command,IMU4_raw,24,NULL);//IMU3
-			while(!DSPIdone(3)){/*iprintf("DSPI3done state=%s\n",(DSPIdone(3))?"true":"false");*/};
-
 			//packaging NB counter
 			Navcomp_send_buff[4]=(uint8_t)((NB_counter & 0xFF00)>>8);
 			Navcomp_send_buff[3]=(uint8_t)(NB_counter & 0x00FF);
@@ -263,12 +325,6 @@ void UserMain( void* pd ){
 			Navcomp_send_buff[6]=time_ms[0];
 			Navcomp_send_buff[5]=time_ms[1];
 
-			IMU_data[0]=(((int32_t)IMU3_raw[2]<<24|(int32_t)IMU3_raw[3]<<16|(int32_t)IMU3_raw[4]<<8|(int32_t)IMU3_raw[5])-((int32_t)IMU4_raw[2]<<24|(int32_t)IMU4_raw[3]<<16|(int32_t)IMU4_raw[4]<<8|(int32_t)IMU4_raw[5]))/2;//X-Accel
-			IMU_data[1]=(((int32_t)IMU3_raw[6]<<24|(int32_t)IMU3_raw[7]<<16|(int32_t)IMU3_raw[8]<<8|(int32_t)IMU3_raw[9])-((int32_t)IMU4_raw[6]<<24|(int32_t)IMU4_raw[7]<<16|(int32_t)IMU4_raw[8]<<8|(int32_t)IMU4_raw[9]))/2;//Y-Accel
-			IMU_data[2]=(((int32_t)IMU3_raw[10]<<24|(int32_t)IMU3_raw[11]<<16|(int32_t)IMU3_raw[12]<<8|(int32_t)IMU3_raw[13])+((int32_t)IMU4_raw[10]<<24|(int32_t)IMU4_raw[11]<<16|(int32_t)IMU4_raw[12]<<8|(int32_t)IMU4_raw[13]))/2;//Z-Accel
-			IMU_data[3]=(((int32_t)IMU3_raw[14]<<24|(int32_t)IMU3_raw[15]<<16|(int32_t)IMU3_raw[16]<<8|(int32_t)IMU3_raw[17])-((int32_t)IMU4_raw[14]<<24|(int32_t)IMU4_raw[15]<<16|(int32_t)IMU4_raw[16]<<8|(int32_t)IMU4_raw[17]))/2;//X-Gyro
-			IMU_data[4]=(((int32_t)IMU3_raw[18]<<24|(int32_t)IMU3_raw[19]<<16|(int32_t)IMU3_raw[20]<<8|(int32_t)IMU3_raw[21])-((int32_t)IMU4_raw[18]<<24|(int32_t)IMU4_raw[19]<<16|(int32_t)IMU4_raw[20]<<8|(int32_t)IMU4_raw[21]))/2;//Y-Gyro
-			IMU_data[5]=(((int32_t)IMU3_raw[22]<<24|(int32_t)IMU3_raw[23]<<16|(int32_t)IMU3_raw[0]<<8|(int32_t)IMU3_raw[1])+((int32_t)IMU4_raw[22]<<24|(int32_t)IMU4_raw[23]<<16|(int32_t)IMU4_raw[0]<<8|(int32_t)IMU4_raw[1]))/2;//Z-Gyro
 
 			i=0;
 			for(i=0;i<6;i++){
@@ -289,7 +345,8 @@ void UserMain( void* pd ){
 
 			Navcomp_send_buff[63]=(uint8_t)(sum % 256);
 
-			for(uint8_t j=0;j<sizeof(Navcomp_send_buff);j++){
+			i=0;
+			for(i=0;i<sizeof(Navcomp_send_buff);i++){
 				write(fdNavcomp,&Navcomp_send_buff[j],1);
 			}
 

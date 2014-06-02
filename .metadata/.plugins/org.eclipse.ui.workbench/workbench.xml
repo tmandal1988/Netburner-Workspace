@@ -30,30 +30,45 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="QUadIMU_NB2_v3.cpp" partName="QUadIMU_NB2_v3.cpp" path="C:/Users/IRL/Desktop/Tanmay_GitRepo/Netburner_Codes/QuadIMU_NB2_v3/QUadIMU_NB2_v3.cpp" title="QUadIMU_NB2_v3.cpp" tooltip="QuadIMU_NB2_v3/QUadIMU_NB2_v3.cpp" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="QUadIMU_NB2_v3.cpp" partName="QUadIMU_NB2_v3.cpp" path="C:/Users/IRL/Desktop/Tanmay_GitRepo/Netburner_Codes/QuadIMU_NB2_v3/QUadIMU_NB2_v3.cpp" title="QUadIMU_NB2_v3.cpp" tooltip="QuadIMU_NB2_v3/QUadIMU_NB2_v3.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QuadIMU_NB2_v3/QUadIMU_NB2_v3.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8948" selectionTopPixel="5771"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10811" selectionTopPixel="7248"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Sensor_Interface_Board_v7.cpp" partName="Sensor_Interface_Board_v7.cpp" path="C:/Users/IRL/Desktop/Tanmay_GitRepo/Netburner_Codes/Sensor_Interface_Board/Sensor_Interface_Board_v7.cpp" title="Sensor_Interface_Board_v7.cpp" tooltip="Sensor_Interface_Board/Sensor_Interface_Board_v7.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Sensor_Interface_Board/Sensor_Interface_Board_v7.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8069" selectionTopPixel="4995"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="SIB_SendtoNAVCOMP.cpp" partName="SIB_SendtoNAVCOMP.cpp" path="C:/Users/IRL/Desktop/Tanmay_GitRepo/Netburner_Codes/Sensor_Interface_Board/SIB_SendtoNAVCOMP.cpp" title="SIB_SendtoNAVCOMP.cpp" tooltip="Sensor_Interface_Board/SIB_SendtoNAVCOMP.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Sensor_Interface_Board/SIB_SendtoNAVCOMP.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2903" selectionTopPixel="1589"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Laser_rangefinder.cpp" partName="Laser_rangefinder.cpp" path="C:/Users/IRL/Desktop/Tanmay_GitRepo/Netburner_Codes/Sensor_Interface_Board/Laser_rangefinder.cpp" title="Laser_rangefinder.cpp" tooltip="Sensor_Interface_Board/Laser_rangefinder.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Sensor_Interface_Board/Laser_rangefinder.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4004" selectionTopPixel="3670"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="QuadIMU_NB1_v2.7.cpp" partName="QuadIMU_NB1_v2.7.cpp" path="C:/Users/IRL/Desktop/Tanmay_GitRepo/Netburner_Codes/QuadIMU_NB1_v2.7/QuadIMU_NB1_v2.7.cpp" title="QuadIMU_NB1_v2.7.cpp" tooltip="QuadIMU_NB1_v2.7/QuadIMU_NB1_v2.7.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QuadIMU_NB1_v2.7/QuadIMU_NB1_v2.7.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10211" selectionTopPixel="6537"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.cdt.ui.CView" partName="C/C++ Projects">
+<viewState horizontalPosition="0" verticalPosition="0">
+<expanded>
+<element path="C:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB1_v2.7"/>
+</expanded>
+<selection>
+<element path="C:/Users/IRL/Desktop/Tanmay_GitRepo/Netburner_Codes/QuadIMU_NB1_v2.7/QuadIMU_NB1_v2.7.cpp"/>
+</selection>
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.cdt.internal.ui.CView.ExecutableFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.internal.ui.CView.SharedFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.internal.ui.CView.ClosedProjectFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.internal.ui.CView.NonCProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.internal.ui.CView.NonCElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.internal.ui.CView.ObjectFilter" isEnabled="false"/>
+<child filterId="org.eclipse.cdt.ui.CView_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.cdt.internal.ui.CView.ArchiveFilter" isEnabled="false"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
+<viewState/>
+</view>
 <view id="nbeclipse.tools.nb.nbfind" partName="NBFind">
 <viewState/>
 </view>
@@ -62,10 +77,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="120" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -83,7 +94,7 @@
 </view>
 </views>
 <perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="nbeclipse.core.perspective.netburner">
-<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="nbeclipse.core.perspective.NBPerspectiveFactory" id="nbeclipse.core.perspective.netburner" label="NetBurner"/>
 <alwaysOnActionSet id="nbeclipse.core.actions.nb"/>
 <alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
@@ -107,34 +118,25 @@
 <show_view_action id="org.eclipse.ui.views.PropertySheet"/>
 <perspective_action id="nbeclipse.core.perspective.netburner"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="16384" id="bottomLeft" orientation="256" selectedTabId="nbeclipse.tools.nb.nbconfig" style="1">
-<fastViews>
-<view id="nbeclipse.tools.nb.nbfind" ratio="0.29948366"/>
-<view id="nbeclipse.tools.nb.nbconfig" ratio="0.29948366"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="131072" id="topRight" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="1">
-<fastViews>
-<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="1024" id="bottomRight" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
-<fastViews>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
-<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
-<view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<view id="nbeclipse.tools.nb.nbfind"/>
+<view id="nbeclipse.tools.nb.nbconfig"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.views.ProgressView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.cdt.ui.CView"/>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
-<folder appearance="2" expanded="2">
+<folder activePageID="org.eclipse.cdt.ui.CView" appearance="2" expanded="2">
+<page content="org.eclipse.cdt.ui.CView" label="C/C++ Projects"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
-<page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.749499" ratioLeft="748" ratioRight="250" relationship="2" relative="topLeft">
@@ -144,26 +146,37 @@
 </folder>
 </info>
 <info folder="true" part="bottomLeft" ratio="0.7495591" ratioLeft="425" ratioRight="142" relationship="4" relative="topLeft">
-<folder appearance="2" expanded="0">
-<page content="nbeclipse.tools.nb.nbfind" label="LabelNotFound"/>
-<page content="nbeclipse.tools.nb.nbconfig" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="nbeclipse.tools.nb.nbconfig" appearance="2" expanded="2">
+<page content="nbeclipse.tools.nb.nbfind" label="NBFind"/>
+<page content="nbeclipse.tools.nb.nbconfig" label="NBConfig"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="bottomRight" ratio="0.5" ratioLeft="499" ratioRight="499" relationship="2" relative="bottomLeft">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.views.ProgressView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.27437186" ratioLeft="273" ratioRight="722" relationship="2" relative="topLeft"/>
 <info folder="true" part="topRight" ratio="0.7997497" ratioLeft="639" ratioRight="160" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </mainWindow>
@@ -177,73 +190,10 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QuadIMU_NB2_v3/QUadIMU_NB2_v3.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sensor_Interface_Board/Laser_rangefinder.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sensor_Interface_Board/SIB_SendtoNAVCOMP.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sensor_Interface_Board/Ranging_Radio.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sensor_Interface_Board/SIB_initPINS.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sensor_Interface_Board/Laser_rangefinder.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QuadIMU_NB1_v2.7/QuadIMU_NB1_v2.7.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Sensor_Interface_Board/SIB_SendtoNAVCOMP.cpp"/>
 </editors>
-<item historyLabel="Laser_rangefinder.cpp" index="2">
-<position info="not_deleted" x="3280" y="0"/>
-</item>
-<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
-<position info="not_deleted" x="6773" y="0"/>
-</item>
-<item historyLabel="Sensor_Interface_Board_v7.cpp" index="0">
-<position info="not_deleted" x="6213" y="0"/>
-</item>
-<item historyLabel="Ranging_Radio.cpp" index="4">
-<position info="not_deleted" x="2224" y="147"/>
-</item>
-<item historyLabel="Sensor_Interface_Board_v7.cpp" index="0">
-<position info="not_deleted" x="3387" y="0"/>
-</item>
-<item historyLabel="Laser_rangefinder.cpp" index="2">
-<position info="not_deleted" x="3280" y="0"/>
-</item>
-<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
-<position info="not_deleted" x="6773" y="0"/>
-</item>
-<item historyLabel="Sensor_Interface_Board_v7.cpp" index="0">
-<position info="not_deleted" x="15330" y="0"/>
-</item>
-<item historyLabel="SIB_initPINS.cpp" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SIB_SendtoNAVCOMP.cpp" index="3">
-<position info="not_deleted" x="2334" y="0"/>
-</item>
-<item historyLabel="Sensor_Interface_Board_v7.cpp" index="0">
-<position info="not_deleted" x="15330" y="0"/>
-</item>
-<item historyLabel="Sensor_Interface_Board_v7.cpp" index="0">
-<position info="not_deleted" x="14259" y="0"/>
-</item>
-<item historyLabel="Sensor_Interface_Board_v7.cpp" index="0">
-<position info="not_deleted" x="14237" y="0"/>
-</item>
-<item historyLabel="Sensor_Interface_Board_v7.cpp" index="0">
-<position info="not_deleted" x="4257" y="0"/>
-</item>
-<item historyLabel="SIB_SendtoNAVCOMP.cpp" index="3">
-<position info="not_deleted" x="2817" y="0"/>
-</item>
-<item historyLabel="Sensor_Interface_Board_v7.cpp" index="0">
-<position info="not_deleted" x="4435" y="0"/>
-</item>
-<item historyLabel="Laser_rangefinder.cpp" index="2">
-<position info="not_deleted" x="1006" y="0"/>
-</item>
-<item historyLabel="SIB_SendtoNAVCOMP.cpp" index="3">
-<position info="not_deleted" x="2817" y="0"/>
-</item>
-<item historyLabel="SIB_initPINS.cpp" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SIB_SendtoNAVCOMP.cpp" index="3">
-<position info="not_deleted" x="2817" y="0"/>
-</item>
-<item historyLabel="Laser_rangefinder.cpp" index="2">
-<position info="not_deleted" x="1006" y="0"/>
-</item>
 <item historyLabel="Sensor_Interface_Board_v7.cpp" index="0">
 <position info="not_deleted" x="4435" y="0"/>
 </item>
@@ -262,7 +212,7 @@
 <item historyLabel="Laser_rangefinder.cpp" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Laser_rangefinder.h" index="6">
+<item historyLabel="Laser_rangefinder.h" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="Laser_rangefinder.cpp" index="2">
@@ -328,8 +278,71 @@
 <item historyLabel="Sensor_Interface_Board_v7.cpp" index="0">
 <position info="not_deleted" x="8069" y="0"/>
 </item>
-<item active="true" historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
 <position info="not_deleted" x="8964" y="0"/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position info="not_deleted" x="9936" y="0"/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position info="not_deleted" x="9936" y="0"/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position info="not_deleted" x="9906" y="0"/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position info="not_deleted" x="9635" y="0"/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position info="not_deleted" x="9879" y="0"/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position info="not_deleted" x="9963" y="0"/>
+</item>
+<item historyLabel="QuadIMU_NB1_v2.7.cpp" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SIB_SendtoNAVCOMP.cpp" index="6">
+<position info="not_deleted" x="2903" y="0"/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position info="not_deleted" x="9963" y="0"/>
+</item>
+<item historyLabel="QuadIMU_NB1_v2.7.cpp" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position info="not_deleted" x="5842" y="4064"/>
+</item>
+<item historyLabel="QuadIMU_NB1_v2.7.cpp" index="5">
+<position info="not_deleted" x="9823" y="0"/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position info="not_deleted" x="5842" y="4064"/>
+</item>
+<item historyLabel="QuadIMU_NB1_v2.7.cpp" index="5">
+<position info="not_deleted" x="9981" y="0"/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position info="not_deleted" x="4923" y="79"/>
+</item>
+<item historyLabel="QuadIMU_NB1_v2.7.cpp" index="5">
+<position info="not_deleted" x="10528" y="0"/>
+</item>
+<item historyLabel="QUadIMU_NB2_v3.cpp" index="1">
+<position info="not_deleted" x="10811" y="0"/>
+</item>
+<item active="true" historyLabel="QuadIMU_NB1_v2.7.cpp" index="5">
+<position info="not_deleted" x="10528" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -337,13 +350,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="bottomLeft"/>
-<trimItem IMemento.internal.id="topLeft"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="topRight"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -351,11 +357,13 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottomRight"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="QuadIMU_NB1_v2.7.cpp" tooltip="QuadIMU_NB1_v2.7/QuadIMU_NB1_v2.7.cpp">
+<persistable path="/QuadIMU_NB1_v2.7/QuadIMU_NB1_v2.7.cpp"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Laser_rangefinder.h" tooltip="Sensor_Interface_Board/Laser_rangefinder.h">
 <persistable path="/Sensor_Interface_Board/Laser_rangefinder.h"/>
 </file>

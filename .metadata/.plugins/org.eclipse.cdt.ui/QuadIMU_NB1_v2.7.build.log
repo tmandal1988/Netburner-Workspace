@@ -1,35 +1,5 @@
 
-**** Rebuild of configuration Release for project QuadIMU_NB1_v2.7 ****
+**** Build of configuration Release for project QuadIMU_NB1_v2.7 ****
 
 **** Internal Builder is used for build               ****
-comphtml ../html -ohtmldata.cpp
-Reading files from ../html and compressing them into htmldata.cpp
-Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
-MIME_file: C:\nburn/pcbin/MIME_magic.txt
-
-Building MIME list..... Done
-Processing /index.htm 83 bytes
-Result counts = 73 total_ends :37
-39 bytes out of 66 original encode out of 83 total original 
-Processing /index.htm 83 bytes
-m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
-m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB1_v2.7 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_v2.7.o ..\QuadIMU_NB1_v2.7.cpp
-m68k-elf-g++ QuadIMU_NB1_v2.7.o htmldata.o -Wl,-Map=QuadIMU_NB1_v2.7.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_v2.7.elf
-m68k-elf-objcopy QuadIMU_NB1_v2.7.elf --strip-all --output-target=srec QuadIMU_NB1_v2.7.s19
-compcode QuadIMU_NB1_v2.7.s19 QuadIMU_NB1_v2.7_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
-Block starts at 40000400 
-Block ends at 40029864 
-Block size= 165K
-Execution starts at 40000400 
-compressed 169060 bytes into 100607 bytes
-Code CheckSum= e4ea2150
-Struct CheckSum= dd670b9b
-S records output with a base address of c0040000
-S records output with a final address of c0058917
-About to write S7...
-******************************Build summary ******************************
-Used 100631 bytes of 33292288 available flash (0.30%)
-Used 641592 bytes of 67108095 available ram (0.96%)
-NNDK release tag version:2.6.4
-Build complete for project QuadIMU_NB1_v2.7
-Time consumed: 1375  ms.  
+Nothing to build for QuadIMU_NB1_v2.7
