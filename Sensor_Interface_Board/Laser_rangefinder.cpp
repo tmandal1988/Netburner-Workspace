@@ -17,19 +17,20 @@
 #include <SIB_initPINS.h>
 #include <ucosmcfc.h>
 #include <ucos.h> //OS macros
+#include <constants.h>
 
 
 
 int16_t StartUpLaserScan(int Laserserial){
 
-	uint8_t C_NUM=19,val_sol1=0,val_sol2=0,k=0;
+	uint8_t C_NUM=21,val_sol1=0,val_sol2=0,k=0;
 	uint8_t Laser_Num=20;
 	int16_t StartPan=0;
 	int i=0,j=0;
 	uint16_t Pulse = 12287,pwmr_comp=0;
 	double dYawS=0;
 	double sum=0,avg_dist=0,min_dist=9999,min_angle=0;
-	double c_dist[19]={0},c_ang[19]={0},f_dist[11]={0},f_ang[11]={0};
+	double c_dist[24]={0},c_ang[24]={0},f_dist[19]={0},f_ang[19]={0};
 
 	dYawS=-180;
 	Pulse=12287-dYawS*20.51;
@@ -44,13 +45,16 @@ int16_t StartUpLaserScan(int Laserserial){
 	pwmr_comp=sim1.mcpwm.mcr;
 	sim1.mcpwm.mcr |=LDOK;
 
-	while(i<C_NUM){
+	OSTimeDly(3*TICKS_PER_SECOND);
+
+	i=0;
+	while(i<C_NUM+3){
 
 		/*if(Pause Activated){
 			Startpan=11110;
 			return Startpan;
 		}*/
-		dYawS=-180+i*20;
+		dYawS=-180+i*18;
 		Pulse=12287-dYawS*20.51;
 
 		if(Pulse<8594 || Pulse==8594)
@@ -76,17 +80,20 @@ int16_t StartUpLaserScan(int Laserserial){
 		else
 			c_dist[i]=avg_dist;
 
-		//printf("%g\n",c_dist[i]);
+		//printf("%g,%g\n",c_dist[i],c_ang[i]);
 		c_ang[i]=dYawS;
+		//printf("%g,%g\n",c_dist[i],c_ang[i]);
 		i++;
 
 	}//Coarse While Loop
 
+	//printf("************************************\n");
 	//Calculating number of valid solutions
+	val_sol1=0;val_sol2=0;
 	for(i=0;i<C_NUM;i++){
-		if(i<8 && c_dist[i]!=999 || i==8)
+		if(i<13 && c_dist[i]!=999)
 			val_sol1++;
-		if(i>8 && c_dist[i]!=999 && i!=8)
+		if(i>12 && c_dist[i]!=999)
 			val_sol2++;
 
 	}//valid solutions for loop
@@ -94,33 +101,33 @@ int16_t StartUpLaserScan(int Laserserial){
 	//printf("valsol1=%d,valsol2=%d\n",val_sol1,val_sol2);
 
 	if(val_sol1 > val_sol2){
-		for(i=0;i<8;i++){
+		for(i=0;i<13;i++){
 			if(c_dist[i]<min_dist || c_dist[i]==min_dist){
 				min_dist=c_dist[i];
 				min_angle=c_ang[i];
 			}
+			//printf("1=%g\n",min_dist);
 		}//first half min
 	}
 	else{
-		for(i=8;i<C_NUM;i++){
+		for(i=13;i<C_NUM;i++){
 			if(c_dist[i]<min_dist || c_dist[i]==min_dist){
 				min_dist=c_dist[i];
 				min_angle=c_ang[i];
 			}
+			//printf("2=%g\n",min_dist);
 		}//second half min
 	}
 
-	//printf("%g\n",min_angle);
-
 	k=0;
-	i=-5;
-	while(i<6){
+	i=-9;
+	while(i<10){
 
 		/*if(Pause Activated){
 			Startpan=11110;
 			return Startpan;
 		}*/
-		dYawS=min_angle+i*5;
+		dYawS=min_angle+i*2;
 		Pulse=12287-dYawS*20.51;
 		if(Pulse<8594 || Pulse==8594)
 			sim1.mcpwm.sm[1].val[5]=8594;
@@ -146,18 +153,21 @@ int16_t StartUpLaserScan(int Laserserial){
 			f_dist[k]=avg_dist;
 
 		f_ang[k]=dYawS;
+		//printf("%g,%g\n",f_dist[k],f_ang[k]);
 		k++;
 		i++;
 
 	}//finer search
 
-	min_dist=9999;
 	i=0;
-	for(i=0;i<11;i++){
+	//printf("%d\n",k);
+	for(i=0;i<k;i++){
 		if(f_dist[i]<min_dist || f_dist[i]==min_dist){
 			min_dist=f_dist[i];
 			min_angle=f_ang[i];
 		}
+
+		//printf("%g,%g,%d\n",min_dist,min_angle,i);
 
 	}
 
@@ -175,8 +185,11 @@ int16_t StartUpLaserScan(int Laserserial){
 		sim1.mcpwm.mcr |=LDOK;
 
 		StartPan=(int16_t)(min_angle*10);
+		//printf("*********************************\n");
+		//printf("%g,%g\n",min_dist,min_angle);
 	}
 
+	//printf("%d\n",sizeof(f_ang));
 	if(min_dist==999){
 		StartPan=11110;
 	}

@@ -73,26 +73,6 @@ uint8_t grab_interrupt = 0;
 char Navcomp_in_buff[16]={0};
 
 
-
-//IMU Commands:Send values corresponding to the data needed
-#define xghigh 0x12
-#define xglow  0x10
-#define yghigh 0x16
-#define yglow  0x14
-#define zghigh 0x1A
-#define	zglow  0x18
-#define	xahigh 0x1E
-#define xalow  0x1C
-#define	yahigh 0x22
-#define	yalow  0x20
-#define	zahigh 0x26
-#define	zalow  0x24
-#define	xm     0x28
-#define	ym     0x2A
-#define	zm     0x2C
-#define	barhigh 0x30
-#define	barlow  0x2E
-
 void initPINS(){
 
 	//Defining the Serial Pins
@@ -203,7 +183,7 @@ void NAVcompData(void *){
 		}
 
 		m1=atoi(buff1);
-		if(m1==91 || m1==97 || m1==89)
+		if(m1==91 || m1==97 || m1==101)
 			statestatus=m1;
 		//iprintf("%d,%d\n",statestatus,anglestatus);
 
@@ -261,7 +241,7 @@ void UserMain( void* pd ){
 
 	initTIMERS(timer2);
 	while(1){
-		OSTimeDly(2);
+		TotalTime=timer2->readTime();
 
 		if (FiftyHzTaskFlag==1){
 			DSPIStart(1,IMU_command,IMU3_raw,24,NULL);//IMU3
@@ -278,7 +258,7 @@ void UserMain( void* pd ){
 			NB_counter++;
 
 			//getting time in ms
-			TotalTime=timer2->readTime();
+
 			sprintf(time_ms,"%lf",TotalTime);
 			Navcomp_send_buff[6]=time_ms[0];
 			Navcomp_send_buff[5]=time_ms[1];
@@ -313,6 +293,7 @@ void UserMain( void* pd ){
 				write(fdNavcomp,&Navcomp_send_buff[j],1);
 			}
 
+			//anglestatus=50;
 			sprintf(G_angle,"!VAR 3 %d\r",anglestatus);//setting the angle values
 		//	printf("%s\n",G);
 			i=0;
@@ -321,6 +302,10 @@ void UserMain( void* pd ){
 					write(fdgrabber,&G_angle[i],1);
 			}
 
+
+			//47 to grab, 51 to drop,57 to drop but not get out
+			//yuou can't drop if you don't grab, you can't grab if you have not dropped after starting the code
+			//commandstatus=51;
 			sprintf(G,"!VAR 1 %d\r",commandstatus);//setting the mode
 			i=0;
 			for (i=0;i<sizeof(G);i++){

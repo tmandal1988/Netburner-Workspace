@@ -83,7 +83,7 @@ uint8_t FiveHzcount=0;
 
 
 /*****File Descriptor for NAVcomp communication and receive buffer**************/
-static int fdNAVcomp=0;static char Navcomp_in_buff[32]={23};
+static int fdNAVcomp=0;static char Navcomp_in_buff[32]={0};
 
 /**************MIS comp communication*******************************************/
 static char Navcomp_in_buffMIS[32]={23};
@@ -106,6 +106,9 @@ void serviceWatchDog(){
 /************************Task to receive data from Mission Comp***************/
 void MIScompData(void *){
 	uint8_t i=0;
+	uint16_t k=0;
+	char m=0;
+	int com_timeout=0;
 	//uint16_t sum=0;
 	//uint8_t checksum=0;
 	/**************PAN variable**************************/
@@ -139,10 +142,12 @@ void MIScompData(void *){
 
 						checksum=(uint8_t)sum%255;*/
 
+					//printf("Hi and mode=%d\n",(unsigned char)Navcomp_in_buffMIS[19]);
 
 					if((unsigned char)Navcomp_in_buffMIS[19]==1){
 						Scan_Complete=0;
 						Start_PAN=StartUpLaserScan(fdLaser);
+						//ujgts6printf("Hi and mode=%d\n",(unsigned char)Navcomp_in_buffMIS[19]);
 						if(Start_PAN!=11110)
 							Scan_Status=1;
 						else{
@@ -150,12 +155,25 @@ void MIScompData(void *){
 							Start_PAN=11110;
 						}
 						Scan_Complete=1;
+
+						//printf("Hi2 and mode=%d\n",(unsigned char)Navcomp_in_buffMIS[19]);
+
 					}
+					//printf("Hi3 and mode=%d\n",(unsigned char)Navcomp_in_buffMIS[19]);
+
 					//serviceWatchDog();
 
 				}//second if
 
 		}//first if*///Task main while loop
+
+		k=0;
+		for(k=0;k<256;k++){
+			com_timeout=ReadWithTimeout(fdDebug,&m,1,1);
+			if(com_timeout==0 || com_timeout==-1){
+				break;
+			}
+		}
 	}//While loop
 
 }//MIScompData task bracket
@@ -201,7 +219,7 @@ void NAVcompData(void *){
 
 					//if((uint8_t)checksum==(uint8_t)Navcomp_in_buff[31]){
 
-					if((unsigned char)Navcomp_in_buff[19]==0 && Scan_Complete==1){
+					if(Scan_Complete==1){
 						//Pulse =12287-20.51*double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
 						dYaw  =double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
 						//printf("%g\n",dYaw);
@@ -410,10 +428,11 @@ void UserMain( void* pd ){
 	//Start the Timers and init the DSPI
 	DSPIInit(1,2000000,16,0x01,0x01,1,1,0,0,0);//initializing SPI
 
-	OSTimeDly(3*TICKS_PER_SECOND);
+	//printf("Going to wait 3 sec\n");
+	//OSTimeDly(3*TICKS_PER_SECOND);
 	initTIMERS(timer2);
 	J1[7]=0;
-	startup_timeout=ReadWithTimeout(fdNAVcomp,&m,1,2);
+	startup_timeout=ReadWithTimeout(fdDebug,&m,1,2);
 	if(startup_timeout==-1 || startup_timeout==0){
 		Start_PAN=StartUpLaserScan(fdLaser);
 		if(Start_PAN!=11110)
@@ -427,24 +446,25 @@ void UserMain( void* pd ){
 		Start_PAN=11110;
 	}
 
+	//printf("Hi\n");
 	Scan_Complete=1;
 	/***********packing startup PAN angle*************************/
 	Navcomp_send_buff[38] = (uint8_t)((Start_PAN & 0xFF00)>>8);
-	Navcomp_send_buff[37] = (uint8_t)((Start_PAN & 0x00FF)>>8);
+	Navcomp_send_buff[37] = (uint8_t)(Start_PAN & 0x00FF);
 	Navcomp_send_buff[36] = Scan_Status;
 	OSSimpleTaskCreate(NAVcompData,MAIN_PRIO+1);
 	OSSimpleTaskCreate(MIScompData,MAIN_PRIO+2);
 	//enableWatchDog( 1, 0x001F );//0x001C
 	//Creating Data Receiving task from the computer
 
-
-	J1[7]=0;
 	while(1){
 
+		//printf("Hi\n");
 		TotalTime=timer1->readTime();
 
 		//First if statement to command host radio to get ranging data from 101 guest with antenna A
 		if(FiveHzflag==1 && Radiocount3==0){
+			//printf("In WHile Loop\n");
 			radio_in_buff=ReadRadio(RCM_SEND_RANGE_REQUESTA1,fdRadio,sizeof(RCM_SEND_RANGE_REQUESTA1));
 			CRME=(uint16_t)radio_in_buff[28]*256+(uint16_t)radio_in_buff[29];
 			if((unsigned char)radio_in_buff[12]==0 && CRME<60){
@@ -479,25 +499,28 @@ void UserMain( void* pd ){
 		}//second if bracket
 
 		if(FiftyHzflag==1){
-			laser_range=ReadLaser(fdLaser);
-			Navcomp_send_buff[36] = Scan_Status;
-			Navcomp_send_buff[38] = (uint8_t)((Start_PAN & 0xFF00)>>8);
-			Navcomp_send_buff[37] = (uint8_t)((Start_PAN & 0x00FF)>>8);
-			//printf("laser range=%g\n",laser_range);
-			//printf("laser range=%g\n",laser_range);
-			//uint32_t Range=(uint32_t)F_range_buff[0]*16777216+(uint32_t)F_range_buff[1]*65536+(uint32_t)F_range_buff[2]*256+(uint32_t)F_range_buff[3];
+			if(Scan_Complete==1){
+			//printf("Start Pan=%d,Start Pan=%d\n",Start_PAN,(int16_t)Navcomp_send_buff[38]*256+(int16_t)Navcomp_send_buff[37]);
+				laser_range=ReadLaser(fdLaser);
+				Navcomp_send_buff[36] = Scan_Status;
+				Navcomp_send_buff[38] = (uint8_t)((Start_PAN & 0xFF00)>>8);
+				Navcomp_send_buff[37] = (uint8_t)(Start_PAN & 0x00FF);
+				//printf("laser range=%g\n",laser_range);
+				//printf("laser range=%g\n",laser_range);
+				//uint32_t Range=(uint32_t)F_range_buff[0]*16777216+(uint32_t)F_range_buff[1]*65536+(uint32_t)F_range_buff[2]*256+(uint32_t)F_range_buff[3];
 
-			//printf("%zu,%u,%u,%u\n",Range,Ant_config,(unsigned char)radio_in_buff[12],(uint16_t)radio_in_buff[32]*256+(uint16_t)radio_in_buff[33]);
-			StartAD();
-			 while (!ADDone()){}
-			asm("nop");
-			for (int i = 0; i < 8; i++)
-			ADC_channel[i] = (unsigned short int)(1000 * (((double)GetADResult(i)) * 3.3 / (32768.0)));
-			sprintf(time_ms,"%lf",TotalTime);
-			//send data to the computer
-			SendtoNAVCOMP(Navcomp_send_buff,ADC_channel,time_ms,netburner_counter,laser_range,F_range_buff,PanAngle,fdNAVcomp,fdDebug,sizeof(Navcomp_send_buff),Ant_config);
-			netburner_counter ++;
-			FiftyHzflag=0;
+				//printf("%zu,%u,%u,%u\n",Range,Ant_config,(unsigned char)radio_in_buff[12],(uint16_t)radio_in_buff[32]*256+(uint16_t)radio_in_buff[33]);
+				StartAD();
+				while (!ADDone()){}
+				asm("nop");
+				for (int i = 0; i < 8; i++)
+					ADC_channel[i] = (unsigned short int)(1000 * (((double)GetADResult(i)) * 3.3 / (32768.0)));
+				sprintf(time_ms,"%lf",TotalTime);
+				//send data to the computer
+				SendtoNAVCOMP(Navcomp_send_buff,ADC_channel,time_ms,netburner_counter,laser_range,F_range_buff,PanAngle,fdNAVcomp,fdDebug,sizeof(Navcomp_send_buff),Ant_config);
+				netburner_counter ++;
+			}
+				FiftyHzflag=0;
 
 			//serviceWatchDog();//
 		}//FiftyHzflag bracket
