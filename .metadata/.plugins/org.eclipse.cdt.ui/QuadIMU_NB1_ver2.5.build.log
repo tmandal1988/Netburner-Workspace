@@ -1,24 +1,5 @@
 
-**** Rebuild of configuration Release for project QuadIMU_NB1_ver2.5 ****
+**** Build of configuration Release for project QuadIMU_NB1_ver2.5 ****
 
 **** Internal Builder is used for build               ****
-m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\QuadIMU_NB1_ver2.5 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o QuadIMU_NB1_ver2.5.o ..\QuadIMU_NB1_ver2.5.cpp
-m68k-elf-g++ QuadIMU_NB1_ver2.5.o -Wl,-Map=QuadIMU_NB1_ver2.5.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -oQuadIMU_NB1_ver2.5.elf
-m68k-elf-objcopy QuadIMU_NB1_ver2.5.elf --strip-all --output-target=srec QuadIMU_NB1_ver2.5.s19
-compcode QuadIMU_NB1_ver2.5.s19 QuadIMU_NB1_ver2.5_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
-Block starts at 40000400 
-Block ends at 40029b54 
-Block size= 165K
-Execution starts at 40000400 
-compressed 169812 bytes into 100979 bytes
-Code CheckSum= f18b86a9
-Struct CheckSum= d0c5a1de
-S records output with a base address of c0040000
-S records output with a final address of c0058a8b
-About to write S7...
-******************************Build summary ******************************
-Used 101003 bytes of 33292288 available flash (0.30%)
-Used 642376 bytes of 67108095 available ram (0.96%)
-NNDK release tag version:2.6.6
-Build complete for project QuadIMU_NB1_ver2.5
-Time consumed: 891  ms.  
+Nothing to build for QuadIMU_NB1_ver2.5

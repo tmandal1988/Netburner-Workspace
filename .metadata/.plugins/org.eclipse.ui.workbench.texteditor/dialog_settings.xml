@@ -3,28 +3,32 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="305" key="DIALOG_WIDTH"/>
 		<item value="61" key="DIALOG_Y_ORIGIN"/>
-		<item value="444" key="DIALOG_HEIGHT"/>
 		<item value="1070" key="DIALOG_X_ORIGIN"/>
+		<item value="444" key="DIALOG_HEIGHT"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="IMU2" key="selection"/>
+		<item value="G" key="selection"/>
 		<list key="findhistory">
-			<item value="IMU4"/>
-			<item value="IMU3"/>
-			<item value="47"/>
-			<item value="51"/>
-			<item value="PRINTF"/>
-			<item value="commandstatus"/>
-			<item value="anglestatus"/>
+			<item value="G"/>
+			<item value="dspiinit"/>
+			<item value="csmask"/>
+			<item value="J1[10]"/>
+			<item value="J1[13]"/>
+			<item value="Pulse"/>
+			<item value="Radio_Data"/>
 			<item value="printf"/>
 		</list>
 		<list key="replacehistory">
+			<item value="radio_in_buff"/>
+			<item value="radio_in_buff1"/>
+			<item value="tanmay1"/>
+			<item value="read"/>
 			<item value="IMU2"/>
 			<item value="IMU1"/>
 		</list>

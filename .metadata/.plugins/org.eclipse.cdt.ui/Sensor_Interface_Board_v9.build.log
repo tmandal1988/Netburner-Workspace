@@ -1,0 +1,24 @@
+
+**** Build of configuration Release for project Sensor_Interface_Board_v9 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\IRL\Desktop\Tanmay_GitRepo\Netburner_Codes\Sensor_Interface_Board_v9 -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Sensor_Interface_Board_v9.o ..\Sensor_Interface_Board_v9.cpp
+m68k-elf-g++ Sensor_Interface_Board_v9.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board_v9.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\webclient.a -Wl,--end-group -oSensor_Interface_Board_v9.elf
+m68k-elf-objcopy Sensor_Interface_Board_v9.elf --strip-all --output-target=srec Sensor_Interface_Board_v9.s19
+compcode Sensor_Interface_Board_v9.s19 Sensor_Interface_Board_v9_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002b794 
+Block size= 172K
+Execution starts at 40000400 
+compressed 177044 bytes into 105825 bytes
+Code CheckSum= f2507755
+Struct CheckSum= d0008204
+S records output with a base address of c0040000
+S records output with a final address of c0059d79
+About to write S7...
+******************************Build summary ******************************
+Used 105849 bytes of 33292288 available flash (0.32%)
+Used 666392 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.6
+Build complete for project Sensor_Interface_Board_v9
+Time consumed: 2188  ms.  

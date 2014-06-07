@@ -30,11 +30,17 @@ void initPINS(){
 	J2[41].function(2);//UART9_RX For communication with Nav computer
 	J2[44].function(2);//UART9_TX
 
+	J2[23].function(2);//UART5_RX
+	J2[24].function(2);//UART5_TX
+
 	//Defining SPI 1 pins
 	J2[27].function(1);//SPI_IN
 	J2[28].function(1);//SPI_OUT
 	J2[30].function(1);//SPI_CS0
 	J2[25].function(1);//SPI_SCK
+
+	J2[37].function(0); //Indicator LED
+	J2[37] = 0;
 
 	//Defining IRQ 7
 	J2[48].function(1);//IRQ 7 for reading PPM

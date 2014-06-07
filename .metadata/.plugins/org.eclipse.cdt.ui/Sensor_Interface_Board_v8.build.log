@@ -1,0 +1,23 @@
+
+**** Build of configuration Release for project Sensor_Interface_Board_v8 ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ Sensor_Interface_Board_v9.o SIB_initPINS.o SIB_SendtoNAVCOMP.o Ranging_Radio.o Laser_rangefinder.o -Wl,-Map=Sensor_Interface_Board_v8.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\webclient.a -Wl,--end-group -oSensor_Interface_Board_v8.elf
+m68k-elf-objcopy Sensor_Interface_Board_v8.elf --strip-all --output-target=srec Sensor_Interface_Board_v8.s19
+compcode Sensor_Interface_Board_v8.s19 Sensor_Interface_Board_v8_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 4002b6c4 
+Block size= 172K
+Execution starts at 40000400 
+compressed 176836 bytes into 105670 bytes
+Code CheckSum= fcbb7208
+Struct CheckSum= c59588bc
+S records output with a base address of c0040000
+S records output with a final address of c0059cde
+About to write S7...
+******************************Build summary ******************************
+Used 105694 bytes of 33292288 available flash (0.32%)
+Used 666184 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.6
+Build complete for project Sensor_Interface_Board_v8
+Time consumed: 641  ms.  

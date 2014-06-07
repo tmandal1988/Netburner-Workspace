@@ -66,8 +66,10 @@ void initPINS(){
 	J1[6].function(0);
 	J1[7].function(0);
 	J1[13].function(0);
+	//J1[10].function(0);
 	J1[6] = 0;
 	J1[7] = 0;
+	//J1[10] = 0;
 	J1[13] = 0;
 
 	J2[19].function(3);//TXD UART2
@@ -106,8 +108,8 @@ void FiftyHzTask(){
 }
 
 void initDSPI(){
-	DSPIInit(3,2000000,16,0x01,1,1,1,0,0,0);//initializing SPI
-	DSPIInit(1,2000000,16,0x01,1,1,1,0,0,0);//initializing SPI
+	DSPIInit(3,2000000,16,0xFE,1,1,1,0,0,0);//initializing SPI
+	DSPIInit(1,2000000,16,0xFE,1,1,1,0,0,0);//initializing SPI
 
 //printf("dspi_stat3=%d,dspi_stat1=%d\n",dspi3_stat,dspi1_stat);
 }
@@ -277,7 +279,7 @@ while(1){
 		IMU_data[4]=(((int32_t)IMU1_raw[18]<<24|(int32_t)IMU1_raw[19]<<16|(int32_t)IMU1_raw[20]<<8|(int32_t)IMU1_raw[21])-((int32_t)IMU2_raw[18]<<24|(int32_t)IMU2_raw[19]<<16|(int32_t)IMU2_raw[20]<<8|(int32_t)IMU2_raw[21]))/2;//Y-Gyro
 		IMU_data[5]=(((int32_t)IMU1_raw[22]<<24|(int32_t)IMU1_raw[23]<<16|(int32_t)IMU1_raw[0]<<8|(int32_t)IMU1_raw[1])+((int32_t)IMU2_raw[22]<<24|(int32_t)IMU2_raw[23]<<16|(int32_t)IMU2_raw[0]<<8|(int32_t)IMU2_raw[1]))/2;//Z-Gyro
 
-		//printf("Z-Accel=%g\n",0.00025*IMU_data[2]/65536);//0.00025*((int32_t)send_buff[18]<<24|(int32_t)send_buff[17]<<16|(int32_t)send_buff[16]<<8|(int32_t)send_buff[15])/65536);
+		printf("Z-Accel=%g\n",0.00025*IMU_data[2]/65536);//0.00025*((int32_t)send_buff[18]<<24|(int32_t)send_buff[17]<<16|(int32_t)send_buff[16]<<8|(int32_t)send_buff[15])/65536);
 
 		for(unsigned int i=0;i<6;i++){
 			send_buff[4*i+10]=(BYTE)((uint32_t)(IMU_data[i] & 0xFF000000)>>24);
@@ -305,10 +307,13 @@ while(1){
 		if(J1[7].read())
 			pause = 0;
 
+
 		if (NB_counter%50 == 0 && pause == 0)
 			J1[13] = J1[13]^1;
 		if (pause == 0xFF)
 			J1[13] = 1;
+
+		printf("%d \n", NB_counter);
 
 		send_buff[47] = pause;
 

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;QuadIMU_NB1_v2.9/main.cpp&apos; to &apos;QuadIMU_NB1_v2.9&apos;" description="Rename resource &apos;main.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="main.cpp" name="QuadIMU_NB1_v2.9" stamp="1401959717349" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;QuadIMU_NB1_v2.9/QuadIMU_NB1_v2.9&apos; to &apos;QuadIMU_NB1_v2.9.cpp&apos;" description="Rename resource &apos;QuadIMU_NB1_v2.9&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="QuadIMU_NB1_v2.9" name="QuadIMU_NB1_v2.9.cpp" stamp="1401959732991" updateReferences="true"/>
+</session>

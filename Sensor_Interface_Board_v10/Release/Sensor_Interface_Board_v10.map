@@ -1,0 +1,2468 @@
+Archive member included because of file (symbol)
+
+C:\nburn/lib/MOD5441X.a(bsp.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\nb-crt0.o (atexit)
+C:\nburn/lib/MOD5441X.a(flash.o)
+                              C:\nburn/lib/MOD5441X.a(bsp.o) (FlashErase)
+C:\nburn/lib/MOD5441X.a(serial.o)
+                              Sensor_Interface_Board_v9.o (SerialClose)
+C:\nburn/lib/MOD5441X.a(pins.o)
+                              Sensor_Interface_Board_v9.o (PinIO::set(unsigned char))
+C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+                              Sensor_Interface_Board_v9.o (HiResTimer::getHiResTimer(int))
+C:\nburn/lib/MOD5441X.a(localio.o)
+                              C:\nburn/lib/MOD5441X.a(serial.o) (GetUartRecord)
+C:\nburn/lib/NetBurner.a(ucosmcfa.o)
+                              C:\nburn/lib/MOD5441X.a(bsp.o) (OSCtxSw)
+C:\nburn/lib/NetBurner.a(software_init.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\nb-crt0.o (software_init_hook)
+C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+                              Sensor_Interface_Board_v9.o (OSTaskCreate)
+C:\nburn/lib/NetBurner.a(ucos.o)
+                              C:\nburn/lib/NetBurner.a(ucosmcfc.o) (OSSched)
+C:\nburn/lib/NetBurner.a(ucosmain.o)
+                              C:\nburn/lib/MOD5441X.a(bsp.o) (critical_count)
+C:\nburn/lib/NetBurner.a(fileio.o)
+                              C:\nburn/lib/MOD5441X.a(serial.o) (ReplaceStdio)
+C:\nburn/lib/NetBurner.a(system.o)
+                              C:\nburn/lib/MOD5441X.a(serial.o) (rnd_cnt)
+C:\nburn/lib/NetBurner.a(main.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\nb-crt0.o (main)
+C:\nburn/lib/NetBurner.a(utils.o)
+                              C:\nburn/lib/NetBurner.a(system.o) (AsciiToIp)
+C:\nburn/lib/NetBurner.a(ip.o)
+                              Sensor_Interface_Board_v9.o (InitializeStack(unsigned long, unsigned long, unsigned long, unsigned long))
+C:\nburn/lib/NetBurner.a(buffers.o)
+                              C:\nburn/lib/NetBurner.a(ip.o) (FreeBuffer)
+C:\nburn/lib/NetBurner.a(arp.o)
+                              C:\nburn/lib/NetBurner.a(ip.o) (wArpLifetime)
+C:\nburn/lib/NetBurner.a(udp.o)
+                              C:\nburn/lib/NetBurner.a(ip.o) (process_udp(pool_buffer*, IPPKT*, unsigned short))
+C:\nburn/lib/NetBurner.a(tcp.o)
+                              C:\nburn/lib/NetBurner.a(ip.o) (DumpTcpPacket(IPPKT*))
+C:\nburn/lib/NetBurner.a(extraio.o)
+                              C:\nburn/lib/MOD5441X.a(serial.o) (GetExtraFD)
+C:\nburn/lib/NetBurner.a(iosys.o)
+                              C:\nburn/lib/MOD5441X.a(serial.o) (FD_ZERO)
+C:\nburn/lib/NetBurner.a(autoip.o)
+                              C:\nburn/lib/NetBurner.a(arp.o) (AutoIPClient::addressCollision())
+C:\nburn/lib/NetBurner.a(defappname.o)
+                              C:\nburn/lib/NetBurner.a(udp.o) (AppName)
+C:\nburn/lib/NetBurner.a(netinterface.o)
+                              C:\nburn/lib/NetBurner.a(ip.o) (GetFirstInterface())
+C:\nburn/lib/NetBurner.a(taskmon.o)
+                              Sensor_Interface_Board_v9.o (EnableTaskMonitor())
+C:\nburn/lib/NetBurner.a(smarttrap.o)
+                              Sensor_Interface_Board_v9.o (EnableSmartTraps())
+C:\nburn/lib/NetBurner.a(autoupdate.o)
+                              Sensor_Interface_Board_v9.o (EnableAutoUpdate)
+C:\nburn/lib/NetBurner.a(device.o)
+                              C:\nburn/lib/NetBurner.a(main.o) (DeviceInitializeSem)
+C:\nburn/lib/NetBurner.a(new_ops.o)
+                              C:\nburn/lib/NetBurner.a(autoip.o) (operator new(unsigned long))
+C:\nburn/lib/MOD5441X.a(ethernet.o)
+                              C:\nburn/lib/NetBurner.a(netinterface.o) (AddEthernetInterface())
+C:\nburn/lib/MOD5441X.a(etherprint.o)
+                              C:\nburn/lib/MOD5441X.a(ethernet.o) (EtherLink())
+C:\nburn/lib/MOD5441X.a(emulticast.o)
+                              C:\nburn/lib/MOD5441X.a(ethernet.o) (EthEnableMulticast(MACADR))
+C:\nburn/lib/NetBurner.a(netrx.o)
+                              C:\nburn/lib/MOD5441X.a(ethernet.o) (NetDoRX(pool_buffer*, unsigned short, int))
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_double.o)
+                              Sensor_Interface_Board_v9.o (__adddf3)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_floatex.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_double.o) (_fpCCR)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_eqdf2.o)
+                              Laser_rangefinder.o (__eqdf2)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_nedf2.o)
+                              Laser_rangefinder.o (__nedf2)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_gtdf2.o)
+                              Laser_rangefinder.o (__gtdf2)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_gedf2.o)
+                              Laser_rangefinder.o (__gedf2)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_ltdf2.o)
+                              Laser_rangefinder.o (__ltdf2)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_fixunsdfsi.o)
+                              Sensor_Interface_Board_v9.o (__fixunsdfsi)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(fpgnulib.o)
+                              Sensor_Interface_Board_v9.o (__floatunsidf)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-atof.o)
+                              Laser_rangefinder.o (atof)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-cxa_atexit.o)
+                              C:\nburn/lib/MOD5441X.a(serial.o) (__cxa_atexit)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-errno.o)
+                              C:\nburn/lib/NetBurner.a(fileio.o) (__errno)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fiprintf.o)
+                              C:\nburn/lib/MOD5441X.a(serial.o) (fiprintf)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-impure.o)
+                              C:\nburn/lib/NetBurner.a(ucosmain.o) (_impure_ptr)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-iprintf.o)
+                              Sensor_Interface_Board_v9.o (iprintf)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-malloc.o)
+                              C:\nburn/lib/NetBurner.a(utils.o) (free)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-mallocr.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-malloc.o) (_malloc_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-printf.o)
+                              Sensor_Interface_Board_v9.o (printf)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-puts.o)
+                              C:\nburn/lib/NetBurner.a(utils.o) (puts)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-rand.o)
+                              C:\nburn/lib/NetBurner.a(autoip.o) (srand)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-rget.o)
+                              C:\nburn/lib/NetBurner.a(system.o) (__srget_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-setvbuf.o)
+                              C:\nburn/lib/NetBurner.a(ucosmain.o) (setvbuf)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-siprintf.o)
+                              C:\nburn/lib/NetBurner.a(utils.o) (siprintf)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-sniprintf.o)
+                              C:\nburn/lib/NetBurner.a(utils.o) (sniprintf)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-sprintf.o)
+                              Sensor_Interface_Board_v9.o (sprintf)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strlen.o)
+                              C:\nburn/lib/NetBurner.a(udp.o) (strlen)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-atof.o) (strtod)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-iprintf.o) (_vfiprintf_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-printf.o) (_vfprintf_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wbuf.o)
+                              C:\nburn/lib/NetBurner.a(system.o) (__swbuf_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wcrtomb.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o) (_wcrtomb_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wcsrtombs.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o) (_wcsrtombs_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wctomb_r.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wcrtomb.o) (_wctomb_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wsetup.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o) (__swsetup)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-__atexit.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-cxa_atexit.o) (__register_exitproc)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-dtoa.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o) (_dtoa_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fflush.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-setvbuf.o) (fflush)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-findfp.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-setvbuf.o) (__sinit)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-freer.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-malloc.o) (_free_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fvwrite.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-puts.o) (__sfvwrite_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fwalk.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fflush.o) (_fwalk)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-gethex.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o) (__gethex)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-hexnan.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o) (__hexnan)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-locale.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o) (localeconv)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-makebuf.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wsetup.o) (__smakebuf)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-memchr.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o) (memchr)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-memmove.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fvwrite.o) (memmove)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-mprec.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-dtoa.o) (__hi0bits)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-reallocr.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fvwrite.o) (_realloc_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-refill.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-rget.o) (__srefill_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-s_isinfd.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o) (__isinfd)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-s_isnand.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o) (__isnand)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-stdio.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-findfp.o) (__sclose)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strcmp.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wctomb_r.o) (strcmp)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-writer.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-stdio.o) (_write_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-callocr.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-mprec.o) (_calloc_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-closer.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-stdio.o) (_close_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fclose.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-findfp.o) (fclose)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fstatr.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-makebuf.o) (_fstat_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-lseekr.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-stdio.o) (_lseek_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-readr.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-stdio.o) (_read_r)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_ledf2.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o) (__ledf2)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_nesf2.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o) (__nesf2)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_gtsf2.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o) (__gtsf2)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_ltsf2.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o) (__ltsf2)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_muldi3.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-rand.o) (__muldi3)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_udivdi3.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o) (__udivdi3)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_umoddi3.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o) (__umoddi3)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_float.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_nesf2.o) (__cmpsf2_internal)
+c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_clz.o)
+                              c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_udivdi3.o) (__clz_tab)
+
+Allocating common symbols
+Common symbol       size              file
+
+NotifyUpdatePtr     0x4               C:\nburn/lib/NetBurner.a(system.o)
+BspTickMaxCount     0x2               C:\nburn/lib/MOD5441X.a(bsp.o)
+write_pcsr          0x2               C:\nburn/lib/MOD5441X.a(bsp.o)
+errno               0x4               C:\nburn/lib/MOD5441X.a(bsp.o)
+TERR_REGISTER       0x1               C:\nburn/lib/MOD5441X.a(bsp.o)
+heap_ptr            0x4               C:\nburn/lib/MOD5441X.a(bsp.o)
+__hexdig            0x100             c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-gethex.o)
+OSIdleTaskStk       0x2000            C:\nburn/lib/NetBurner.a(ucosmain.o)
+rnd_collect         0x200             C:\nburn/lib/NetBurner.a(system.o)
+CPU_CLOCK           0x4               C:\nburn/lib/MOD5441X.a(bsp.o)
+config_rec_buf      0x800             C:\nburn/lib/NetBurner.a(system.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x40000400         0x03fffcff         xrw
+SRAM             0x80000400         0x0000fbf0         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\nb-crt0.o
+LOAD c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
+LOAD Sensor_Interface_Board_v9.o
+LOAD SIB_initPINS.o
+LOAD SIB_SendtoNAVCOMP.o
+LOAD Ranging_Radio.o
+LOAD Laser_rangefinder.o
+LOAD C:\nburn/MOD5441X/lib/sys.ld
+                0x40000000                ovector_base = 0x40000000
+                0x80000000                vector_base = 0x80000000
+                0x80000400                SRAM_START_ADDR = 0x80000400
+                0x80010000                SRAM_END_ADDR = 0x80010000
+                0xc0000000                gConfigRec = 0xc0000000
+                0xc0020000                UserParamBase = 0xc0020000
+                0xc0040000                FlashAppBase = 0xc0040000
+                0xec008000                sim1 = 0xec008000
+                0xfc004000                sim2 = 0xfc004000
+                0xfc0d4008                DBETHER_EMIR_REG = 0xfc0d4008
+START GROUP
+LOAD C:\nburn/lib/MOD5441X.a
+LOAD C:\nburn/lib/NetBurner.a
+LOAD C:\nburn/lib/FatFile.a
+LOAD C:\nburn\lib\debugLibrary.a
+LOAD C:\nburn\lib\Lua_Full.a
+LOAD C:\nburn\lib\nb-libxively.a
+LOAD C:\nburn\lib\webclient.a
+END GROUP
+LOAD c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libstdc++.a
+LOAD c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libm.a
+LOAD c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a
+LOAD c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a
+LOAD c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a
+LOAD c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtend.o
+START GROUP
+LOAD c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a
+LOAD c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a
+LOAD c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libm.a
+END GROUP
+                0x00000000                __DYNAMIC = 0x0
+                0x44000000                PROVIDE (__stack, 0x44000000)
+                0x00000000                PROVIDE (hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (_hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (software_init_hook, 0x0)
+                0x00000000                PROVIDE (_software_init_hook, 0x0)
+
+.SRAM_SECT      0x80000400     0x89a0
+                0x80000400                SRAM_START = .
+ *(SYS_VAR_SECT)
+ SYS_VAR_SECT   0x80000400      0x238 C:\nburn/lib/NetBurner.a(ucos.o)
+                0x8000052c                TimeTick
+                0x8000051c                OSLockNesting
+                0x80000526                OSRunning
+                0x80000508                OSTCBList
+                0x80000530                OSMapTbl
+                0x80000528                Secs
+                0x80000514                OSTCBFreeList
+                0x80000524                OSISRLevel
+                0x80000510                OSTCBHighRdy
+                0x80000520                OSRdyGrp
+                0x80000538                OSUnMapTbl
+                0x80000500                OSRdyTbl
+                0x80000518                OSIntNesting
+                0x8000050c                OSTCBCur
+                0x80000400                OSTCBPrioTbl
+ SYS_VAR_SECT   0x80000638      0x1ac C:\nburn/lib/NetBurner.a(ucosmain.o)
+                0x80000638                OSTcbStructSize
+                0x80000650                critical_count
+                0x80000654                OSTCBTbl
+ SYS_VAR_SECT   0x800007e4       0x1c C:\nburn/lib/NetBurner.a(fileio.o)
+                0x800007fc                pExtraFdFunc
+ SYS_VAR_SECT   0x80000800       0x20 C:\nburn/lib/NetBurner.a(iosys.o)
+                0x80000800                read_file_sets
+                0x80000810                error_file_sets
+                0x80000808                write_file_sets
+                0x80000820                SYS_VAR_SECT_END = .
+                0x80000820                . = ALIGN (0x10)
+ *(IDLE_STK_SECT)
+                0x80000820                IDLE_STK_SECT_END = .
+                0x80000820                . = ALIGN (0x10)
+ *(MAIN_STK_SECT)
+ MAIN_STK_SECT  0x80000820     0x2000 C:\nburn/lib/NetBurner.a(main.o)
+                0x80000820                MainStk
+                0x80002820                MAIN_STK_SECT_END = .
+                0x80002820                . = ALIGN (0x4)
+ *(ETHER_VAR_SECT)
+ ETHER_VAR_SECT
+                0x80002820      0x110 C:\nburn/lib/MOD5441X.a(ethernet.o)
+                0x800028f6                TxcPosts
+                0x800028fa                TxcSems
+                0x80002820                EthernetMac
+                0x800028ee                LastIsrStatus
+                0x80002850                RxBD
+                0x800028e0                TxBDFlag
+                0x800028fe                RxIsr
+                0x8000290c                PHY_addr
+                0x800028f2                RxPosts
+                0x8000290e                PHY_ID
+                0x80002906                bEthLink
+                0x800028d4                RxBDFlag
+                0x800028ea                last_rxbd
+                0x800028a0                RxBDpp
+                0x80002908                phy_data_pd
+                0x80002826                nTx
+                0x80002902                TxIsr
+                0x800028c8                TxBDpp
+                0x80002830                TxBD
+                0x80002930                ETHER_VAR_SECT_END = .
+                0x80002930                . = ALIGN (0x10)
+ *(ETHER_STK_SECT)
+ ETHER_STK_SECT
+                0x80002930     0x2000 C:\nburn/lib/MOD5441X.a(ethernet.o)
+                0x80002930                EtherSendStk
+                0x80004930                ETHER_STK_SECT_END = .
+                0x80004930                . = ALIGN (0x4)
+ *(IP_VAR_SECT)
+ IP_VAR_SECT    0x80004930      0x2fe C:\nburn/lib/NetBurner.a(ip.o)
+                0x8000494e                pDHCPServerTick
+                0x80004932                bTTL_Default
+                0x80004c26                next_arp_time
+                0x80004934                ipRxFifo
+                0x8000496a                multi_home_if_record
+                0x80004946                IcmpFifo
+                0x80004966                nAdditional_Homes
+                0x80004930                wGlobalPktId
+                0x8000495a                pPromisciousPacketFunc
+                0x80004962                pFragFunc
+                0x8000495e                pMultiCastFunc
+                0x80004c2a                delay
+                0x80004956                pAutoIPTick
+                0x80004952                pMultiTick
+                0x8000494a                pDHCPTick
+                0x80004992                multi_if_block
+ IP_VAR_SECT    0x80004c2e       0x78 C:\nburn/lib/NetBurner.a(udp.o)
+                0x80004ca2                UdpNetbiosNameServicePtr
+                0x80004c9a                pDHCPServerProcessFunction
+                0x80004c2e                udp_fifos
+                0x80004c96                pDHCPProcessFunction
+                0x80004c9e                pTaskPacketFunc
+                0x80004c92                UDP_fifos_used
+                0x80004ca6                IP_VAR_SECT_END = .
+                0x80004cb0                . = ALIGN (0x10)
+ *fill*         0x80004ca6        0xa 00
+ *(IP_STK_SECT)
+ IP_STK_SECT    0x80004cb0     0x2000 C:\nburn/lib/NetBurner.a(ip.o)
+                0x80004cb0                IPStk
+                0x80006cb0                IP_STK_SECT_END = .
+                0x80006cb0                . = ALIGN (0x4)
+ *(TCP_VAR_SECT)
+ TCP_VAR_SECT   0x80006cb0       0x1e C:\nburn/lib/NetBurner.a(tcp.o)
+                0x80006cc0                TCP_TimerSemaphore
+                0x80006cb0                TCP_critical_section
+                0x80006cce                TCP_VAR_SECT_END = .
+                0x80006cd0                . = ALIGN (0x10)
+ *fill*         0x80006cce        0x2 00
+ *(TCP_STK_SECT)
+ TCP_STK_SECT   0x80006cd0     0x2000 C:\nburn/lib/NetBurner.a(tcp.o)
+                0x80006cd0                TCPStk
+                0x80008cd0                TCP_STK_SECT_END = .
+                0x80008cd0                . = ALIGN (0x10)
+ *(HTTP_STK_SECT)
+                0x80008cd0                HTTP_STK_SECT_END = .
+                0x80008cd0                . = ALIGN (0x10)
+ *(FTP_STK_SECT)
+                0x80008cd0                FTP_STK_SECT_END = .
+                0x80008cd0                . = ALIGN (0x10)
+ *(WIFI_STK_SECT)
+                0x80008cd0                WIFI_STK_SECT_END = .
+                0x80008cd0                . = ALIGN (0x10)
+ *(PPP_STK_SECT)
+                0x80008cd0                PPP_STK_SECT_END = .
+                0x80008cd0                . = ALIGN (0x10)
+ *(COMMAND_STK_SECT)
+                0x80008cd0                COMMAND_STK_SECT_END = .
+                0x80008cd0                . = ALIGN (0x4)
+ *(USER_VAR_SECT)
+ USER_VAR_SECT  0x80008cd0       0xac C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+                0x80008d78                HiResTimer::timerCreated
+                0x80008cd0                HiResTimer::timers
+                0x80008d7c                USER_VAR_SECT_END = .
+                0x80008d80                . = ALIGN (0x10)
+ *fill*         0x80008d7c        0x4 00
+ *(USER_STK_SECT)
+                0x80008d80                USER_STK_SECT_END = .
+                0x80008d80                BUFFERS_SECT_START = .
+                0x80008d80                . = ALIGN (0x10)
+ *(BUFFERS_VAR_SECT)
+ BUFFERS_VAR_SECT
+                0x80008d80       0x1c C:\nburn/lib/NetBurner.a(buffers.o)
+                0x80008d80                FAST_BUFFER_POOL_SIZE
+                0x80008d8e                free_fast_list
+                0x80008d98                free_list_is_initialized
+                0x80008d84                free_list
+                0x80008da0                . = ALIGN (0x10)
+ *fill*         0x80008d9c        0x4 00
+                0x80008da0                BUFFERS_VAR_SECT_END = .
+                0x80008da0                . = ALIGN (0x10)
+                0x80008da0                SRAM_END = .
+
+.text           0x40000400    0x2ae60
+ *(.text)
+ .text          0x40000400       0xaa c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\nb-crt0.o
+                0x40000400                start
+ *fill*         0x400004aa        0x2 00
+ .text          0x400004ac       0x9c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
+ .text          0x40000548     0x10b2 Sensor_Interface_Board_v9.o
+                0x40000634                GetADResult(int)
+                0x40000aac                MIScompData(void*)
+                0x400006f0                RadioData(void*)
+                0x4000061c                ADDone()
+                0x40000c40                UserMain
+                0x4000066c                FiftyHzTask()
+                0x400008b4                initTIMERS(HiResTimer*)
+                0x40000600                StartAD()
+                0x400006ac                enableWatchDog(bool, int)
+                0x4000092c                NAVcompData(void*)
+                0x40000548                InitSingleEndAD()
+                0x40000654                serviceWatchDog()
+ *fill*         0x400015fa        0x2 00
+ .text          0x400015fc      0x286 SIB_initPINS.o
+                0x400015fc                initPINS
+ *fill*         0x40001882        0x2 00
+ .text          0x40001884      0x1be SIB_SendtoNAVCOMP.o
+                0x40001884                SendtoNAVCOMP
+ *fill*         0x40001a42        0x2 00
+ .text          0x40001a44      0x21a Ranging_Radio.o
+                0x40001a44                crc16
+                0x40001ab8                ReadRadio
+ *fill*         0x40001c5e        0x2 00
+ .text          0x40001c60      0x862 Laser_rangefinder.o
+                0x40001c60                ReadLaser
+                0x40001ce4                StartUpLaserScan
+ *fill*         0x400024c2        0x2 00
+ .text          0x400024c4      0x3f8 C:\nburn/lib/MOD5441X.a(bsp.o)
+                0x40002700                GetUserParameters
+                0x4000265c                _sbrk_r
+                0x400027a0                HardwareSetup
+                0x400025ac                DisableCache
+                0x400026b4                spaceleft
+                0x400024c8                Tick5441X
+                0x40002784                ForceReboot
+                0x400026ec                BspGetTickFraction
+                0x400024c4                xTick
+                0x400026a8                atexit
+                0x40002710                SaveUserParameters
+                0x40002624                EnableCache
+                0x400024e4                SetIntc
+ .text          0x400028bc      0x1b2 C:\nburn/lib/MOD5441X.a(flash.o)
+                0x40002934                FlashProgram
+                0x400028bc                FlashErase
+ *fill*         0x40002a6e        0x2 00
+ .text          0x40002a70     0x1d9e C:\nburn/lib/MOD5441X.a(serial.o)
+                0x40002a9c                WakeTx(int)
+                0x40002a70                FdSerialMap(int)
+                0x400039fc                SerialClose
+                0x4000308c                fake_SER_7_ISR()
+                0x40004710                real_SER_5_ISR
+                0x40003988                SendBreak
+                0x400041c0                OpenSerial
+                0x400034c0                GetUartErrorReg
+                0x40002e00                fake_SER_0_ISR()
+                0x400030e4                SER_8_ISR
+                0x40002ea8                real_SER_1_ISR
+                0x40004750                real_SER_4_ISR
+                0x40003708                fShowSerialData(__sFILE*)
+                0x40004650                real_SER_8_ISR
+                0x40002fe4                fake_SER_5_ISR()
+                0x4000303c                SER_6_ISR
+                0x40002ee8                fake_SER_2_ISR()
+                0x40003638                SerialSendComplete
+                0x40003188                SerialEnableTxFlow
+                0x400031d0                SerialEnableRxFlow
+                0x40004690                real_SER_7_ISR
+                0x40002b30                DoSerIsr(int)
+                0x400033bc                Serial485HalfDupMode
+                0x40004790                real_SER_3_ISR
+                0x40003138                SER_9_ISR
+                0x40002f40                SER_3_ISR
+                0x40003134                fake_SER_9_ISR()
+                0x40002fe8                SER_5_ISR
+                0x400045d4                real_SER_0_ISR
+                0x4000330c                SerialEnableHwRxFlow
+                0x40003cdc                serread
+                0x40003ffc                BasePutChar(int, unsigned char)
+                0x40003cf8                BaseGetChar(int)
+                0x400047d0                real_SER_2_ISR
+                0x40002f94                SER_4_ISR
+                0x40002e58                SER_1_ISR
+                0x40003af0                serreadwto
+                0x40004120                InitializeMaps()
+                0x40002e04                SER_0_ISR
+                0x40003f00                serwriteaddress
+                0x40003090                SER_7_ISR
+                0x40004610                real_SER_9_ISR
+                0x40003db8                serwrite
+                0x400036b8                SerialExpandRxBuffer(int, int)
+                0x40003acc                serexternalclose
+                0x40003038                fake_SER_6_ISR()
+                0x40002eec                SER_2_ISR
+                0x40002f90                fake_SER_4_ISR()
+                0x400030e0                fake_SER_8_ISR()
+                0x40002e54                fake_SER_1_ISR()
+                0x40002f3c                fake_SER_3_ISR()
+                0x400046d0                real_SER_6_ISR
+                0x4000321c                SerialEnableHwTxFlow
+ *fill*         0x4000480e        0x2 00
+ .text          0x40004810     0x1d06 C:\nburn/lib/MOD5441X.a(pins.o)
+                0x40004810                PinIO::set(unsigned char)
+                0x40005da4                PinIO::function(int)
+                0x40005308                PinIO::drive()
+                0x400064b4                CReadPin
+                0x40005734                PinIO::read()
+                0x400064d8                CGPInPin
+ *fill*         0x40006516        0x2 00
+ .text          0x40006518      0xaf4 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+                0x400066b8                HiResTimer::HiResTimer(int)
+                0x40006618                Timer3_Interrupt
+                0x40006c7c                HiResTimer::clockGenerator(double)
+                0x400066ec                HiResTimer::operator=(HiResTimer const&)
+                0x40006570                Timer1_Interrupt
+                0x40006d30                HiResTimer::pollingDelay(double)
+                0x4000651c                Timer0_Interrupt
+                0x40006748                HiResTimer::getHiResTimer(int)
+                0x40006fa0                real_Timer1_Interrupt
+                0x4000656c                fake_Timer1_Interrupt()
+                0x40006870                HiResTimer::toString()
+                0x40006db0                HiResTimer::readTime()
+                0x40006668                HiResTimer::releaseTimer()
+                0x40006a80                HiResTimer::init(double)
+                0x40006614                fake_Timer3_Interrupt()
+                0x40006518                fake_Timer0_Interrupt()
+                0x40006f34                real_Timer2_Interrupt
+                0x400065c0                fake_Timer2_Interrupt()
+                0x40006ec8                real_Timer3_Interrupt
+                0x400069f8                HiResTimer::delay_uSec(unsigned long)
+                0x40006684                HiResTimer::HiResTimer(int)
+                0x40006cf0                HiResTimer::pollingDelay_refTicks(unsigned long)
+                0x400068f0                HiResTimer::init_ticks(unsigned long)
+                0x400065c4                Timer2_Interrupt
+                0x40006b9c                real_Timer0_Interrupt
+                0x40006c08                HiResTimer::delay(double)
+ .text          0x4000700c       0xbc C:\nburn/lib/MOD5441X.a(localio.o)
+                0x4000700c                GetUartRecord
+                0x40007050                GetDefUart
+                0x40007064                LocalInByte
+                0x40007080                LocalOutByte
+                0x400070b4                LocalCharAvail
+ *fill*         0x400070c8        0x8 00
+ .text          0x400070d0      0x44a C:\nburn/lib/NetBurner.a(ucosmcfa.o)
+                0x400071b0                OSDebugTraceHalt
+                0x400070d0                OSStartHighRdy
+                0x400071c0                TrapOutByte
+                0x400071f0                memcpy
+                0x400071f0                fmemcpy
+                0x400070f0                OSCtxSw
+                0x400071e0                TrapCharAvail
+                0x40007120                OSIntCtxSw
+                0x400071d0                TrapInByte
+                0x40007150                OSTickISR
+                0x400072c0                memcpysum
+                0x40007190                OSSetupVBR
+                0x400074f0                GetSR_IntLevel
+                0x40007450                memset
+                0x40007450                fmemset
+                0x40007500                SetSR_IntLevel
+ *fill*         0x4000751a        0x2 00
+ .text          0x4000751c        0x8 C:\nburn/lib/NetBurner.a(software_init.o)
+                0x4000751c                software_init_hook
+ .text          0x40007524      0x320 C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+                0x4000780c                OSTaskCreate
+                0x40007838                TopOfStackKillfunction
+                0x400075e0                OSTaskCreatewName
+                0x40007524                OSTCBInit
+                0x4000783c                KillFunctionLink
+ .text          0x40007844     0x1e0c C:\nburn/lib/NetBurner.a(ucos.o)
+                0x400091f0                OSCritEnterNoWait
+                0x400078f4                UCOSWAITS_HERE
+                0x40008e9c                OSFifoPostFirst
+                0x40009264                OSCritLeave
+                0x40008ffc                getpid
+                0x40007b00                OSLock
+                0x4000896c                OSQPostFirst
+                0x4000937c                OSTaskID
+                0x40008758                OSQPendNoWait
+                0x40009394                OSSetName
+                0x400093bc                OSIntExit
+                0x40007f84                OSSemPendNoWait
+                0x40007c6c                OSTaskDelete
+                0x40007b28                OSUnlock
+                0x40009014                OSCritInit
+                0x400087d4                OSQPost
+                0x40009050                OSCritEnter
+                0x40008b58                OSFifoPend
+                0x40007de4                OSSemPend
+                0x40008150                OSMboxInit
+                0x4000838c                OSMboxPost
+                0x40008b0c                OSFifoInit
+                0x40008570                OSQPend
+                0x40007870                OSSched
+                0x4000792c                OSTimeDly
+                0x40007fc4                OSSemPost
+                0x40007b68                OSChangePrio
+                0x40007ad0                OSTCBGetFree
+                0x40007904                OSIntEnterWAS
+                0x40008344                OSMboxPendNoWait
+                0x40008d3c                OSFifoPost
+                0x40007d84                OSSemInit
+                0x40009458                OSStart
+                0x400079e4                OSTimeTick
+                0x400084fc                OSQInit
+                0x400093a8                OSTaskName
+                0x40008cec                OSFifoPendNoWait
+                0x400081a4                OSMboxPend
+                0x400094d4                OSInit
+                0x400079c4                OSChangeTaskDly
+ .text          0x40009650      0x1b8 C:\nburn/lib/NetBurner.a(ucosmain.o)
+                0x4000972c                __malloc_unlock
+                0x40009650                UCosBegin
+                0x4000974c                balloc_lock
+                0x4000978c                UCosSetup
+                0x40009710                balloc_unlock
+                0x4000976c                __malloc_lock
+ .text          0x40009808      0x5f8 C:\nburn/lib/NetBurner.a(fileio.o)
+                0x40009998                ioctl
+                0x40009808                isatty
+                0x400098f0                CurrentStdioFD
+                0x40009968                lseek
+                0x40009840                ReplaceStdio
+                0x40009a04                write
+                0x40009824                fstat
+                0x40009b34                rawwrite
+                0x40009d40                stdioinbyte
+                0x40009bb8                read
+                0x40009920                outbyte
+                0x40009980                open
+                0x40009938                charavail
+                0x40009914                fcntl
+                0x40009db8                close
+ .text          0x40009e00      0x684 C:\nburn/lib/NetBurner.a(system.o)
+                0x4000a184                UpdateConfigRecord_Num
+                0x40009e54                RawGetConfig
+                0x40009e00                isvalidcr
+                0x4000a340                SetupDialog
+                0x40009f10                ReadLine
+                0x4000a32c                UpdateConfigRecord
+                0x40009e80                GetValidConfig
+                0x4000a0d0                IpQuestion
+                0x40009ea8                ShowChange
+ .text          0x4000a484       0x78 C:\nburn/lib/NetBurner.a(main.o)
+                0x4000a4bc                main
+                0x4000a484                __do_global_ctors
+ .text          0x4000a4fc      0xc84 C:\nburn/lib/NetBurner.a(utils.o)
+                0x4000aee8                fShowMac
+                0x4000a6ec                FancyDump(unsigned char*, int)
+                0x4000b01c                ShowCounters
+                0x4000a634                convertHexAsciiToBinary
+                0x4000a8ac                ShowData
+                0x4000af44                snShowIP
+                0x4000a4fc                kill
+                0x4000b084                fShowCounters
+                0x4000aea8                fShowIP
+                0x4000a50c                _fini
+                0x4000a818                ShowIP
+                0x4000a518                AsciiToIp
+                0x4000b0fc                sShowCounters
+                0x4000afe8                DiagMenuPicker(int, unsigned char)
+                0x4000a854                ShowMac
+                0x4000a59c                convertBinaryToHexAscii
+                0x4000a6d4                __builtin_delete
+                0x4000a504                _exit
+                0x4000af88                snShowMac
+ .text          0x4000b180     0x1aaa C:\nburn/lib/NetBurner.a(ip.o)
+                0x4000b5d0                FixUpICMP(IPPKT*, unsigned char, unsigned char, unsigned char*, unsigned short)
+                0x4000b340                IsMultiCast(unsigned long)
+                0x4000bf70                FixHeaderAndSend(pool_buffer*, IPPKT*)
+                0x4000b8e4                DoIPPacket(pool_buffer*, EFRAME*, unsigned short)
+                0x4000b23c                GetSum20
+                0x4000c26c                PingViaInterface
+                0x4000b884                SaveError(pool_buffer*)
+                0x4000bbf4                process_icmp(pool_buffer*, IPPKT*, unsigned short)
+                0x4000b47c                IpProcessEthernetPacket
+                0x4000baa8                FixHeaderAndSendViaInterface(pool_buffer*, IPPKT*, int)
+                0x4000c4e8                ShowIPBuffer(pool_buffer*)
+                0x4000c0d0                SendICMPError(pool_buffer*, unsigned char, unsigned char)
+                0x4000b6e8                InitializeStack(unsigned long, unsigned long, unsigned long, unsigned long)
+                0x4000b390                GetData(IPPKT*)
+                0x4000b80c                InitializeCStack
+                0x4000c37c                Ping
+                0x4000b180                GetSum
+                0x4000b818                GetMultiHomeInterface(unsigned long, int)
+                0x4000b8c8                IsMyIp
+                0x4000b68c                IsBroadCast(unsigned long, int)
+                0x4000b638                KillStack
+                0x4000b3bc                PrepareIPOutput(pool_buffer*, unsigned long, unsigned short)
+                0x4000b360                GetMultiAddress(unsigned long)
+                0x4000c1a4                SendPing
+                0x4000b274                GetSumHdr
+                0x4000b644                IsLocal(unsigned long, int)
+                0x4000c3b0                GetLocalIPInterface(unsigned long)
+                0x4000c408                AddInterface(unsigned long, unsigned long, unsigned long, int)
+                0x4000bd10                IPTask(void*)
+ *fill*         0x4000cc2a        0x2 00
+ .text          0x4000cc2c      0xef8 C:\nburn/lib/NetBurner.a(buffers.o)
+                0x4000cd10                FreeBufferList
+                0x4000d11c                fifo_buffer_storage::Full()
+                0x4000d20c                ShowBuffer
+                0x4000d4f0                fifo_buffer_storage::Reset(unsigned char)
+                0x4000cd40                InitBuffers
+                0x4000ce6c                buffer_list::InsertBefore(pool_buffer*, pool_buffer*)
+                0x4000d044                GetBuffer
+                0x4000d1ec                fifo_buffer_storage::fifo_buffer_storage(unsigned char, unsigned char)
+                0x4000d104                fifo_buffer_storage::Empty()
+                0x4000d968                fifo_buffer_storage::ReadDatawSum(unsigned char*, int, unsigned long&)
+                0x4000d0f0                fifo_buffer_storage::SpaceUsed()
+                0x4000cc2c                ShowBuffers()
+                0x4000cc58                buffer_list::InsertHead(pool_buffer*)
+                0x4000d338                GetFreeCount
+                0x4000cc3c                IncUsageCount
+                0x4000d1cc                fifo_buffer_storage::fifo_buffer_storage(unsigned char, unsigned char)
+                0x4000ce08                buffer_list::InsertTail(pool_buffer*)
+                0x4000d5b0                fifo_buffer_storage::~fifo_buffer_storage()
+                0x4000d6a0                fifo_buffer_storage::SetMaxBuffers(unsigned char)
+                0x4000d3b0                fifo_buffer_storage::ReadData(unsigned char*, int)
+                0x4000d164                fifo_buffer_storage::Init(unsigned char, unsigned char)
+                0x4000cc34                DumpBuffers()
+                0x4000cfdc                buffer_list::RemoveHead()
+                0x4000cf54                buffer_list::Remove(pool_buffer*)
+                0x4000d090                buffer_list::RemoveTail()
+                0x4000d5c4                fifo_buffer_storage::LongSpaceAvail()
+                0x4000d730                fifo_buffer_storage::WriteData(unsigned char*, int)
+                0x4000ccc8                FreeBuffer
+                0x4000cee0                buffer_list::InsertAfter(pool_buffer*, pool_buffer*)
+                0x4000d67c                fifo_buffer_storage::SpaceAvail()
+                0x4000d59c                fifo_buffer_storage::~fifo_buffer_storage()
+ .text          0x4000db24     0x1922 C:\nburn/lib/NetBurner.a(arp.o)
+                0x4000e858                FindAddArp(unsigned long)
+                0x4000dc80                sendGratuitousArp(int)
+                0x4000db4c                MacEqual(MACADR, MACADR)
+                0x4000de88                InitializeArp()
+                0x4000df30                FindArp(unsigned long)
+                0x4000e18c                SendArp(ArpRecord*, int)
+                0x4000de3c                GetInterface(unsigned long)
+                0x4000f13c                AddCheckArp(MACADR*, unsigned long, int)
+                0x4000dbac                SetMac(ArpRecord*, MACADR, int)
+                0x4000e694                DeleteArpFromIp(unsigned long)
+                0x4000e034                GetArpMacFromIp(unsigned long, MACADR&)
+                0x4000ec64                RouteOutVia(EFRAME*, unsigned long, pool_buffer*, int)
+                0x4000e0e8                GetProperInterface(unsigned long)
+                0x4000e7a8                FreeOneArp()
+                0x4000f1c8                processArp(pool_buffer*, EFRAME*)
+                0x4000dc44                NeedsArp(int)
+                0x4000e2bc                GetNextArp(ArpRecord*)
+                0x4000dd50                RawSendArp(ArpRecord*, unsigned long, int)
+                0x4000e6b4                AgeArp()
+                0x4000ee84                RouteOut(EFRAME*, unsigned long, pool_buffer*)
+                0x4000e384                ShowArp()
+                0x4000e4c4                DeleteArp(ArpRecord*)
+                0x4000e32c                GetFirstArp()
+                0x4000e1f8                GetSrcIp
+                0x4000eaf4                IsMyAddressUsedArpDetect(unsigned short, int)
+                0x4000db44                Cleanup()
+                0x4000db24                IsNull(ArpRecord*)
+                0x4000e418                fShowArp(__sFILE*)
+                0x4000e08c                AddPending(MACADR*, unsigned long, int)
+ *fill*         0x4000f446        0x2 00
+ .text          0x4000f448     0x13dc C:\nburn/lib/NetBurner.a(udp.o)
+                0x4000fd10                UDPPacket::Send(unsigned long, unsigned char)
+                0x4000f590                UDPPacket::SetDestinationPort(unsigned short)
+                0x4000f654                UDPPacket::GetPacketId()
+                0x4000f6a0                UDPPacket::GetSourceAddress()
+                0x4001045c                UDPPacket::UDPPacket()
+                0x4000fa4c                UDPPacket::AddDataByte(unsigned char)
+                0x4000fe28                UDPPacket::SendAndKeep(unsigned long, unsigned char)
+                0x4000f6c4                RegisterUDPFifo(unsigned short, os_fifo*)
+                0x4000fa94                UDPPacket::AddData(char const*)
+                0x4000f4bc                UDPPacket::UDPPacket(pool_buffer*)
+                0x4000fb54                UDPPacket::SendViaInterface(unsigned long, int, unsigned char)
+                0x4000f63c                UDPPacket::GetIpPacket()
+                0x4000fc7c                UDPPacket::SendVia(unsigned long, unsigned long, unsigned char)
+                0x4000fe98                UDPPacket::~UDPPacket()
+                0x4000f448                GetUdpFifoRec(unsigned short)
+                0x4000f5cc                UDPPacket::GetDataBuffer()
+                0x4000f78c                RegisterUDPFifoWithNotify(unsigned short, os_fifo*, void (*)(os_fifo*, unsigned short))
+                0x4000f508                UDPPacket::UDPPacket(pool_buffer*)
+                0x4000f600                UDPPacket::GetDataSize() const
+                0x4000ff04                ProcessIDPacket(UDPPacket&, int)
+                0x4000fa70                UDPPacket::AddDataWord(unsigned short)
+                0x400104a0                process_udp(pool_buffer*, IPPKT*, unsigned short)
+                0x4000fac4                UDPPacket::Validate()
+                0x4000f5ac                UDPPacket::GetDestinationPort() const
+                0x4000f9a0                UDPPacket::AddData(unsigned char const*, unsigned short)
+                0x4000f854                UnregisterUDPFifo(unsigned short)
+                0x40010764                UDPPacket::UDPPacket(os_fifo*, unsigned long)
+                0x4000f5e0                UDPPacket::SetDataSize(unsigned short)
+                0x4000f91c                FixIDDataPacket(UDPPacket&, _InterfaceBlock*)
+                0x4000f628                UDPPacket::ResetData()
+                0x4000fe70                UDPPacket::~UDPPacket()
+                0x400107c4                UDPPacket::UDPPacket(os_fifo*, unsigned long)
+                0x4000fcbc                UDPPacket::SendAndKeepVia(unsigned long, unsigned long, unsigned char)
+                0x4000f554                UDPPacket::SetSourcePort(unsigned short)
+                0x4000f570                UDPPacket::GetSourcePort() const
+                0x4000f978                FixIDDataPacket(UDPPacket&, int)
+                0x4000fec0                UDPPacket::UDPPacket()
+                0x4000f67c                UDPPacket::GetDestinationAddress()
+ .text          0x40010824     0x5416 C:\nburn/lib/NetBurner.a(tcp.o)
+                0x40011edc                SendTcpRst(IPPKT*)
+                0x40010e60                GetTcpState(int)
+                0x4001218c                InitTCP()
+                0x40012c70                _Socket_Private_read
+                0x40010e14                ShortSocketList::ShortSocketList()
+                0x40010ec0                SetOutOfOrderbuffers(int, unsigned char)
+                0x40010a94                GetSocketRemotePort(int)
+                0x40011634                socket_struct::MyAdvertisedWindow()
+                0x400114d0                SetSocketTxBuffers(int, int)
+                0x40010ba8                setsockoption(int, int)
+                0x40011990                TcpSend(socket_struct*, unsigned long, pool_buffer*, unsigned short, unsigned char)
+                0x40014dbc                TCPTimerTask(void*)
+                0x400155ac                process_tcp(pool_buffer*, IPPKT*, unsigned short)
+                0x400132cc                socket_struct::ProcessRST()
+                0x40015b70                NoBlockconnectvia(unsigned long, unsigned short, unsigned short, unsigned long)
+                0x40010f04                TcpGetLastRxTime(int)
+                0x400133e8                abortsocket
+                0x400137cc                socket_struct::ProcessDataSegment(TCPPKT*, unsigned short, unsigned char*, pool_buffer*&)
+                0x400159c8                connectvia(unsigned long, unsigned short, unsigned short, unsigned long, unsigned long)
+                0x400127a4                HashSocketList::RemoveSocket(socket_struct*) const
+                0x40013e64                _Socket_Private_write
+                0x40010be0                getsockoption(int)
+                0x400144ac                socket_struct::ProcessAck(TCPPKT*)
+                0x40012c8c                socket_struct::SaveData(unsigned char*, unsigned short, unsigned char)
+                0x40012494                GetTcpRtxCount(int)
+                0x40010988                fixoverlap(unsigned long, unsigned long, unsigned long&, unsigned long&)
+                0x40012f6c                socket_struct::SetTimer(unsigned long)
+                0x40015b48                connect(unsigned long, unsigned short, unsigned short, unsigned long)
+                0x40010c6c                HashSocketList::HashSocketList()
+                0x400129e8                GetTcpSocket(TCPPKT*, unsigned long)
+                0x40015bc0                NoBlockConnect(unsigned long, unsigned short, unsigned short, unsigned long)
+                0x40011150                TcpGetRxBufferSpaceUsed(int)
+                0x40013aac                socket_struct::DoRawSend()
+                0x40011190                ShowFdTcpSocket(int)
+                0x40011454                socket_struct::ClearPending(int)
+                0x40012508                ShortSocketList::findsocket(unsigned short, unsigned short, unsigned long) const
+                0x40015ac0                connect(unsigned long, unsigned short, unsigned short, unsigned long, unsigned long)
+                0x40012420                TcpSendKeepAlive(int)
+                0x40010a04                getsocketerror(int)
+                0x40010c54                EnableTcpDebug(unsigned short)
+                0x40014cc8                socket_struct::ProcessTimer()
+                0x40013988                socket_struct::SetUpNextRetransmit()
+                0x40010c64                HashSocketList::HashSocketList()
+                0x40012aa0                SockReadWithTimeout
+                0x40012120                GetFreeSocketCount()
+                0x40014758                socket_struct::ProcessFIN(TCPPKT*, unsigned short)
+                0x400116ac                FixHeaderAndSendTcp(pool_buffer*, IPPKT*, socket_struct*)
+                0x40010c10                setsocketackbuffers(int, unsigned char)
+                0x40010b88                socket_struct::CleanUpDeletedListener()
+                0x40010944                FindListenSocket(unsigned short, unsigned long)
+                0x400117c8                TcpSendwSum(socket_struct*, unsigned long, pool_buffer*, unsigned short, unsigned char, unsigned long)
+                0x40012fec                socket_struct::DoCleanup()
+                0x40012d7c                socket_struct::TestOutofOrder()
+                0x40010f74                TcpGetLastRxInterval(int)
+                0x40010824                GetFirstSeq()
+                0x4001238c                FREESOCKET(socket_struct*)
+                0x400131c4                ShortSocketList::AddSocket(socket_struct*)
+                0x40014390                socket_struct::DoRetransmit(unsigned char)
+                0x40010e24                ShortSocketList::Init()
+                0x400125ac                ShortSocketList::processTick()
+                0x400156b8                socket_struct::CoreConnect(unsigned long, unsigned short, unsigned short, unsigned long)
+                0x400148cc                _Socket_Private_close
+                0x40014a0c                accept(int, unsigned long*, unsigned short*, unsigned short)
+                0x40010e1c                ShortSocketList::ShortSocketList()
+                0x40011510                SetSocketRxBuffers(int, int)
+                0x40013608                listen(unsigned long, unsigned short, unsigned char)
+                0x40010c74                HashSocketList::Init() const
+                0x40010c8c                ShortSocketList::GetFreeShort()
+                0x40010a64                GetSocketRemoteAddr(int)
+                0x40012910                HashSocketList::findsocket(unsigned short, unsigned short, unsigned long) const
+                0x400110e4                WaitForSocketFlush(int, unsigned long)
+                0x40010c5c                DumpTcpPacket(IPPKT*)
+                0x40013710                RemoveFromUserCloseList(socket_struct*)
+                0x40010868                ValidateTCP(IPPKT*, unsigned short)
+                0x4001265c                ShortSocketList::process(pool_buffer*, TCPPKT*, unsigned long) const
+                0x40010854                socket_struct::SetState(int)
+                0x40011550                socket_struct::processoptions(pool_buffer*, TCPPKT*, IPPKT*)
+                0x4001408c                socket_struct::DoClose(int)
+                0x4001351c                GetFreeSocket()
+                0x40010ac4                GetSocketLocalPort(int)
+                0x4001285c                HashSocketList::AddSocket(socket_struct*) const
+                0x40010dd4                ShortSocketList::FreeShort(ShortSocket*) const
+                0x40010af4                socket_struct::CalcRTO(unsigned long)
+                0x40011e84                socket_struct::OpenWindow()
+                0x40011ff0                SendTcpSynRst(IPPKT*)
+                0x40011094                TcpAllDataAcked(int)
+                0x40013de4                clrsockoption(int, int)
+                0x40010f38                TcpGetSocketState(int)
+                0x40010c4c                DumpTcpDebug()
+                0x40010a34                GetSocketLocalAddr(int)
+                0x40014ee4                socket_struct::process(pool_buffer*, TCPPKT*)
+                0x40010e94                RegisterTCPReadNotify
+                0x40011a20                socket_struct::SendState(unsigned short, pool_buffer*)
+ *fill*         0x40015c3a        0x2 00
+ .text          0x40015c3c      0x23c C:\nburn/lib/NetBurner.a(extraio.o)
+                0x40015c6c                ExpandWrite(int, char const*, int)
+                0x40015c9c                ExpandClose(int)
+                0x40015ccc                InitExtras()
+                0x40015d08                GetExtraFD
+                0x40015c3c                ExpandRead(int, char*, int)
+                0x40015e3c                GetFreeExtraFDCount
+                0x40015d98                FreeExtraFd
+                0x40015dd0                GetExtraData
+                0x40015e04                GetExtraExtraData
+ .text          0x40015e78      0x69e C:\nburn/lib/NetBurner.a(iosys.o)
+                0x400162b4                SetDataAvail
+                0x40016154                writeall
+                0x400161b4                RawCheckSelects()
+                0x40016260                SetHaveError
+                0x400162f0                RemoveSelect(PendingSelect*)
+                0x40016278                SetWriteAvail
+                0x40016044                ZeroWaitSelect
+                0x40016370                AddSelect(PendingSelect*)
+                0x40015f98                FD_ISSET
+                0x40015f40                ClrDataAvail
+                0x400163c8                select
+                0x40015f28                ClrWriteAvail
+                0x4001622c                CheckSelects()
+                0x400160f8                writestring
+                0x40016008                countbits(fd_set*)
+                0x40015e78                FD_OVERLAP(fd_set*, fd_set*)
+                0x400160c8                dataavail
+                0x40015eb4                FD_ZERO
+                0x40015f58                FD_SET
+                0x40015f10                ClrHaveError
+                0x40015fe4                countdwbits(unsigned long)
+                0x40016468                ReadWithTimeout
+                0x40015ecc                FD_CLR
+ *fill*         0x40016516        0x2 00
+ .text          0x40016518      0x71c C:\nburn/lib/NetBurner.a(autoip.o)
+                0x40016754                AutoIPClient::AutoIPClient(int)
+                0x40016634                AutoIPClient::stop()
+                0x40016a80                AutoIPClient::arpCheck()
+                0x400165a4                AutoIPClient::getNextTick()
+                0x400168dc                AutoIPClient::announce()
+                0x40016558                AutoIPClient::addressCollision()
+                0x40016594                AutoIPClient::getState()
+                0x400169b8                AutoIPClient::startArp()
+                0x40016bdc                AutoIPClient::staticTimeTick()
+                0x40016518                AutoIPClient::start()
+                0x400167d0                AutoIPClient::AutoIPClient(int)
+                0x400165b4                AutoIPClient::tickDelay(int)
+                0x400165dc                AutoIPClient::negotiate()
+                0x40016920                AutoIPClient::setRNG()
+                0x400166f0                AutoIPClient::~AutoIPClient()
+                0x40016b6c                AutoIPClient::timeTick()
+                0x4001666c                AutoIPClient::restart()
+                0x4001684c                AddAutoIPInterface(int)
+                0x4001668c                AutoIPClient::~AutoIPClient()
+                0x4001697c                AutoIPClient::generateNewIPAddr()
+ .text          0x40016c34        0x0 C:\nburn/lib/NetBurner.a(defappname.o)
+ .text          0x40016c34      0x4b2 C:\nburn/lib/NetBurner.a(netinterface.o)
+                0x40017018                InitializeNetwork(void (*)(pool_buffer*, EFRAME*, unsigned short), void (*)(pool_buffer*, EFRAME*))
+                0x40016cec                InterfaceIP(int)
+                0x40016de0                GetEframe(pool_buffer*)
+                0x40016fb8                SaveIfConfig(ConfigRecord*, int)
+                0x40016eac                RegisterMultiHomeInterface(_InterfaceBlock*)
+                0x40016c34                GetFirstInterface()
+                0x40016fe8                GetIfConfig(int)
+                0x40016d9c                InterfaceMAC(int)
+                0x40016c98                GetInterFaceBlock(int)
+                0x40016d18                InterfaceDNS(int)
+                0x40016d44                InterfaceMASK(int)
+                0x40016c54                GetnextInterface(int)
+                0x40017084                TransmitBuffer(pool_buffer*, int)
+                0x40016e4c                DisableMulticast(MACADR, int)
+                0x40016f14                RegisterInterface(_InterfaceBlock*)
+                0x40016df4                EnableMulticast(MACADR, int)
+                0x40016f84                Removeinterface(int)
+                0x40016ea4                StopNetworks()
+                0x40016cc4                GetInterfaceNumber(_InterfaceBlock*)
+                0x40016d70                InterfaceGate(int)
+ *fill*         0x400170e6        0x2 00
+ .text          0x400170e8      0x5c8 C:\nburn/lib/NetBurner.a(taskmon.o)
+                0x400175f0                ProcessTaskPacket(UDPPacket&, int)
+                0x400170e8                EnableTaskMonitor()
+                0x400170fc                BufferDumpTCBState(os_tcb*)
+ .text          0x400176b0     0x131e C:\nburn/lib/NetBurner.a(smarttrap.o)
+                0x400176e4                EnableSmartTraps()
+                0x400177c4                WalkStack(os_tcb*, unsigned long, unsigned long)
+                0x40017ca4                smart_trap_asm
+                0x40017ac4                Local_OutTCBState(os_tcb*, unsigned long, unsigned long)
+                0x400176b0                SafeRead(unsigned long)
+                0x40017700                Local_OutHex(unsigned long, int)
+                0x40017c9c                Smart_Trap_Holder()
+                0x40017794                Local_OutString(char const*)
+                0x40017840                Local_ShowTaskName(os_tcb volatile*)
+ *fill*         0x400189ce        0x2 00
+ .text          0x400189d0      0x538 C:\nburn/lib/NetBurner.a(autoupdate.o)
+                0x40018e58                ProcessAutoUpdatePacket(UDPPacket&)
+                0x40018b8c                DoData(UDPPacket&)
+                0x400189d0                EnableAutoUpdate
+                0x400189e4                DoReboot()
+                0x40018a14                DoExecute(UDPPacket&, int)
+                0x40018c7c                DoStart(UDPPacket&)
+ .text          0x40018f08       0x52 C:\nburn/lib/NetBurner.a(device.o)
+                0x40018f28                DeviceInitializeSem
+                0x40018f08                DeviceGetQspiSem()
+                0x40018f18                DeviceGetI2cSem()
+ *fill*         0x40018f5a        0x2 00
+ .text          0x40018f5c       0x26 C:\nburn/lib/NetBurner.a(new_ops.o)
+                0x40018f5c                operator new(unsigned long)
+ *fill*         0x40018f82        0x2 00
+ .text          0x40018f84     0x17ce C:\nburn/lib/MOD5441X.a(ethernet.o)
+                0x40019b68                AddEthernetInterface()
+                0x40019168                StopEnet()
+                0x40019620                ResetEnet()
+                0x40019d88                ProcessDuplexStatus()
+                0x40018f84                read_eth_addr(MACADR*)
+                0x40019c5c                WarmEnetReset()
+                0x4001a5a4                real_rxenetisr
+                0x40018fb0                fake_rxenetisr()
+                0x40018fb4                rxenetisr
+                0x40019004                fake_txenetisr()
+                0x40019d58                EnablePHY()
+                0x400191bc                EthMultifunc(MACADR, unsigned char)
+                0x40019058                GetMII(unsigned char, unsigned char)
+                0x400191d8                ResetEnetPart2()
+                0x40019008                txenetisr
+                0x400190dc                SetMII(unsigned char, unsigned char, unsigned short)
+                0x400199b4                InitializeEthernet()
+                0x4001a200                real_txenetisr
+                0x40019198                DisablePHY()
+                0x40019cf8                ManualEthernetConfig(unsigned char, unsigned char, unsigned char)
+                0x4001a0ac                EthTransmitBuffer(pool_buffer*)
+                0x4001a3f8                Ether_ProcessTask(void*)
+ *fill*         0x4001a752        0x2 00
+ .text          0x4001a754     0x16e8 C:\nburn/lib/MOD5441X.a(etherprint.o)
+                0x4001bd64                EtherLink()
+                0x4001a754                EtherSpeed100()
+                0x4001bd58                denet()
+                0x4001b9f8                ShowFECRegisters()
+                0x4001a82c                ShowMII(unsigned char, unsigned char, char const*, unsigned short)
+                0x4001bd98                elink()
+                0x4001bd4c                dEnet()
+                0x4001a774                SwitchMIIPage(unsigned long)
+                0x4001a764                EtherDuplex()
+                0x4001a7a0                showbinary(unsigned short, unsigned short)
+                0x4001a894                ShowPhyterMII()
+ .text          0x4001be3c      0x196 C:\nburn/lib/MOD5441X.a(emulticast.o)
+                0x4001bf20                EthDisableMulticast(MACADR)
+                0x4001be7c                EthEnableMulticast(MACADR)
+                0x4001be3c                GetMultiCastCRC(MACADR)
+ *fill*         0x4001bfd2        0x2 00
+ .text          0x4001bfd4      0x1f2 C:\nburn/lib/NetBurner.a(netrx.o)
+                0x4001bfd4                NetDoRX(pool_buffer*, unsigned short, int)
+ *fill*         0x4001c1c6        0x2 00
+ .text          0x4001c1c8      0xba0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_double.o)
+                0x4001ccc6                __cmpdf2
+                0x4001c228                __adddf3
+                0x4001cb90                __negdf2
+                0x4001c8a0                __divdf3
+                0x4001cbee                __cmpdf2_internal
+                0x4001c6c4                __muldf3
+                0x4001c222                __subdf3
+ .text          0x4001cd68       0x74 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_floatex.o)
+                0x4001cd74                $_exception_handler
+                0x4001cd68                __clear_sticky_bit
+ .text          0x4001cddc       0x22 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_eqdf2.o)
+                0x4001cddc                __eqdf2
+ *fill*         0x4001cdfe        0x2 00
+ .text          0x4001ce00       0x22 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_nedf2.o)
+                0x4001ce00                __nedf2
+ *fill*         0x4001ce22        0x2 00
+ .text          0x4001ce24       0x22 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_gtdf2.o)
+                0x4001ce24                __gtdf2
+ *fill*         0x4001ce46        0x2 00
+ .text          0x4001ce48       0x22 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_gedf2.o)
+                0x4001ce48                __gedf2
+ *fill*         0x4001ce6a        0x2 00
+ .text          0x4001ce6c       0x22 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_ltdf2.o)
+                0x4001ce6c                __ltdf2
+ *fill*         0x4001ce8e        0x2 00
+ .text          0x4001ce90       0x7a c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_fixunsdfsi.o)
+                0x4001ce90                __fixunsdfsi
+ *fill*         0x4001cf0a        0x2 00
+ .text          0x4001cf0c      0x49a c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(fpgnulib.o)
+                0x4001d38c                __fixsfsi
+                0x4001d074                __floatsidf
+                0x4001d14a                __extendsfdf2
+                0x4001d002                __floatunsidf
+                0x4001d30c                __fixdfsi
+                0x4001d130                __floatsisf
+                0x4001d1e4                __truncdfsf2
+                0x4001cf0c                __unordsf2
+                0x4001d116                __floatunsisf
+                0x4001cf6e                __unorddf2
+ *fill*         0x4001d3a6        0x2 00
+ .text          0x4001d3a8       0x14 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-atof.o)
+                0x4001d3a8                atof
+ .text          0x4001d3bc       0x1e c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-cxa_atexit.o)
+                0x4001d3bc                __cxa_atexit
+ *fill*         0x4001d3da        0x2 00
+ .text          0x4001d3dc        0xe c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-errno.o)
+                0x4001d3dc                __errno
+ *fill*         0x4001d3ea        0x2 00
+ .text          0x4001d3ec       0x24 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fiprintf.o)
+                0x4001d3ec                fiprintf
+ .text          0x4001d410        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-impure.o)
+ .text          0x4001d410       0x54 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-iprintf.o)
+                0x4001d410                _iprintf_r
+                0x4001d43a                iprintf
+ .text          0x4001d464       0x32 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-malloc.o)
+                0x4001d47e                malloc
+                0x4001d464                free
+ *fill*         0x4001d496        0x2 00
+ .text          0x4001d498      0x78c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-mallocr.o)
+                0x4001d498                _malloc_r
+ .text          0x4001dc24       0x54 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-printf.o)
+                0x4001dc24                printf
+                0x4001dc4e                _printf_r
+ .text          0x4001dc78       0x8a c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-puts.o)
+                0x4001dc78                _puts_r
+                0x4001dcec                puts
+ *fill*         0x4001dd02        0x2 00
+ .text          0x4001dd04       0x6a c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-rand.o)
+                0x4001dd1c                rand
+                0x4001dd04                srand
+ *fill*         0x4001dd6e        0x2 00
+ .text          0x4001dd70       0x4e c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-rget.o)
+                0x4001ddaa                __srget
+                0x4001dd70                __srget_r
+ *fill*         0x4001ddbe        0x2 00
+ .text          0x4001ddc0      0x1ee c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-setvbuf.o)
+                0x4001ddc0                setvbuf
+ *fill*         0x4001dfae        0x2 00
+ .text          0x4001dfb0       0xba c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-siprintf.o)
+                0x4001e00e                _siprintf_r
+                0x4001dfb0                siprintf
+ *fill*         0x4001e06a        0x2 00
+ .text          0x4001e06c      0x14c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-sniprintf.o)
+                0x4001e114                _sniprintf_r
+                0x4001e06c                sniprintf
+ .text          0x4001e1b8       0xba c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-sprintf.o)
+                0x4001e216                _sprintf_r
+                0x4001e1b8                sprintf
+ *fill*         0x4001e272        0x2 00
+ .text          0x4001e274       0x1a c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strlen.o)
+                0x4001e274                strlen
+ *fill*         0x4001e28e        0x2 00
+ .text          0x4001e290     0x174a c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o)
+                0x4001e2e2                _strtod_r
+                0x4001f9c0                strtod
+                0x4001f8da                strtof
+ *fill*         0x4001f9da        0x2 00
+ .text          0x4001f9dc     0x1280 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o)
+                0x40020c3e                vfiprintf
+                0x4001fa20                _vfiprintf_r
+ .text          0x40020c5c     0x1fac c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o)
+                0x40020ca0                _vfprintf_r
+                0x40022bea                vfprintf
+ .text          0x40022c08      0x124 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wbuf.o)
+                0x40022c08                __swbuf_r
+                0x40022d12                __swbuf
+ .text          0x40022d2c       0x7c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wcrtomb.o)
+                0x40022d2c                _wcrtomb_r
+                0x40022d8c                wcrtomb
+ .text          0x40022da8      0x130 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wcsrtombs.o)
+                0x40022da8                _wcsrtombs_r
+                0x40022eb6                wcsrtombs
+ .text          0x40022ed8      0x452 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wctomb_r.o)
+                0x40022ed8                _wctomb_r
+ *fill*         0x4002332a        0x2 00
+ .text          0x4002332c      0x130 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wsetup.o)
+                0x4002332c                __swsetup
+ .text          0x4002345c       0xe8 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-__atexit.o)
+                0x4002345c                __register_exitproc
+ .text          0x40023544     0x160a c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-dtoa.o)
+                0x400236f6                _dtoa_r
+ *fill*         0x40024b4e        0x2 00
+ .text          0x40024b50      0x198 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fflush.o)
+                0x40024b50                fflush
+ .text          0x40024ce8      0x25e c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-findfp.o)
+                0x40024d42                __sinit
+                0x40024dfa                __sfmoreglue
+                0x40024de8                _cleanup
+                0x40024dce                _cleanup_r
+                0x40024e68                __sfp
+ *fill*         0x40024f46        0x2 00
+ .text          0x40024f48      0x422 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-freer.o)
+                0x40025038                _free_r
+                0x40024f48                _malloc_trim_r
+ *fill*         0x4002536a        0x2 00
+ .text          0x4002536c      0x37e c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fvwrite.o)
+                0x4002536c                __sfvwrite_r
+ *fill*         0x400256ea        0x2 00
+ .text          0x400256ec       0xe4 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fwalk.o)
+                0x400256ec                _fwalk
+                0x4002575c                _fwalk_reent
+ .text          0x400257d0      0x800 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-gethex.o)
+                0x40025802                __hexdig_init
+                0x400258c8                __gethex
+ .text          0x40025fd0      0x1d2 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-hexnan.o)
+                0x4002600e                __hexnan
+ *fill*         0x400261a2        0x2 00
+ .text          0x400261a4       0xa6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-locale.o)
+                0x400261d2                _setlocale_r
+                0x400261a4                __locale_charset
+                0x400261b2                _localeconv_r
+                0x40026232                setlocale
+                0x400261c0                localeconv
+ *fill*         0x4002624a        0x2 00
+ .text          0x4002624c      0x178 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-makebuf.o)
+                0x4002624c                __smakebuf
+ .text          0x400263c4       0xd2 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-memchr.o)
+                0x400263c4                memchr
+ *fill*         0x40026496        0x2 00
+ .text          0x40026498       0xb6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-memmove.o)
+                0x40026498                memmove
+ *fill*         0x4002654e        0x2 00
+ .text          0x40026550      0xc78 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-mprec.o)
+                0x400268a4                _mprec_log10
+                0x4002695a                __any_on
+                0x40026a00                _Balloc
+                0x40026812                __ratio
+                0x40026f28                __i2b
+                0x40026722                __b2d
+                0x400270f0                __s2b
+                0x40026640                __mcmp
+                0x40026550                __hi0bits
+                0x4002700e                __pow5mult
+                0x40026d0c                __lshift
+                0x40026dba                __multiply
+                0x40026ab6                __d2b
+                0x40026916                __copybits
+                0x400266a0                __ulp
+                0x40026bcc                __mdiff
+                0x400265b4                __lo0bits
+                0x40026f4a                __multadd
+                0x400269c6                _Bfree
+ .text          0x400271c8      0x502 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-reallocr.o)
+                0x400271c8                _realloc_r
+ *fill*         0x400276ca        0x2 00
+ .text          0x400276cc      0x21c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-refill.o)
+                0x400276f0                __srefill_r
+ .text          0x400278e8       0x42 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-s_isinfd.o)
+                0x400278e8                __isinfd
+ *fill*         0x4002792a        0x2 00
+ .text          0x4002792c       0x34 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-s_isnand.o)
+                0x4002792c                __isnand
+ .text          0x40027960      0x162 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-stdio.o)
+                0x4002797e                __sseek
+                0x40027a70                __sread
+                0x40027960                __sclose
+                0x400279e0                __swrite
+ *fill*         0x40027ac2        0x2 00
+ .text          0x40027ac4       0x70 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strcmp.o)
+                0x40027ac4                strcmp
+ .text          0x40027b34       0x3e c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-writer.o)
+                0x40027b34                _write_r
+ *fill*         0x40027b72        0x2 00
+ .text          0x40027b74       0x92 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-callocr.o)
+                0x40027b74                _calloc_r
+ *fill*         0x40027c06        0x2 00
+ .text          0x40027c08       0x32 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-closer.o)
+                0x40027c08                _close_r
+ *fill*         0x40027c3a        0x2 00
+ .text          0x40027c3c       0xfe c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fclose.o)
+                0x40027c3c                _fclose_r
+                0x40027d24                fclose
+ *fill*         0x40027d3a        0x2 00
+ .text          0x40027d3c       0x36 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fstatr.o)
+                0x40027d3c                _fstat_r
+ *fill*         0x40027d72        0x2 00
+ .text          0x40027d74       0x3e c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-lseekr.o)
+                0x40027d74                _lseek_r
+ *fill*         0x40027db2        0x2 00
+ .text          0x40027db4       0x3e c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-readr.o)
+                0x40027db4                _read_r
+ *fill*         0x40027df2        0x2 00
+ .text          0x40027df4       0x22 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_ledf2.o)
+                0x40027df4                __ledf2
+ *fill*         0x40027e16        0x2 00
+ .text          0x40027e18       0x1a c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_nesf2.o)
+                0x40027e18                __nesf2
+ *fill*         0x40027e32        0x2 00
+ .text          0x40027e34       0x1a c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_gtsf2.o)
+                0x40027e34                __gtsf2
+ *fill*         0x40027e4e        0x2 00
+ .text          0x40027e50       0x1a c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_ltsf2.o)
+                0x40027e50                __ltsf2
+ *fill*         0x40027e6a        0x2 00
+ .text          0x40027e6c       0x72 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_muldi3.o)
+                0x40027e6c                __muldi3
+ *fill*         0x40027ede        0x2 00
+ .text          0x40027ee0      0x4f6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_udivdi3.o)
+                0x40027ee0                __udivdi3
+ *fill*         0x400283d6        0x2 00
+ .text          0x400283d8      0x4f8 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_umoddi3.o)
+                0x400283d8                __umoddi3
+ .text          0x400288d0      0x7ca c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_float.o)
+                0x40028d42                __divsf3
+                0x40028918                __subsf3
+                0x40028f36                __negsf2
+                0x40029028                __cmpsf2
+                0x40028f88                __cmpsf2_internal
+                0x40028c00                __mulsf3
+                0x4002891e                __addsf3
+ *fill*         0x4002909a        0x2 00
+ .text          0x4002909c        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_clz.o)
+ .text          0x4002909c       0x32 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtend.o
+                0x400290d0                . = ALIGN (0x10)
+ *fill*         0x400290ce        0x2 00
+ *(.text.*)
+                0x400290d0                . = ALIGN (0x10)
+ *(.eh_frame)
+ .eh_frame      0x400290d0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
+ .eh_frame      0x400290d0       0x40 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_udivdi3.o)
+ .eh_frame      0x40029110       0x2c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_umoddi3.o)
+                                 0x40 (size before relaxing)
+ .eh_frame      0x4002913c        0x4 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtend.o
+                0x40029140                . = ALIGN (0x10)
+ *fill*         0x40029140        0x0 00
+ *(.gnu.linkonce.t.*)
+                0x40029140                . = ALIGN (0x4)
+                0x40029140                __CTOR_LIST__ = .
+ *(.ctors)
+ .ctors         0x40029140        0x4 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
+ .ctors         0x40029144        0x4 C:\nburn/lib/MOD5441X.a(serial.o)
+ .ctors         0x40029148        0x4 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .ctors         0x4002914c        0x4 C:\nburn/lib/NetBurner.a(ip.o)
+ .ctors         0x40029150        0x4 C:\nburn/lib/NetBurner.a(buffers.o)
+ .ctors         0x40029154        0x4 C:\nburn/lib/NetBurner.a(tcp.o)
+ .ctors         0x40029158        0x4 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtend.o
+                0x4002915c                __CTOR_END__ = .
+                0x4002915c        0x4 LONG 0x0
+                0x40029160                __CTOR_END__ = .
+                0x40029160                __DTOR_LIST__ = .
+                0x40029160                ___DTOR_LIST__ = .
+                0x40029160        0x4 LONG 0x2 (((__DTOR_END__ - __DTOR_LIST__) / 0x4) - 0x2)
+ *(.dtors)
+ .dtors         0x40029164        0x4 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
+ .dtors         0x40029168        0x4 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtend.o
+                0x4002916c        0x4 LONG 0x0
+                0x40029170                __DTOR_END__ = .
+ *(.rodata)
+ .rodata        0x40029170      0x200 Ranging_Radio.o
+ .rodata        0x40029370       0x50 C:\nburn/lib/MOD5441X.a(serial.o)
+ .rodata        0x400293c0      0x108 C:\nburn/lib/NetBurner.a(ucos.o)
+                0x400293c8                FAKE_OSUnMapTbl
+                0x400293c0                FAKE_OSMapTbl
+ .rodata        0x400294c8       0xb8 C:\nburn/lib/NetBurner.a(utils.o)
+ .rodata        0x40029580        0x4 C:\nburn/lib/NetBurner.a(buffers.o)
+ .rodata        0x40029584        0x2 C:\nburn/lib/NetBurner.a(udp.o)
+ .rodata        0x40029586        0xd C:\nburn/lib/NetBurner.a(tcp.o)
+ *fill*         0x40029593        0x1 00
+ .rodata        0x40029594      0x400 C:\nburn/lib/MOD5441X.a(emulticast.o)
+ .rodata        0x40029994        0x4 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-impure.o)
+                0x40029994                _global_impure_ptr
+ .rodata        0x40029998       0x28 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o)
+ .rodata        0x400299c0       0x20 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o)
+ .rodata        0x400299e0       0x20 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o)
+ .rodata        0x40029a00       0x34 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-locale.o)
+ .rodata        0x40029a34      0x124 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-mprec.o)
+                0x40029b24                __mprec_tinytens
+                0x40029a34                __mprec_tens
+                0x40029afc                __mprec_bigtens
+ .rodata        0x40029b58      0x100 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_clz.o)
+                0x40029b58                __clz_tab
+ *(.rodata.*)
+ .rodata.str1.1
+                0x40029c58       0x56 Sensor_Interface_Board_v9.o
+ .rodata.str1.1
+                0x40029cae        0x9 C:\nburn/lib/MOD5441X.a(bsp.o)
+ .rodata.str1.1
+                0x40029cb7      0x15a C:\nburn/lib/MOD5441X.a(serial.o)
+ .rodata.str1.1
+                0x40029e11       0xcf C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .rodata.str1.1
+                0x40029ee0        0x5 C:\nburn/lib/NetBurner.a(ucos.o)
+ .rodata.str1.1
+                0x40029ee5        0x3 C:\nburn/lib/NetBurner.a(fileio.o)
+                                  0x6 (size before relaxing)
+ .rodata.str1.1
+                0x40029ee8       0xc9 C:\nburn/lib/NetBurner.a(system.o)
+                                 0xcd (size before relaxing)
+ .rodata.str1.1
+                0x40029fb1        0x5 C:\nburn/lib/NetBurner.a(main.o)
+ .rodata.str1.1
+                0x40029fb6      0x179 C:\nburn/lib/NetBurner.a(utils.o)
+                                0x17b (size before relaxing)
+ .rodata.str1.1
+                0x4002a12f      0x212 C:\nburn/lib/NetBurner.a(ip.o)
+                                0x217 (size before relaxing)
+ .rodata.str1.1
+                0x4002a341       0x68 C:\nburn/lib/NetBurner.a(buffers.o)
+                                 0x70 (size before relaxing)
+ .rodata.str1.1
+                0x4002a3a9       0x50 C:\nburn/lib/NetBurner.a(arp.o)
+ .rodata.str1.1
+                0x4002a3f9       0x18 C:\nburn/lib/NetBurner.a(udp.o)
+ .rodata.str1.1
+                0x4002a411      0x38f C:\nburn/lib/NetBurner.a(tcp.o)
+                                0x392 (size before relaxing)
+ .rodata.str1.1
+                0x4002a7a0        0x8 C:\nburn/lib/NetBurner.a(defappname.o)
+ .rodata.str1.1
+                0x4002a7a8       0xa4 C:\nburn/lib/NetBurner.a(taskmon.o)
+                                 0xa7 (size before relaxing)
+ .rodata.str1.1
+                0x4002a84c      0x4f9 C:\nburn/lib/NetBurner.a(smarttrap.o)
+                                0x540 (size before relaxing)
+ .rodata.str1.1
+                0x4002ad45        0xe C:\nburn/lib/MOD5441X.a(ethernet.o)
+ .rodata.str1.1
+                0x4002ad53      0x452 C:\nburn/lib/MOD5441X.a(etherprint.o)
+                                0x46c (size before relaxing)
+ .rodata.str1.1
+                0x4002b1a5        0x2 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-impure.o)
+ .rodata.str1.1
+                0x00000000        0x2 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-puts.o)
+ .rodata.str1.1
+                0x00000000        0x2 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o)
+                                  0xc (size before relaxing)
+ .rodata.str1.1
+                0x4002b1a7       0x43 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o)
+ .rodata.str1.1
+                0x4002b1ea       0x10 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o)
+                                 0x57 (size before relaxing)
+ .rodata.str1.1
+                0x4002b1fa       0x1d c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wctomb_r.o)
+ .rodata.str1.1
+                0x4002b217        0xd c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-dtoa.o)
+                                  0xf (size before relaxing)
+ .rodata.str1.1
+                0x4002b224        0xb c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-gethex.o)
+                                 0x19 (size before relaxing)
+ .rodata.str1.1
+                0x4002b22f        0xb c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-locale.o)
+                                 0x10 (size before relaxing)
+ *(.gnu.linkonce.*)
+ *(.gcc_except_table)
+                0x4002b23c                . = ALIGN (0x4)
+ *fill*         0x4002b23a        0x2 00
+                0x4002b23c                __INIT_SECTION__ = .
+                0x4002b23c        0x4 LONG 0x4e560000
+ *(.init)
+ .init          0x4002b240        0x6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
+ .init          0x4002b246        0x6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtend.o
+                0x4002b24c        0x2 SHORT 0x4e5e
+                0x4002b24e        0x2 SHORT 0x4e75
+                0x4002b250                . = ALIGN (0x4)
+                0x4002b250                __FINI_SECTION__ = .
+                0x4002b250        0x4 LONG 0x4e560000
+ *(.fini)
+ .fini          0x4002b254        0x6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
+                0x4002b25a        0x2 SHORT 0x4e5e
+                0x4002b25c        0x2 SHORT 0x4e75
+ *(.lit)
+                0x4002b260                . = ALIGN (0x10)
+ *fill*         0x4002b25e        0x2 00
+                0x4002b260                _etext = .
+                0x4002b260                etext = .
+
+.data           0x4002b260      0x8a0
+                0x4002b260                copy_start = .
+ *(.shdata)
+ *(.data)
+ .data          0x4002b260        0x4 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\nb-crt0.o
+ .data          0x4002b264        0x8 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
+                0x4002b264                __dso_handle
+ .data          0x4002b26c       0x22 Sensor_Interface_Board_v9.o
+ *fill*         0x4002b28e        0x2 00
+ .data          0x4002b290        0x0 SIB_initPINS.o
+ .data          0x4002b290        0x0 SIB_SendtoNAVCOMP.o
+ .data          0x4002b290        0x0 Ranging_Radio.o
+ .data          0x4002b290        0x0 Laser_rangefinder.o
+ .data          0x4002b290        0x4 C:\nburn/lib/MOD5441X.a(bsp.o)
+                0x4002b290                PlatformName
+ .data          0x4002b294        0x0 C:\nburn/lib/MOD5441X.a(flash.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/MOD5441X.a(serial.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/MOD5441X.a(pins.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/MOD5441X.a(localio.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(ucosmcfa.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(software_init.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(ucos.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(ucosmain.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(fileio.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(system.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(main.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(utils.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(ip.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(buffers.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(arp.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(udp.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(tcp.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(extraio.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(iosys.o)
+ .data          0x4002b294        0x0 C:\nburn/lib/NetBurner.a(autoip.o)
+ .data          0x4002b294        0x4 C:\nburn/lib/NetBurner.a(defappname.o)
+                0x4002b294                AppName
+ .data          0x4002b298        0x0 C:\nburn/lib/NetBurner.a(netinterface.o)
+ .data          0x4002b298        0x0 C:\nburn/lib/NetBurner.a(taskmon.o)
+ .data          0x4002b298        0x0 C:\nburn/lib/NetBurner.a(smarttrap.o)
+ .data          0x4002b298        0x0 C:\nburn/lib/NetBurner.a(autoupdate.o)
+ .data          0x4002b298        0x0 C:\nburn/lib/NetBurner.a(device.o)
+ .data          0x4002b298        0x0 C:\nburn/lib/NetBurner.a(new_ops.o)
+ .data          0x4002b298        0x4 C:\nburn/lib/MOD5441X.a(ethernet.o)
+                0x4002b298                AutoNeg
+                0x4002b29a                wait
+ .data          0x4002b29c        0x0 C:\nburn/lib/MOD5441X.a(etherprint.o)
+ .data          0x4002b29c        0x0 C:\nburn/lib/MOD5441X.a(emulticast.o)
+ .data          0x4002b29c        0x0 C:\nburn/lib/NetBurner.a(netrx.o)
+ .data          0x4002b29c        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_double.o)
+ .data          0x4002b29c       0x1c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_floatex.o)
+                0x4002b29c                _fpCCR
+ .data          0x4002b2b8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_eqdf2.o)
+ .data          0x4002b2b8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_nedf2.o)
+ .data          0x4002b2b8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_gtdf2.o)
+ .data          0x4002b2b8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_gedf2.o)
+ .data          0x4002b2b8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_ltdf2.o)
+ .data          0x4002b2b8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_fixunsdfsi.o)
+ .data          0x4002b2b8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(fpgnulib.o)
+ .data          0x4002b2b8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-atof.o)
+ .data          0x4002b2b8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-cxa_atexit.o)
+ .data          0x4002b2b8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-errno.o)
+ .data          0x4002b2b8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fiprintf.o)
+ .data          0x4002b2b8      0x3f6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-impure.o)
+                0x4002b2b8                _impure_ptr
+ *fill*         0x4002b6ae        0x2 00
+ .data          0x4002b6b0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-iprintf.o)
+ .data          0x4002b6b0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-malloc.o)
+ .data          0x4002b6b0      0x410 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-mallocr.o)
+                0x4002babc                __malloc_sbrk_base
+                0x4002b6b0                __malloc_av_
+                0x4002bab8                __malloc_trim_threshold
+ .data          0x4002bac0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-printf.o)
+ .data          0x4002bac0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-puts.o)
+ .data          0x4002bac0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-rand.o)
+ .data          0x4002bac0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-rget.o)
+ .data          0x4002bac0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-setvbuf.o)
+ .data          0x4002bac0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-siprintf.o)
+ .data          0x4002bac0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-sniprintf.o)
+ .data          0x4002bac0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-sprintf.o)
+ .data          0x4002bac0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strlen.o)
+ .data          0x4002bac0       0x28 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wbuf.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wcrtomb.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wcsrtombs.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wctomb_r.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wsetup.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-__atexit.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-dtoa.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fflush.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-findfp.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-freer.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fvwrite.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fwalk.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-gethex.o)
+ .data          0x4002bae8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-hexnan.o)
+ .data          0x4002bae8       0x10 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-locale.o)
+                0x4002bae8                __mb_cur_max
+                0x4002baec                __lc_ctype
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-makebuf.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-memchr.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-memmove.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-mprec.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-reallocr.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-refill.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-s_isinfd.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-s_isnand.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-stdio.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strcmp.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-writer.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-callocr.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-closer.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fclose.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fstatr.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-lseekr.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-readr.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_ledf2.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_nesf2.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_gtsf2.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_ltsf2.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_muldi3.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_udivdi3.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_umoddi3.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_float.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_clz.o)
+ .data          0x4002baf8        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtend.o
+                0x4002bb00                . = ALIGN (0x10)
+ *fill*         0x4002baf8        0x8 00
+                0x4002bb00                _edata = .
+                0x4002bb00                copy_end = .
+
+.jcr            0x4002bb00        0x4
+ .jcr           0x4002bb00        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
+ .jcr           0x4002bb00        0x4 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtend.o
+
+.bss            0x4002bb10    0x77808
+                0x4002bb10                . = ALIGN (0x4)
+                0x4002bb10                __bss_start = .
+ *(.shbss)
+ *(.bss)
+ .bss           0x4002bb10        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\nb-crt0.o
+ .bss           0x4002bb10       0x1a c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
+ *fill*         0x4002bb2a        0x2 00
+ .bss           0x4002bb2c     0x40dc Sensor_Interface_Board_v9.o
+                0x4002bb6c                Radio_Mail4
+                0x4002bbca                FiftyHzflag
+                0x4002bb48                Radio_Mail2
+                0x4002bb2e                dYaw
+                0x4002bbcb                FiveHzflag
+                0x4002bba2                Radio_Mail7
+                0x4002bb7e                Radio_Mail5
+                0x4002bb5a                Radio_Mail3
+                0x4002bbcc                FiveHzcount
+                0x4002bbb4                Radio_Mail8
+                0x4002bbc6                timer1
+                0x4002bb2c                pwmr_comp
+                0x4002bb90                Radio_Mail6
+                0x4002bb36                Radio_Mail1
+ .bss           0x4002fc08        0x0 SIB_initPINS.o
+ .bss           0x4002fc08        0x0 SIB_SendtoNAVCOMP.o
+ .bss           0x4002fc08       0x64 Ranging_Radio.o
+ .bss           0x4002fc6c        0x0 Laser_rangefinder.o
+ .bss           0x4002fc6c        0x0 C:\nburn/lib/MOD5441X.a(bsp.o)
+ .bss           0x4002fc6c        0x0 C:\nburn/lib/MOD5441X.a(flash.o)
+ .bss           0x4002fc6c      0x469 C:\nburn/lib/MOD5441X.a(serial.o)
+                0x4002ff78                Serial_Ioexp
+                0x4002fc94                UartData
+                0x4002ff88                serisrcnt
+                0x4002ff90                serisrtcnt
+                0x4002ff8c                serisrrcnt
+                0x4002ffa8                p2
+                0x4002ffa0                serisrtxcx
+                0x4002ff98                LastGCChan
+                0x4002ffa4                p1
+                0x4002ff9c                serisrtxc
+                0x4002ff94                LastIsrChan
+                0x4002fc6c                Uarts
+ *fill*         0x400300d5        0x3 00
+ .bss           0x400300d8        0x2 C:\nburn/lib/MOD5441X.a(pins.o)
+                0x400300d9                J2
+                0x400300d8                J1
+ *fill*         0x400300da        0x2 00
+ .bss           0x400300dc      0x100 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .bss           0x400301dc        0x0 C:\nburn/lib/MOD5441X.a(localio.o)
+ .bss           0x400301dc        0x0 C:\nburn/lib/NetBurner.a(ucosmcfa.o)
+ .bss           0x400301dc        0x0 C:\nburn/lib/NetBurner.a(software_init.o)
+ .bss           0x400301dc        0x0 C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+ .bss           0x400301dc        0x0 C:\nburn/lib/NetBurner.a(ucos.o)
+ .bss           0x400301dc        0x4 C:\nburn/lib/NetBurner.a(ucosmain.o)
+ .bss           0x400301e0        0x0 C:\nburn/lib/NetBurner.a(fileio.o)
+ .bss           0x400301e0        0x4 C:\nburn/lib/NetBurner.a(system.o)
+                0x400301e0                rnd_cnt
+ .bss           0x400301e4        0x0 C:\nburn/lib/NetBurner.a(main.o)
+ .bss           0x400301e4       0x56 C:\nburn/lib/NetBurner.a(utils.o)
+                0x400301ea                frames_rx_err
+                0x400301fa                frames_rx_icmp
+                0x40030208                enet_last_errhw
+                0x400301f0                frames_tx_udp
+                0x400301e4                frames_tx
+                0x400301f8                frames_tx_icmp
+                0x400301f6                frames_rx_tcp
+                0x40030206                enet_last_errlw
+                0x400301ee                frames_tx_arp
+                0x400301e6                frames_rx
+                0x40030204                frames_rx_ppp_errors
+                0x4003020a                ip_last_err
+                0x4003020e                frames_rx_unknown
+                0x400301f2                frames_rx_udp
+                0x400301e8                frames_tx_err
+                0x4003020c                enet_isr
+                0x40030200                frames_udp_errors
+                0x400301fe                frames_ip_discard
+                0x40030210                frames_rx_fragment
+                0x40030212                static_buffer
+                0x400301f4                frames_tx_tcp
+                0x400301ec                frames_rx_arp
+                0x400301fc                frames_ip_errors
+                0x40030202                frames_tcp_errors
+ *fill*         0x4003023a        0x2 00
+ .bss           0x4003023c        0xa C:\nburn/lib/NetBurner.a(ip.o)
+                0x4003023c                ip_errs
+ *fill*         0x40030246        0xa 00
+ .bss           0x40030250    0x6b010 C:\nburn/lib/NetBurner.a(buffers.o)
+                0x40030250                LastHead
+ .bss           0x4009b260     0x1e20 C:\nburn/lib/NetBurner.a(arp.o)
+                0x4009b270                wArpLifetime
+                0x4009b260                ARP_critical_section
+ .bss           0x4009d080        0x8 C:\nburn/lib/NetBurner.a(udp.o)
+                0x4009d080                ipsetup_authenticate_func
+                0x4009d084                AutoUpdatePtr
+ .bss           0x4009d088     0x2036 C:\nburn/lib/NetBurner.a(tcp.o)
+                0x4009ea74                ShortSockets
+                0x4009f0b4                LastShortFree
+                0x4009ea2a                semiactive_list
+                0x4009d088                sockets
+                0x4009ea24                listen_list_head
+                0x4009ea28                active_list
+                0x4009e988                m_slist
+                0x4009ea20                user_closed_list_head
+                0x4009ea1c                free_list_head
+ *fill*         0x4009f0be        0x2 00
+ .bss           0x4009f0c0       0xee C:\nburn/lib/NetBurner.a(extraio.o)
+ *fill*         0x4009f1ae        0x2 00
+ .bss           0x4009f1b0        0x0 C:\nburn/lib/NetBurner.a(iosys.o)
+ .bss           0x4009f1b0        0x8 C:\nburn/lib/NetBurner.a(autoip.o)
+                0x4009f1b0                AutoIPClient::staticNextTick
+ .bss           0x4009f1b8        0x0 C:\nburn/lib/NetBurner.a(defappname.o)
+ .bss           0x4009f1b8       0x60 C:\nburn/lib/NetBurner.a(netinterface.o)
+                0x4009f1cc                FirstInterFaceIP
+                0x4009f1d4                FirstInterFaceGate
+                0x4009f1d0                FirstInterFaceMask
+                0x4009f1bc                pPacketfunc
+                0x4009f1b8                pArpFunc
+                0x4009f1c0                ENET_BCAST
+                0x4009f1c6                ENET_ZERO
+                0x4009f1d8                FirstInterFaceDNS
+ .bss           0x4009f218     0x1004 C:\nburn/lib/NetBurner.a(taskmon.o)
+ .bss           0x400a021c      0x406 C:\nburn/lib/NetBurner.a(smarttrap.o)
+ *fill*         0x400a0622        0x2 00
+ .bss           0x400a0624       0x10 C:\nburn/lib/NetBurner.a(autoupdate.o)
+                0x400a0630                watchdog_service_function
+                0x400a062c                update_shutdown_func
+                0x400a0624                pCurRecord
+                0x400a0628                update_authenticate_func
+ .bss           0x400a0634       0x1c C:\nburn/lib/NetBurner.a(device.o)
+                0x400a0634                DeviceQspiSem
+                0x400a0642                DeviceI2cSem
+ .bss           0x400a0650        0x0 C:\nburn/lib/NetBurner.a(new_ops.o)
+ .bss           0x400a0650       0x6e C:\nburn/lib/MOD5441X.a(ethernet.o)
+                0x400a0658                EtherLinkCallback
+                0x400a0652                SetEthDuplex
+                0x400a0654                bNewLink
+                0x400a065c                phy_data
+                0x400a0653                SetEth100Mb
+                0x400a0651                bEth100Mb
+                0x400a0668                phy_read_mdata2
+                0x400a066c                AutoTimeOut
+                0x400a0656                bEverHadLink
+                0x400a0664                phy_read_mdata1
+                0x400a0670                v
+                0x400a0660                last_phy_read
+                0x400a0674                DONT_HANG
+                0x400a0678                EthernetBlock
+                0x400a0655                bNewDuplex
+                0x400a0650                bEthDuplex
+ *fill*         0x400a06be        0x2 00
+ .bss           0x400a06c0        0x0 C:\nburn/lib/MOD5441X.a(etherprint.o)
+ .bss           0x400a06c0      0x100 C:\nburn/lib/MOD5441X.a(emulticast.o)
+ .bss           0x400a07c0        0x0 C:\nburn/lib/NetBurner.a(netrx.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_double.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_floatex.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_eqdf2.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_nedf2.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_gtdf2.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_gedf2.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_ltdf2.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_fixunsdfsi.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(fpgnulib.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-atof.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-cxa_atexit.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-errno.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fiprintf.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-impure.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-iprintf.o)
+ .bss           0x400a07c0        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-malloc.o)
+ .bss           0x400a07c0       0x34 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-mallocr.o)
+                0x400a07c0                __malloc_top_pad
+                0x400a07c4                __malloc_max_sbrked_mem
+                0x400a07cc                __malloc_current_mallinfo
+                0x400a07c8                __malloc_max_total_mem
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-printf.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-puts.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-rand.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-rget.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-setvbuf.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-siprintf.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-sniprintf.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-sprintf.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strlen.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wbuf.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wcrtomb.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wcsrtombs.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wctomb_r.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wsetup.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-__atexit.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-dtoa.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fflush.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-findfp.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-freer.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fvwrite.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fwalk.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-gethex.o)
+ .bss           0x400a07f4        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-hexnan.o)
+ .bss           0x400a07f4        0xc c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-locale.o)
+                0x400a07f4                __nlocale_changed
+                0x400a07f8                __mlocale_changed
+                0x400a07fc                _PathLocale
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-makebuf.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-memchr.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-memmove.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-mprec.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-reallocr.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-refill.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-s_isinfd.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-s_isnand.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-stdio.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strcmp.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-writer.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-callocr.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-closer.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fclose.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fstatr.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-lseekr.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-readr.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_ledf2.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_nesf2.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_gtsf2.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_ltsf2.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_muldi3.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_udivdi3.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_umoddi3.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_float.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_clz.o)
+ .bss           0x400a0800        0x0 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtend.o
+ *(.bss.*)
+ *(COMMON)
+ COMMON         0x400a0800       0x12 C:\nburn/lib/MOD5441X.a(bsp.o)
+                0x400a0800                BspTickMaxCount
+                0x400a0802                write_pcsr
+                0x400a0804                errno
+                0x400a0808                TERR_REGISTER
+                0x400a080a                heap_ptr
+                0x400a080e                CPU_CLOCK
+ *fill*         0x400a0812        0x2 00
+ COMMON         0x400a0814     0x2000 C:\nburn/lib/NetBurner.a(ucosmain.o)
+                0x400a0814                OSIdleTaskStk
+ COMMON         0x400a2814      0xa04 C:\nburn/lib/NetBurner.a(system.o)
+                0x400a2814                NotifyUpdatePtr
+                0x400a2818                rnd_collect
+                0x400a2a18                config_rec_buf
+ COMMON         0x400a3218      0x100 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-gethex.o)
+                0x400a3218                __hexdig
+                0x400a3318                _end = ALIGN (0x8)
+                0x400a3318                __end = _end
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x480
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 Sensor_Interface_Board_v9.o
+ .debug_aranges
+                0x00000020       0x20 SIB_initPINS.o
+ .debug_aranges
+                0x00000040       0x20 SIB_SendtoNAVCOMP.o
+ .debug_aranges
+                0x00000060       0x20 Ranging_Radio.o
+ .debug_aranges
+                0x00000080       0x20 Laser_rangefinder.o
+ .debug_aranges
+                0x000000a0       0x20 C:\nburn/lib/MOD5441X.a(bsp.o)
+ .debug_aranges
+                0x000000c0       0x20 C:\nburn/lib/MOD5441X.a(flash.o)
+ .debug_aranges
+                0x000000e0       0x20 C:\nburn/lib/MOD5441X.a(serial.o)
+ .debug_aranges
+                0x00000100       0x20 C:\nburn/lib/MOD5441X.a(pins.o)
+ .debug_aranges
+                0x00000120       0x20 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .debug_aranges
+                0x00000140       0x20 C:\nburn/lib/MOD5441X.a(localio.o)
+ .debug_aranges
+                0x00000160       0x20 C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+ .debug_aranges
+                0x00000180       0x20 C:\nburn/lib/NetBurner.a(ucos.o)
+ .debug_aranges
+                0x000001a0       0x20 C:\nburn/lib/NetBurner.a(ucosmain.o)
+ .debug_aranges
+                0x000001c0       0x20 C:\nburn/lib/NetBurner.a(fileio.o)
+ .debug_aranges
+                0x000001e0       0x20 C:\nburn/lib/NetBurner.a(system.o)
+ .debug_aranges
+                0x00000200       0x20 C:\nburn/lib/NetBurner.a(main.o)
+ .debug_aranges
+                0x00000220       0x20 C:\nburn/lib/NetBurner.a(utils.o)
+ .debug_aranges
+                0x00000240       0x20 C:\nburn/lib/NetBurner.a(ip.o)
+ .debug_aranges
+                0x00000260       0x20 C:\nburn/lib/NetBurner.a(buffers.o)
+ .debug_aranges
+                0x00000280       0x20 C:\nburn/lib/NetBurner.a(arp.o)
+ .debug_aranges
+                0x000002a0       0x20 C:\nburn/lib/NetBurner.a(udp.o)
+ .debug_aranges
+                0x000002c0       0x20 C:\nburn/lib/NetBurner.a(tcp.o)
+ .debug_aranges
+                0x000002e0       0x20 C:\nburn/lib/NetBurner.a(extraio.o)
+ .debug_aranges
+                0x00000300       0x20 C:\nburn/lib/NetBurner.a(iosys.o)
+ .debug_aranges
+                0x00000320       0x20 C:\nburn/lib/NetBurner.a(autoip.o)
+ .debug_aranges
+                0x00000340       0x20 C:\nburn/lib/NetBurner.a(netinterface.o)
+ .debug_aranges
+                0x00000360       0x20 C:\nburn/lib/NetBurner.a(taskmon.o)
+ .debug_aranges
+                0x00000380       0x20 C:\nburn/lib/NetBurner.a(smarttrap.o)
+ .debug_aranges
+                0x000003a0       0x20 C:\nburn/lib/NetBurner.a(autoupdate.o)
+ .debug_aranges
+                0x000003c0       0x20 C:\nburn/lib/NetBurner.a(device.o)
+ .debug_aranges
+                0x000003e0       0x20 C:\nburn/lib/NetBurner.a(new_ops.o)
+ .debug_aranges
+                0x00000400       0x20 C:\nburn/lib/MOD5441X.a(ethernet.o)
+ .debug_aranges
+                0x00000420       0x20 C:\nburn/lib/MOD5441X.a(etherprint.o)
+ .debug_aranges
+                0x00000440       0x20 C:\nburn/lib/MOD5441X.a(emulticast.o)
+ .debug_aranges
+                0x00000460       0x20 C:\nburn/lib/NetBurner.a(netrx.o)
+
+.debug_pubnames
+                0x00000000     0x3a47
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x19f Sensor_Interface_Board_v9.o
+ .debug_pubnames
+                0x0000019f       0x1f SIB_initPINS.o
+ .debug_pubnames
+                0x000001be       0x24 SIB_SendtoNAVCOMP.o
+ .debug_pubnames
+                0x000001e2       0x2a Ranging_Radio.o
+ .debug_pubnames
+                0x0000020c       0x35 Laser_rangefinder.o
+ .debug_pubnames
+                0x00000241      0x13f C:\nburn/lib/MOD5441X.a(bsp.o)
+ .debug_pubnames
+                0x00000380       0x32 C:\nburn/lib/MOD5441X.a(flash.o)
+ .debug_pubnames
+                0x000003b2      0x3d6 C:\nburn/lib/MOD5441X.a(serial.o)
+ .debug_pubnames
+                0x00000788       0x7e C:\nburn/lib/MOD5441X.a(pins.o)
+ .debug_pubnames
+                0x00000806      0x296 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .debug_pubnames
+                0x00000a9c       0x67 C:\nburn/lib/MOD5441X.a(localio.o)
+ .debug_pubnames
+                0x00000b03       0x62 C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+ .debug_pubnames
+                0x00000b65      0x369 C:\nburn/lib/NetBurner.a(ucos.o)
+ .debug_pubnames
+                0x00000ece       0xbc C:\nburn/lib/NetBurner.a(ucosmain.o)
+ .debug_pubnames
+                0x00000f8a       0xd7 C:\nburn/lib/NetBurner.a(fileio.o)
+ .debug_pubnames
+                0x00001061       0xf4 C:\nburn/lib/NetBurner.a(system.o)
+ .debug_pubnames
+                0x00001155       0x3d C:\nburn/lib/NetBurner.a(main.o)
+ .debug_pubnames
+                0x00001192      0x2fe C:\nburn/lib/NetBurner.a(utils.o)
+ .debug_pubnames
+                0x00001490      0x30b C:\nburn/lib/NetBurner.a(ip.o)
+ .debug_pubnames
+                0x0000179b      0x3fd C:\nburn/lib/NetBurner.a(buffers.o)
+ .debug_pubnames
+                0x00001b98      0x1fb C:\nburn/lib/NetBurner.a(arp.o)
+ .debug_pubnames
+                0x00001d93      0x4a1 C:\nburn/lib/NetBurner.a(udp.o)
+ .debug_pubnames
+                0x00002234      0x9d4 C:\nburn/lib/NetBurner.a(tcp.o)
+ .debug_pubnames
+                0x00002c08       0xae C:\nburn/lib/NetBurner.a(extraio.o)
+ .debug_pubnames
+                0x00002cb6      0x1b2 C:\nburn/lib/NetBurner.a(iosys.o)
+ .debug_pubnames
+                0x00002e68      0x26f C:\nburn/lib/NetBurner.a(autoip.o)
+ .debug_pubnames
+                0x000030d7       0x1e C:\nburn/lib/NetBurner.a(defappname.o)
+ .debug_pubnames
+                0x000030f5      0x22e C:\nburn/lib/NetBurner.a(netinterface.o)
+ .debug_pubnames
+                0x00003323       0x55 C:\nburn/lib/NetBurner.a(taskmon.o)
+ .debug_pubnames
+                0x00003378       0xaa C:\nburn/lib/NetBurner.a(smarttrap.o)
+ .debug_pubnames
+                0x00003422       0xd8 C:\nburn/lib/NetBurner.a(autoupdate.o)
+ .debug_pubnames
+                0x000034fa       0x76 C:\nburn/lib/NetBurner.a(device.o)
+ .debug_pubnames
+                0x00003570       0x23 C:\nburn/lib/NetBurner.a(new_ops.o)
+ .debug_pubnames
+                0x00003593      0x38d C:\nburn/lib/MOD5441X.a(ethernet.o)
+ .debug_pubnames
+                0x00003920       0xb4 C:\nburn/lib/MOD5441X.a(etherprint.o)
+ .debug_pubnames
+                0x000039d4       0x55 C:\nburn/lib/MOD5441X.a(emulticast.o)
+ .debug_pubnames
+                0x00003a29       0x1e C:\nburn/lib/NetBurner.a(netrx.o)
+
+.debug_info     0x00000000    0x423c0
+ *(.debug_info)
+ .debug_info    0x00000000     0x56c9 Sensor_Interface_Board_v9.o
+ .debug_info    0x000056c9     0x1842 SIB_initPINS.o
+ .debug_info    0x00006f0b      0x18a SIB_SendtoNAVCOMP.o
+ .debug_info    0x00007095      0x18d Ranging_Radio.o
+ .debug_info    0x00007222     0x1354 Laser_rangefinder.o
+ .debug_info    0x00008576     0x537f C:\nburn/lib/MOD5441X.a(bsp.o)
+ .debug_info    0x0000d8f5      0x15a C:\nburn/lib/MOD5441X.a(flash.o)
+ .debug_info    0x0000da4f     0x637a C:\nburn/lib/MOD5441X.a(serial.o)
+ .debug_info    0x00013dc9     0x15ca C:\nburn/lib/MOD5441X.a(pins.o)
+ .debug_info    0x00015393     0x44e4 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .debug_info    0x00019877     0x4a08 C:\nburn/lib/MOD5441X.a(localio.o)
+ .debug_info    0x0001e27f      0x351 C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+ .debug_info    0x0001e5d0     0x1125 C:\nburn/lib/NetBurner.a(ucos.o)
+ .debug_info    0x0001f6f5      0xb92 C:\nburn/lib/NetBurner.a(ucosmain.o)
+ .debug_info    0x00020287      0xf32 C:\nburn/lib/NetBurner.a(fileio.o)
+ .debug_info    0x000211b9      0xe23 C:\nburn/lib/NetBurner.a(system.o)
+ .debug_info    0x00021fdc      0x118 C:\nburn/lib/NetBurner.a(main.o)
+ .debug_info    0x000220f4     0x1281 C:\nburn/lib/NetBurner.a(utils.o)
+ .debug_info    0x00023375     0x2381 C:\nburn/lib/NetBurner.a(ip.o)
+ .debug_info    0x000256f6     0x1069 C:\nburn/lib/NetBurner.a(buffers.o)
+ .debug_info    0x0002675f     0x21d5 C:\nburn/lib/NetBurner.a(arp.o)
+ .debug_info    0x00028934     0x22ed C:\nburn/lib/NetBurner.a(udp.o)
+ .debug_info    0x0002ac21     0x4e70 C:\nburn/lib/NetBurner.a(tcp.o)
+ .debug_info    0x0002fa91      0x3e6 C:\nburn/lib/NetBurner.a(extraio.o)
+ .debug_info    0x0002fe77      0x8da C:\nburn/lib/NetBurner.a(iosys.o)
+ .debug_info    0x00030751     0x104b C:\nburn/lib/NetBurner.a(autoip.o)
+ .debug_info    0x0003179c       0x4a C:\nburn/lib/NetBurner.a(defappname.o)
+ .debug_info    0x000317e6     0x127c C:\nburn/lib/NetBurner.a(netinterface.o)
+ .debug_info    0x00032a62      0x9c2 C:\nburn/lib/NetBurner.a(taskmon.o)
+ .debug_info    0x00033424      0x4d1 C:\nburn/lib/NetBurner.a(smarttrap.o)
+ .debug_info    0x000338f5      0xb81 C:\nburn/lib/NetBurner.a(autoupdate.o)
+ .debug_info    0x00034476      0x143 C:\nburn/lib/NetBurner.a(device.o)
+ .debug_info    0x000345b9      0x429 C:\nburn/lib/NetBurner.a(new_ops.o)
+ .debug_info    0x000349e2     0x5cf3 C:\nburn/lib/MOD5441X.a(ethernet.o)
+ .debug_info    0x0003a6d5     0x3df8 C:\nburn/lib/MOD5441X.a(etherprint.o)
+ .debug_info    0x0003e4cd     0x3b09 C:\nburn/lib/MOD5441X.a(emulticast.o)
+ .debug_info    0x00041fd6      0x3ea C:\nburn/lib/NetBurner.a(netrx.o)
+
+.debug_abbrev   0x00000000     0x5b5b
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x484 Sensor_Interface_Board_v9.o
+ .debug_abbrev  0x00000484      0x242 SIB_initPINS.o
+ .debug_abbrev  0x000006c6       0x8b SIB_SendtoNAVCOMP.o
+ .debug_abbrev  0x00000751       0xe0 Ranging_Radio.o
+ .debug_abbrev  0x00000831      0x170 Laser_rangefinder.o
+ .debug_abbrev  0x000009a1      0x2c7 C:\nburn/lib/MOD5441X.a(bsp.o)
+ .debug_abbrev  0x00000c68       0xd3 C:\nburn/lib/MOD5441X.a(flash.o)
+ .debug_abbrev  0x00000d3b      0x47d C:\nburn/lib/MOD5441X.a(serial.o)
+ .debug_abbrev  0x000011b8      0x2aa C:\nburn/lib/MOD5441X.a(pins.o)
+ .debug_abbrev  0x00001462      0x3d1 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .debug_abbrev  0x00001833      0x1a8 C:\nburn/lib/MOD5441X.a(localio.o)
+ .debug_abbrev  0x000019db      0x133 C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+ .debug_abbrev  0x00001b0e      0x1f4 C:\nburn/lib/NetBurner.a(ucos.o)
+ .debug_abbrev  0x00001d02      0x1d0 C:\nburn/lib/NetBurner.a(ucosmain.o)
+ .debug_abbrev  0x00001ed2      0x2a4 C:\nburn/lib/NetBurner.a(fileio.o)
+ .debug_abbrev  0x00002176      0x283 C:\nburn/lib/NetBurner.a(system.o)
+ .debug_abbrev  0x000023f9       0xcf C:\nburn/lib/NetBurner.a(main.o)
+ .debug_abbrev  0x000024c8      0x34d C:\nburn/lib/NetBurner.a(utils.o)
+ .debug_abbrev  0x00002815      0x4ce C:\nburn/lib/NetBurner.a(ip.o)
+ .debug_abbrev  0x00002ce3      0x340 C:\nburn/lib/NetBurner.a(buffers.o)
+ .debug_abbrev  0x00003023      0x484 C:\nburn/lib/NetBurner.a(arp.o)
+ .debug_abbrev  0x000034a7      0x44b C:\nburn/lib/NetBurner.a(udp.o)
+ .debug_abbrev  0x000038f2      0x610 C:\nburn/lib/NetBurner.a(tcp.o)
+ .debug_abbrev  0x00003f02      0x197 C:\nburn/lib/NetBurner.a(extraio.o)
+ .debug_abbrev  0x00004099      0x2cf C:\nburn/lib/NetBurner.a(iosys.o)
+ .debug_abbrev  0x00004368      0x335 C:\nburn/lib/NetBurner.a(autoip.o)
+ .debug_abbrev  0x0000469d       0x40 C:\nburn/lib/NetBurner.a(defappname.o)
+ .debug_abbrev  0x000046dd      0x304 C:\nburn/lib/NetBurner.a(netinterface.o)
+ .debug_abbrev  0x000049e1      0x251 C:\nburn/lib/NetBurner.a(taskmon.o)
+ .debug_abbrev  0x00004c32      0x1b5 C:\nburn/lib/NetBurner.a(smarttrap.o)
+ .debug_abbrev  0x00004de7      0x2bf C:\nburn/lib/NetBurner.a(autoupdate.o)
+ .debug_abbrev  0x000050a6       0xbc C:\nburn/lib/NetBurner.a(device.o)
+ .debug_abbrev  0x00005162      0x132 C:\nburn/lib/NetBurner.a(new_ops.o)
+ .debug_abbrev  0x00005294      0x3e0 C:\nburn/lib/MOD5441X.a(ethernet.o)
+ .debug_abbrev  0x00005674      0x200 C:\nburn/lib/MOD5441X.a(etherprint.o)
+ .debug_abbrev  0x00005874      0x1b5 C:\nburn/lib/MOD5441X.a(emulticast.o)
+ .debug_abbrev  0x00005a29      0x132 C:\nburn/lib/NetBurner.a(netrx.o)
+
+.debug_line     0x00000000     0x91bc
+ *(.debug_line)
+ .debug_line    0x00000000      0x3c8 Sensor_Interface_Board_v9.o
+ .debug_line    0x000003c8      0x259 SIB_initPINS.o
+ .debug_line    0x00000621       0xde SIB_SendtoNAVCOMP.o
+ .debug_line    0x000006ff       0xd0 Ranging_Radio.o
+ .debug_line    0x000007cf      0x1a5 Laser_rangefinder.o
+ .debug_line    0x00000974      0x397 C:\nburn/lib/MOD5441X.a(bsp.o)
+ .debug_line    0x00000d0b       0x71 C:\nburn/lib/MOD5441X.a(flash.o)
+ .debug_line    0x00000d7c      0x92b C:\nburn/lib/MOD5441X.a(serial.o)
+ .debug_line    0x000016a7      0x9b6 C:\nburn/lib/MOD5441X.a(pins.o)
+ .debug_line    0x0000205d      0x425 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .debug_line    0x00002482      0x14f C:\nburn/lib/MOD5441X.a(localio.o)
+ .debug_line    0x000025d1      0x184 C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+ .debug_line    0x00002755      0x41a C:\nburn/lib/NetBurner.a(ucos.o)
+ .debug_line    0x00002b6f      0x272 C:\nburn/lib/NetBurner.a(ucosmain.o)
+ .debug_line    0x00002de1      0x39b C:\nburn/lib/NetBurner.a(fileio.o)
+ .debug_line    0x0000317c      0x333 C:\nburn/lib/NetBurner.a(system.o)
+ .debug_line    0x000034af       0xbc C:\nburn/lib/NetBurner.a(main.o)
+ .debug_line    0x0000356b      0x56b C:\nburn/lib/NetBurner.a(utils.o)
+ .debug_line    0x00003ad6      0x738 C:\nburn/lib/NetBurner.a(ip.o)
+ .debug_line    0x0000420e      0x48d C:\nburn/lib/NetBurner.a(buffers.o)
+ .debug_line    0x0000469b      0xa0f C:\nburn/lib/NetBurner.a(arp.o)
+ .debug_line    0x000050aa      0x63e C:\nburn/lib/NetBurner.a(udp.o)
+ .debug_line    0x000056e8     0x1b03 C:\nburn/lib/NetBurner.a(tcp.o)
+ .debug_line    0x000071eb      0x135 C:\nburn/lib/NetBurner.a(extraio.o)
+ .debug_line    0x00007320      0x275 C:\nburn/lib/NetBurner.a(iosys.o)
+ .debug_line    0x00007595      0x2b5 C:\nburn/lib/NetBurner.a(autoip.o)
+ .debug_line    0x0000784a       0x2f C:\nburn/lib/NetBurner.a(defappname.o)
+ .debug_line    0x00007879      0x1fe C:\nburn/lib/NetBurner.a(netinterface.o)
+ .debug_line    0x00007a77      0x1f8 C:\nburn/lib/NetBurner.a(taskmon.o)
+ .debug_line    0x00007c6f      0x376 C:\nburn/lib/NetBurner.a(smarttrap.o)
+ .debug_line    0x00007fe5      0x21b C:\nburn/lib/NetBurner.a(autoupdate.o)
+ .debug_line    0x00008200       0xc9 C:\nburn/lib/NetBurner.a(device.o)
+ .debug_line    0x000082c9      0x262 C:\nburn/lib/NetBurner.a(new_ops.o)
+ .debug_line    0x0000852b      0x622 C:\nburn/lib/MOD5441X.a(ethernet.o)
+ .debug_line    0x00008b4d      0x357 C:\nburn/lib/MOD5441X.a(etherprint.o)
+ .debug_line    0x00008ea4      0x187 C:\nburn/lib/MOD5441X.a(emulticast.o)
+ .debug_line    0x0000902b      0x191 C:\nburn/lib/NetBurner.a(netrx.o)
+
+.debug_frame    0x00000000     0x6a60
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x230 Sensor_Interface_Board_v9.o
+ .debug_frame   0x00000230       0x34 SIB_initPINS.o
+ .debug_frame   0x00000264       0x50 SIB_SendtoNAVCOMP.o
+ .debug_frame   0x000002b4       0x60 Ranging_Radio.o
+ .debug_frame   0x00000314       0xcc Laser_rangefinder.o
+ .debug_frame   0x000003e0      0x15c C:\nburn/lib/MOD5441X.a(bsp.o)
+ .debug_frame   0x0000053c       0x48 C:\nburn/lib/MOD5441X.a(flash.o)
+ .debug_frame   0x00000584      0x5d8 C:\nburn/lib/MOD5441X.a(serial.o)
+ .debug_frame   0x00000b5c       0xb4 C:\nburn/lib/MOD5441X.a(pins.o)
+ .debug_frame   0x00000c10      0x32c C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .debug_frame   0x00000f3c       0x98 C:\nburn/lib/MOD5441X.a(localio.o)
+ .debug_frame   0x00000fd4       0x9c C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+ .debug_frame   0x00001070      0x454 C:\nburn/lib/NetBurner.a(ucos.o)
+ .debug_frame   0x000014c4       0xd0 C:\nburn/lib/NetBurner.a(ucosmain.o)
+ .debug_frame   0x00001594      0x1e4 C:\nburn/lib/NetBurner.a(fileio.o)
+ .debug_frame   0x00001778      0x178 C:\nburn/lib/NetBurner.a(system.o)
+ .debug_frame   0x000018f0       0x4c C:\nburn/lib/NetBurner.a(main.o)
+ .debug_frame   0x0000193c      0x2a4 C:\nburn/lib/NetBurner.a(utils.o)
+ .debug_frame   0x00001be0      0x4a0 C:\nburn/lib/NetBurner.a(ip.o)
+ .debug_frame   0x00002080      0x434 C:\nburn/lib/NetBurner.a(buffers.o)
+ .debug_frame   0x000024b4      0x518 C:\nburn/lib/NetBurner.a(arp.o)
+ .debug_frame   0x000029cc      0x534 C:\nburn/lib/NetBurner.a(udp.o)
+ .debug_frame   0x00002f00      0xf9c C:\nburn/lib/NetBurner.a(tcp.o)
+ .debug_frame   0x00003e9c      0x108 C:\nburn/lib/NetBurner.a(extraio.o)
+ .debug_frame   0x00003fa4      0x2f8 C:\nburn/lib/NetBurner.a(iosys.o)
+ .debug_frame   0x0000429c      0x2a0 C:\nburn/lib/NetBurner.a(autoip.o)
+ .debug_frame   0x0000453c      0x238 C:\nburn/lib/NetBurner.a(netinterface.o)
+ .debug_frame   0x00004774       0x8c C:\nburn/lib/NetBurner.a(taskmon.o)
+ .debug_frame   0x00004800      0x324 C:\nburn/lib/NetBurner.a(smarttrap.o)
+ .debug_frame   0x00004b24      0x128 C:\nburn/lib/NetBurner.a(autoupdate.o)
+ .debug_frame   0x00004c4c       0x60 C:\nburn/lib/NetBurner.a(device.o)
+ .debug_frame   0x00004cac       0x30 C:\nburn/lib/NetBurner.a(new_ops.o)
+ .debug_frame   0x00004cdc      0x348 C:\nburn/lib/MOD5441X.a(ethernet.o)
+ .debug_frame   0x00005024      0x1dc C:\nburn/lib/MOD5441X.a(etherprint.o)
+ .debug_frame   0x00005200       0x68 C:\nburn/lib/MOD5441X.a(emulticast.o)
+ .debug_frame   0x00005268       0x44 C:\nburn/lib/NetBurner.a(netrx.o)
+ .debug_frame   0x000052ac       0x38 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_fixunsdfsi.o)
+ .debug_frame   0x000052e4      0x144 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(fpgnulib.o)
+ .debug_frame   0x00005428       0x30 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-atof.o)
+ .debug_frame   0x00005458       0x30 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-cxa_atexit.o)
+ .debug_frame   0x00005488       0x2c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-errno.o)
+ .debug_frame   0x000054b4       0x30 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fiprintf.o)
+ .debug_frame   0x000054e4       0x4c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-iprintf.o)
+ .debug_frame   0x00005530       0x4c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-malloc.o)
+ .debug_frame   0x0000557c       0x58 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-mallocr.o)
+ .debug_frame   0x000055d4       0x4c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-printf.o)
+ .debug_frame   0x00005620       0x54 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-puts.o)
+ .debug_frame   0x00005674       0x4c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-rand.o)
+ .debug_frame   0x000056c0       0x4c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-rget.o)
+ .debug_frame   0x0000570c       0x3c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-setvbuf.o)
+ .debug_frame   0x00005748       0x54 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-siprintf.o)
+ .debug_frame   0x0000579c       0x4c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-sniprintf.o)
+ .debug_frame   0x000057e8       0x54 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-sprintf.o)
+ .debug_frame   0x0000583c       0x2c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strlen.o)
+ .debug_frame   0x00005868      0x164 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strtod.o)
+ .debug_frame   0x000059cc       0xc8 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o)
+ .debug_frame   0x00005a94      0x100 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o)
+ .debug_frame   0x00005b94       0x54 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wbuf.o)
+ .debug_frame   0x00005be8       0x50 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wcrtomb.o)
+ .debug_frame   0x00005c38       0x60 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wcsrtombs.o)
+ .debug_frame   0x00005c98       0x3c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wctomb_r.o)
+ .debug_frame   0x00005cd4       0x38 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wsetup.o)
+ .debug_frame   0x00005d0c       0x38 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00005d44      0x170 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-dtoa.o)
+ .debug_frame   0x00005eb4       0x44 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fflush.o)
+ .debug_frame   0x00005ef8       0xcc c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-findfp.o)
+ .debug_frame   0x00005fc4       0x78 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-freer.o)
+ .debug_frame   0x0000603c       0x68 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fvwrite.o)
+ .debug_frame   0x000060a4       0x64 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fwalk.o)
+ .debug_frame   0x00006108       0xc4 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-gethex.o)
+ .debug_frame   0x000061cc       0x6c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-gdtoa-hexnan.o)
+ .debug_frame   0x00006238       0x9c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-locale.o)
+ .debug_frame   0x000062d4       0x40 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-makebuf.o)
+ .debug_frame   0x00006314       0x34 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-memchr.o)
+ .debug_frame   0x00006348       0x38 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-memmove.o)
+ .debug_frame   0x00006380      0x2cc c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-mprec.o)
+ .debug_frame   0x0000664c       0x64 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-reallocr.o)
+ .debug_frame   0x000066b0       0x60 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-refill.o)
+ .debug_frame   0x00006710       0x30 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-s_isinfd.o)
+ .debug_frame   0x00006740       0x30 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-s_isnand.o)
+ .debug_frame   0x00006770       0x84 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-stdio.o)
+ .debug_frame   0x000067f4       0x2c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-strcmp.o)
+ .debug_frame   0x00006820       0x30 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-writer.o)
+ .debug_frame   0x00006850       0x34 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-callocr.o)
+ .debug_frame   0x00006884       0x30 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-closer.o)
+ .debug_frame   0x000068b4       0x5c c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fclose.o)
+ .debug_frame   0x00006910       0x30 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-fstatr.o)
+ .debug_frame   0x00006940       0x30 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-lseekr.o)
+ .debug_frame   0x00006970       0x30 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-readr.o)
+ .debug_frame   0x000069a0       0x40 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_muldi3.o)
+ .debug_frame   0x000069e0       0x40 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_udivdi3.o)
+ .debug_frame   0x00006a20       0x40 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e\libgcc.a(_umoddi3.o)
+
+.debug_str      0x00000000     0x8c0f
+ *(.debug_str)
+ .debug_str     0x00000000     0x1c42 Sensor_Interface_Board_v9.o
+                               0x1d88 (size before relaxing)
+ .debug_str     0x00001c42       0x22 SIB_initPINS.o
+                                0x79b (size before relaxing)
+ .debug_str     0x00001c64       0x88 SIB_SendtoNAVCOMP.o
+                                0x1b1 (size before relaxing)
+ .debug_str     0x00001cec       0x55 Ranging_Radio.o
+                                0x164 (size before relaxing)
+ .debug_str     0x00001d41       0xce Laser_rangefinder.o
+                                0x724 (size before relaxing)
+ .debug_str     0x00001e0f      0x6fb C:\nburn/lib/MOD5441X.a(bsp.o)
+                               0x1828 (size before relaxing)
+ .debug_str     0x0000250a       0x57 C:\nburn/lib/MOD5441X.a(flash.o)
+                                0x131 (size before relaxing)
+ .debug_str     0x00002561      0xa97 C:\nburn/lib/MOD5441X.a(serial.o)
+                               0x2140 (size before relaxing)
+ .debug_str     0x00002ff8       0x1b C:\nburn/lib/MOD5441X.a(pins.o)
+                                0x7a5 (size before relaxing)
+ .debug_str     0x00003013      0x1b9 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+                               0x1481 (size before relaxing)
+ .debug_str     0x000031cc       0x54 C:\nburn/lib/MOD5441X.a(localio.o)
+                               0x1467 (size before relaxing)
+ .debug_str     0x00003220      0x16f C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+                                0x207 (size before relaxing)
+ .debug_str     0x0000338f      0x32e C:\nburn/lib/NetBurner.a(ucos.o)
+                                0x5e3 (size before relaxing)
+ .debug_str     0x000036bd       0xb1 C:\nburn/lib/NetBurner.a(ucosmain.o)
+                                0x649 (size before relaxing)
+ .debug_str     0x0000376e      0x18c C:\nburn/lib/NetBurner.a(fileio.o)
+                                0x679 (size before relaxing)
+ .debug_str     0x000038fa       0xcf C:\nburn/lib/NetBurner.a(system.o)
+                                0x6cf (size before relaxing)
+ .debug_str     0x000039c9       0x3c C:\nburn/lib/NetBurner.a(main.o)
+                                0x146 (size before relaxing)
+ .debug_str     0x00003a05      0x348 C:\nburn/lib/NetBurner.a(utils.o)
+                                0x833 (size before relaxing)
+ .debug_str     0x00003d4d     0x17ee C:\nburn/lib/NetBurner.a(ip.o)
+                               0x1deb (size before relaxing)
+ .debug_str     0x0000553b      0x1d3 C:\nburn/lib/NetBurner.a(buffers.o)
+                                0x8f3 (size before relaxing)
+ .debug_str     0x0000570e      0x518 C:\nburn/lib/NetBurner.a(arp.o)
+                               0x1735 (size before relaxing)
+ .debug_str     0x00005c26      0x71a C:\nburn/lib/NetBurner.a(udp.o)
+                               0x173a (size before relaxing)
+ .debug_str     0x00006340     0x155d C:\nburn/lib/NetBurner.a(tcp.o)
+                               0x2844 (size before relaxing)
+ .debug_str     0x0000789d       0xfc C:\nburn/lib/NetBurner.a(extraio.o)
+                                0x257 (size before relaxing)
+ .debug_str     0x00007999      0x271 C:\nburn/lib/NetBurner.a(iosys.o)
+                                0x43c (size before relaxing)
+ .debug_str     0x00007c0a       0x61 C:\nburn/lib/NetBurner.a(autoip.o)
+                                0xe48 (size before relaxing)
+ .debug_str     0x00007c6b        0xf C:\nburn/lib/NetBurner.a(defappname.o)
+                                 0x92 (size before relaxing)
+ .debug_str     0x00007c7a      0x3a4 C:\nburn/lib/NetBurner.a(netinterface.o)
+                               0x12a2 (size before relaxing)
+ .debug_str     0x0000801e       0xc6 C:\nburn/lib/NetBurner.a(taskmon.o)
+                                0x855 (size before relaxing)
+ .debug_str     0x000080e4      0x18a C:\nburn/lib/NetBurner.a(smarttrap.o)
+                                0x36a (size before relaxing)
+ .debug_str     0x0000826e      0x1dc C:\nburn/lib/NetBurner.a(autoupdate.o)
+                                0x923 (size before relaxing)
+ .debug_str     0x0000844a       0x86 C:\nburn/lib/NetBurner.a(device.o)
+                                0x181 (size before relaxing)
+ .debug_str     0x000084d0       0x8f C:\nburn/lib/NetBurner.a(new_ops.o)
+                                0x1a8 (size before relaxing)
+ .debug_str     0x0000855f      0x468 C:\nburn/lib/MOD5441X.a(ethernet.o)
+                               0x24a7 (size before relaxing)
+ .debug_str     0x000089c7      0x138 C:\nburn/lib/MOD5441X.a(etherprint.o)
+                               0x106c (size before relaxing)
+ .debug_str     0x00008aff       0xbf C:\nburn/lib/MOD5441X.a(emulticast.o)
+                                0xe88 (size before relaxing)
+ .debug_str     0x00008bbe       0x51 C:\nburn/lib/NetBurner.a(netrx.o)
+                                0x2e7 (size before relaxing)
+
+.debug_loc      0x00000000    0x14093
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x369 Sensor_Interface_Board_v9.o
+ .debug_loc     0x00000369       0x33 SIB_initPINS.o
+ .debug_loc     0x0000039c      0x229 SIB_SendtoNAVCOMP.o
+ .debug_loc     0x000005c5      0x1fd Ranging_Radio.o
+ .debug_loc     0x000007c2      0x2e9 Laser_rangefinder.o
+ .debug_loc     0x00000aab      0x353 C:\nburn/lib/MOD5441X.a(bsp.o)
+ .debug_loc     0x00000dfe      0x121 C:\nburn/lib/MOD5441X.a(flash.o)
+ .debug_loc     0x00000f1f     0x12a9 C:\nburn/lib/MOD5441X.a(serial.o)
+ .debug_loc     0x000021c8      0x360 C:\nburn/lib/MOD5441X.a(pins.o)
+ .debug_loc     0x00002528      0x701 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .debug_loc     0x00002c29       0xd3 C:\nburn/lib/MOD5441X.a(localio.o)
+ .debug_loc     0x00002cfc      0x3f3 C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+ .debug_loc     0x000030ef     0x1277 C:\nburn/lib/NetBurner.a(ucos.o)
+ .debug_loc     0x00004366       0xc0 C:\nburn/lib/NetBurner.a(ucosmain.o)
+ .debug_loc     0x00004426      0x94e C:\nburn/lib/NetBurner.a(fileio.o)
+ .debug_loc     0x00004d74      0x438 C:\nburn/lib/NetBurner.a(system.o)
+ .debug_loc     0x000051ac       0x53 C:\nburn/lib/NetBurner.a(main.o)
+ .debug_loc     0x000051ff      0xb46 C:\nburn/lib/NetBurner.a(utils.o)
+ .debug_loc     0x00005d45     0x1902 C:\nburn/lib/NetBurner.a(ip.o)
+ .debug_loc     0x00007647     0x10be C:\nburn/lib/NetBurner.a(buffers.o)
+ .debug_loc     0x00008705     0x186b C:\nburn/lib/NetBurner.a(arp.o)
+ .debug_loc     0x00009f70     0x16e4 C:\nburn/lib/NetBurner.a(udp.o)
+ .debug_loc     0x0000b654     0x53e7 C:\nburn/lib/NetBurner.a(tcp.o)
+ .debug_loc     0x00010a3b      0x2d6 C:\nburn/lib/NetBurner.a(extraio.o)
+ .debug_loc     0x00010d11      0xa3b C:\nburn/lib/NetBurner.a(iosys.o)
+ .debug_loc     0x0001174c      0x910 C:\nburn/lib/NetBurner.a(autoip.o)
+ .debug_loc     0x0001205c      0x741 C:\nburn/lib/NetBurner.a(netinterface.o)
+ .debug_loc     0x0001279d      0x170 C:\nburn/lib/NetBurner.a(taskmon.o)
+ .debug_loc     0x0001290d      0x65f C:\nburn/lib/NetBurner.a(smarttrap.o)
+ .debug_loc     0x00012f6c      0x3c3 C:\nburn/lib/NetBurner.a(autoupdate.o)
+ .debug_loc     0x0001332f       0x60 C:\nburn/lib/NetBurner.a(device.o)
+ .debug_loc     0x0001338f       0x62 C:\nburn/lib/NetBurner.a(new_ops.o)
+ .debug_loc     0x000133f1      0x712 C:\nburn/lib/MOD5441X.a(ethernet.o)
+ .debug_loc     0x00013b03      0x235 C:\nburn/lib/MOD5441X.a(etherprint.o)
+ .debug_loc     0x00013d38       0xee C:\nburn/lib/MOD5441X.a(emulticast.o)
+ .debug_loc     0x00013e26      0x26d C:\nburn/lib/NetBurner.a(netrx.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+OUTPUT(Sensor_Interface_Board_v10.elf elf32-m68k)
+
+.debug_ranges   0x00000000     0x2e30
+ .debug_ranges  0x00000000      0x1f8 Sensor_Interface_Board_v9.o
+ .debug_ranges  0x000001f8      0x3d0 SIB_initPINS.o
+ .debug_ranges  0x000005c8       0x18 C:\nburn/lib/MOD5441X.a(flash.o)
+ .debug_ranges  0x000005e0      0x240 C:\nburn/lib/MOD5441X.a(serial.o)
+ .debug_ranges  0x00000820       0x38 C:\nburn/lib/MOD5441X.a(pins.o)
+ .debug_ranges  0x00000858      0x250 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .debug_ranges  0x00000aa8       0x18 C:\nburn/lib/NetBurner.a(ucos.o)
+ .debug_ranges  0x00000ac0       0x40 C:\nburn/lib/NetBurner.a(fileio.o)
+ .debug_ranges  0x00000b00      0x180 C:\nburn/lib/NetBurner.a(utils.o)
+ .debug_ranges  0x00000c80      0x258 C:\nburn/lib/NetBurner.a(ip.o)
+ .debug_ranges  0x00000ed8      0x288 C:\nburn/lib/NetBurner.a(buffers.o)
+ .debug_ranges  0x00001160      0x358 C:\nburn/lib/NetBurner.a(arp.o)
+ .debug_ranges  0x000014b8      0x320 C:\nburn/lib/NetBurner.a(udp.o)
+ .debug_ranges  0x000017d8     0x1150 C:\nburn/lib/NetBurner.a(tcp.o)
+ .debug_ranges  0x00002928       0x38 C:\nburn/lib/NetBurner.a(extraio.o)
+ .debug_ranges  0x00002960       0x30 C:\nburn/lib/NetBurner.a(iosys.o)
+ .debug_ranges  0x00002990       0xc0 C:\nburn/lib/NetBurner.a(autoip.o)
+ .debug_ranges  0x00002a50       0x88 C:\nburn/lib/NetBurner.a(netinterface.o)
+ .debug_ranges  0x00002ad8       0x38 C:\nburn/lib/NetBurner.a(taskmon.o)
+ .debug_ranges  0x00002b10       0xb8 C:\nburn/lib/NetBurner.a(smarttrap.o)
+ .debug_ranges  0x00002bc8       0x80 C:\nburn/lib/NetBurner.a(autoupdate.o)
+ .debug_ranges  0x00002c48      0x148 C:\nburn/lib/MOD5441X.a(ethernet.o)
+ .debug_ranges  0x00002d90       0x40 C:\nburn/lib/MOD5441X.a(etherprint.o)
+ .debug_ranges  0x00002dd0       0x18 C:\nburn/lib/MOD5441X.a(emulticast.o)
+ .debug_ranges  0x00002de8       0x48 C:\nburn/lib/NetBurner.a(netrx.o)
+
+.comment        0x00000000      0x29a
+ .comment       0x00000000       0x12 Sensor_Interface_Board_v9.o
+ .comment       0x00000012       0x12 SIB_initPINS.o
+ .comment       0x00000024       0x12 SIB_SendtoNAVCOMP.o
+ .comment       0x00000036       0x12 Ranging_Radio.o
+ .comment       0x00000048       0x12 Laser_rangefinder.o
+ .comment       0x0000005a       0x12 C:\nburn/lib/MOD5441X.a(bsp.o)
+ .comment       0x0000006c       0x12 C:\nburn/lib/MOD5441X.a(flash.o)
+ .comment       0x0000007e       0x12 C:\nburn/lib/MOD5441X.a(serial.o)
+ .comment       0x00000090       0x12 C:\nburn/lib/MOD5441X.a(pins.o)
+ .comment       0x000000a2       0x12 C:\nburn/lib/MOD5441X.a(HiResTimer.o)
+ .comment       0x000000b4       0x12 C:\nburn/lib/MOD5441X.a(localio.o)
+ .comment       0x000000c6       0x12 C:\nburn/lib/NetBurner.a(ucosmcfc.o)
+ .comment       0x000000d8       0x12 C:\nburn/lib/NetBurner.a(ucos.o)
+ .comment       0x000000ea       0x12 C:\nburn/lib/NetBurner.a(ucosmain.o)
+ .comment       0x000000fc       0x12 C:\nburn/lib/NetBurner.a(fileio.o)
+ .comment       0x0000010e       0x12 C:\nburn/lib/NetBurner.a(system.o)
+ .comment       0x00000120       0x12 C:\nburn/lib/NetBurner.a(main.o)
+ .comment       0x00000132       0x12 C:\nburn/lib/NetBurner.a(utils.o)
+ .comment       0x00000144       0x12 C:\nburn/lib/NetBurner.a(ip.o)
+ .comment       0x00000156       0x12 C:\nburn/lib/NetBurner.a(buffers.o)
+ .comment       0x00000168       0x12 C:\nburn/lib/NetBurner.a(arp.o)
+ .comment       0x0000017a       0x12 C:\nburn/lib/NetBurner.a(udp.o)
+ .comment       0x0000018c       0x12 C:\nburn/lib/NetBurner.a(tcp.o)
+ .comment       0x0000019e       0x12 C:\nburn/lib/NetBurner.a(extraio.o)
+ .comment       0x000001b0       0x12 C:\nburn/lib/NetBurner.a(iosys.o)
+ .comment       0x000001c2       0x12 C:\nburn/lib/NetBurner.a(autoip.o)
+ .comment       0x000001d4       0x12 C:\nburn/lib/NetBurner.a(defappname.o)
+ .comment       0x000001e6       0x12 C:\nburn/lib/NetBurner.a(netinterface.o)
+ .comment       0x000001f8       0x12 C:\nburn/lib/NetBurner.a(taskmon.o)
+ .comment       0x0000020a       0x12 C:\nburn/lib/NetBurner.a(smarttrap.o)
+ .comment       0x0000021c       0x12 C:\nburn/lib/NetBurner.a(autoupdate.o)
+ .comment       0x0000022e       0x12 C:\nburn/lib/NetBurner.a(device.o)
+ .comment       0x00000240       0x12 C:\nburn/lib/NetBurner.a(new_ops.o)
+ .comment       0x00000252       0x12 C:\nburn/lib/MOD5441X.a(ethernet.o)
+ .comment       0x00000264       0x12 C:\nburn/lib/MOD5441X.a(etherprint.o)
+ .comment       0x00000276       0x12 C:\nburn/lib/MOD5441X.a(emulticast.o)
+ .comment       0x00000288       0x12 C:\nburn/lib/NetBurner.a(netrx.o)

@@ -42,3 +42,96 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: 0
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-06-02 01:01:29.297
+!MESSAGE An internal error occurred during: "Launching QuadIMU_NB2_ver2".
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(Unknown Source)
+	at nbeclipse.tools.autoupdate.AutoUpdateDlg.ParseCommandLine(AutoUpdateDlg.java:40)
+	at nbeclipse.tools.autoupdate.AutoUpdateDlg.<init>(AutoUpdateDlg.java:119)
+	at nbeclipse.core.launch.NBLaunchConfiguration.finalLaunchCheck(NBLaunchConfiguration.java:345)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:835)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2014-06-03 10:53:17.797 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-06-03 10:53:27.312
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2014-06-03 17:20:21.753 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-06-04 00:57:24.109
+!MESSAGE Indexed 'NB_test2' (0 sources, 39 headers) in 0.38 sec: 281 declarations; 413 references; 11 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.29%)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-06-04 10:46:21.483
+!MESSAGE An internal error occurred during: "Launching QuadIMU_NB1_v2.6".
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(Unknown Source)
+	at nbeclipse.tools.autoupdate.AutoUpdateDlg.ParseCommandLine(AutoUpdateDlg.java:40)
+	at nbeclipse.tools.autoupdate.AutoUpdateDlg.<init>(AutoUpdateDlg.java:119)
+	at nbeclipse.core.launch.NBLaunchConfiguration.finalLaunchCheck(NBLaunchConfiguration.java:345)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:835)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-06-04 12:40:52.201
+!MESSAGE Indexed 'Sensor_Interface_Board_v8' (0 sources, 39 headers) in 0.39 sec: 281 declarations; 413 references; 11 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.29%)
+!SESSION 2014-06-04 12:59:03.991 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-06-04 13:00:50.059
+!MESSAGE Indexed 'Sensor_Interface_Board_v9' (0 sources, 39 headers) in 0.75 sec: 281 declarations; 413 references; 11 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.29%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-06-04 20:00:26.971
+!MESSAGE Indexed 'Sensor_Interface_Board_v10' (0 sources, 39 headers) in 0.33 sec: 281 declarations; 413 references; 11 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.29%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-06-05 00:42:10.055
+!MESSAGE Indexed 'QuadIMU_NB1_v2.8' (1 sources, 75 headers) in 1.08 sec: 3,990 declarations; 3,702 references; 15 unresolved inclusions; 3 syntax errors; 57 unresolved names (0.74%)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-06-05 00:42:19.493
+!MESSAGE An internal error occurred during: "Launching QuadIMU_NB1_v2.8".
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(Unknown Source)
+	at nbeclipse.tools.autoupdate.AutoUpdateDlg.ParseCommandLine(AutoUpdateDlg.java:40)
+	at nbeclipse.tools.autoupdate.AutoUpdateDlg.<init>(AutoUpdateDlg.java:119)
+	at nbeclipse.core.launch.NBLaunchConfiguration.finalLaunchCheck(NBLaunchConfiguration.java:345)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:835)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-06-05 02:13:56.158
+!MESSAGE Indexed 'QuadIMU_NB1_v2.9' (2 sources, 62 headers) in 0.94 sec: 1,995 declarations; 1,539 references; 14 unresolved inclusions; 2 syntax errors; 27 unresolved names (0.76%)
+!SESSION 2014-06-06 20:18:31.984 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-06-06 20:18:43.703
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-06-06 20:43:56.625
+!MESSAGE Indexed 'NB2_Final_v1' (0 sources, 39 headers) in 0.77 sec: 281 declarations; 413 references; 11 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.29%)

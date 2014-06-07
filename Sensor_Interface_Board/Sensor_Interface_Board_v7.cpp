@@ -180,8 +180,8 @@ void MIScompData(void *){
 /************************Task to receive data from Nav Comp******************/
 void NAVcompData(void *){
 	uint8_t i=0;
-	//uint16_t sum=0;
-	//uint8_t checksum=0;
+	uint16_t sum=0;
+	uint8_t checksum=0;
 	/**************PAN variable**************************/
 	static uint16_t Pulse = 12287;
 	uint16_t pwmr_comp=0;
@@ -209,20 +209,21 @@ void NAVcompData(void *){
 						ReadWithTimeout(fdNAVcomp,&Navcomp_in_buff[i],1,4);
 						i++;
 					}//for loop
-					/*sum=0;
+					sum=0;
 					checksum=0;
 
 					for(i=3;i<(sizeof(Navcomp_in_buff)-1);i++)
 						sum +=Navcomp_in_buff[i];
 
-						checksum=(uint8_t)sum%255;*/
+						checksum=(uint8_t)sum%255;
 
-					//if((uint8_t)checksum==(uint8_t)Navcomp_in_buff[31]){
+					if((uint8_t)checksum==(uint8_t)Navcomp_in_buff[31]){
 
-					if(Scan_Complete==1){
+					//if(Scan_Complete==1){
 						//Pulse =12287-20.51*double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
-						dYaw  =double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
+						dYaw  = double((int16_t)((uint8_t)Navcomp_in_buff[18] * 256 + (uint8_t)Navcomp_in_buff[17]))/10;
 						//printf("%g\n",dYaw);
+						//dYaw=0;
 						StartAD();
 						 while (!ADDone()){}
 						asm("nop");
@@ -232,6 +233,7 @@ void NAVcompData(void *){
 						uint16_t ServoPot = GetADResult(0);
 						////Servo PAN 1 numbers
 						Pulse=12287-dYaw*20.51;
+						//printf("%d\n",ServoPot);
 
 						if(Pulse<8594 || Pulse==8594)
 							sim1.mcpwm.sm[1].val[5]=8594;
@@ -312,6 +314,8 @@ void FiftyHzTask(){
 		FiveHzflag =1;
 		FiveHzcount=0;
 	}
+
+	J2[37]=J2[37]^1;
 
 }
 
@@ -411,28 +415,31 @@ void UserMain( void* pd ){
 	InitSingleEndAD();
 
 	//Initializing Serial Ports
-	SerialClose(0);
+	SerialClose(5);
 	SerialClose(7);
 	SerialClose(9);
 	SerialClose(8);
 
+
 	fdRadio= OpenSerial( 8, 115200, 1, 8, eParityNone );
-	fdDebug = OpenSerial( 0, 115200, 1, 8, eParityNone );
+	fdDebug = OpenSerial( 5, 115200, 1, 8, eParityNone );
 	fdLaser = OpenSerial( 7, 115200, 1, 8, eParityNone );
 	fdNAVcomp = OpenSerial( 9, 115200, 1, 8, eParityNone );
 
+	/*
 	ReplaceStdio(0,fdDebug);
 	ReplaceStdio(1,fdDebug);
 	ReplaceStdio(2,fdDebug);
+	*/
 
 	//Start the Timers and init the DSPI
-	DSPIInit(1,2000000,16,0x01,0x01,1,1,0,0,0);//initializing SPI
+	//DSPIInit(1,2000000,16,0x01,0x01,1,1,0,0,0);//initializing SPI
 
 	//printf("Going to wait 3 sec\n");
 	//OSTimeDly(3*TICKS_PER_SECOND);
 	initTIMERS(timer2);
 	J1[7]=0;
-	startup_timeout=ReadWithTimeout(fdDebug,&m,1,2);
+	/*startup_timeout=ReadWithTimeout(fdDebug,&m,1,2);
 	if(startup_timeout==-1 || startup_timeout==0){
 		Start_PAN=StartUpLaserScan(fdLaser);
 		if(Start_PAN!=11110)
@@ -444,7 +451,7 @@ void UserMain( void* pd ){
 	else{
 		Scan_Status=0;
 		Start_PAN=11110;
-	}
+	}*/
 
 	//printf("Hi\n");
 	Scan_Complete=1;
@@ -453,7 +460,7 @@ void UserMain( void* pd ){
 	Navcomp_send_buff[37] = (uint8_t)(Start_PAN & 0x00FF);
 	Navcomp_send_buff[36] = Scan_Status;
 	OSSimpleTaskCreate(NAVcompData,MAIN_PRIO+1);
-	OSSimpleTaskCreate(MIScompData,MAIN_PRIO+2);
+	//OSSimpleTaskCreate(MIScompData,MAIN_PRIO+2);
 	//enableWatchDog( 1, 0x001F );//0x001C
 	//Creating Data Receiving task from the computer
 
@@ -501,7 +508,7 @@ void UserMain( void* pd ){
 		if(FiftyHzflag==1){
 			if(Scan_Complete==1){
 			//printf("Start Pan=%d,Start Pan=%d\n",Start_PAN,(int16_t)Navcomp_send_buff[38]*256+(int16_t)Navcomp_send_buff[37]);
-				laser_range=ReadLaser(fdLaser);
+				//laser_range=ReadLaser(fdLaser);
 				Navcomp_send_buff[36] = Scan_Status;
 				Navcomp_send_buff[38] = (uint8_t)((Start_PAN & 0xFF00)>>8);
 				Navcomp_send_buff[37] = (uint8_t)(Start_PAN & 0x00FF);
@@ -509,12 +516,15 @@ void UserMain( void* pd ){
 				//printf("laser range=%g\n",laser_range);
 				//uint32_t Range=(uint32_t)F_range_buff[0]*16777216+(uint32_t)F_range_buff[1]*65536+(uint32_t)F_range_buff[2]*256+(uint32_t)F_range_buff[3];
 
-				//printf("%zu,%u,%u,%u\n",Range,Ant_config,(unsigned char)radio_in_buff[12],(uint16_t)radio_in_buff[32]*256+(uint16_t)radio_in_buff[33]);
+				//printf("%zu,%u,%u,%u\n",Range,Ant_config);
 				StartAD();
 				while (!ADDone()){}
 				asm("nop");
 				for (int i = 0; i < 8; i++)
 					ADC_channel[i] = (unsigned short int)(1000 * (((double)GetADResult(i)) * 3.3 / (32768.0)));
+
+				//printf("%d \n", ADC_channel[1]);
+
 				sprintf(time_ms,"%lf",TotalTime);
 				//send data to the computer
 				SendtoNAVCOMP(Navcomp_send_buff,ADC_channel,time_ms,netburner_counter,laser_range,F_range_buff,PanAngle,fdNAVcomp,fdDebug,sizeof(Navcomp_send_buff),Ant_config);

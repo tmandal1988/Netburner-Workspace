@@ -118,7 +118,7 @@ void NAVcompData(void *){
 	char m1;
 	char buff1[100]={0};
 	while(1){
-		//iprintf("\n%d\n",commandstatus);
+		iprintf("\n%d\n",commandstatus);
 		i=0;
 		ReadWithTimeout(fdNavcomp,&Navcomp_in_buff[i],1,4);
 		i++;

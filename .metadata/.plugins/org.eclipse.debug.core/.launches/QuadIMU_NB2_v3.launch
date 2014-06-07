@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="nbeclipse.core.launch.nbconfig">
-<stringAttribute key="ATTR_IP" value="169.254.116.253"/>
+<stringAttribute key="ATTR_IP" value="169.254.62.50"/>
 <booleanAttribute key="DebugLog" value="false"/>
 <booleanAttribute key="DebugOutput" value="false"/>
 <stringAttribute key="SSHostName" value="127.0.0.1"/>

@@ -138,6 +138,7 @@ void NAVcompData(void *){
 		i=0;
 		ReadWithTimeout(fdNavcomp,&Navcomp_in_buff[i],1,4);
 		i++;
+		printf("Hi\n");
 		if(Navcomp_in_buff[0]==0x41){
 			ReadWithTimeout(fdNavcomp,&Navcomp_in_buff[i],1,4);
 			i++;
@@ -150,6 +151,7 @@ void NAVcompData(void *){
 		}//first if
 
 		commandstatus=(unsigned char) Navcomp_in_buff[7];
+		printf("%d\n",commandstatus);
 
 		if((unsigned char)Navcomp_in_buff[8]>150)
 			anglestatus=150;
@@ -231,7 +233,7 @@ void UserMain( void* pd ){
 	fdgrabber=OpenSerial(2,115200,1,8,eParityNone);
 	fdDebug=OpenSerial(0,115200,1,8,eParityNone);
 
-	OSSimpleTaskCreate(NAVcompData,MAIN_PRIO-1);
+	OSSimpleTaskCreate(NAVcompData,MAIN_PRIO+1);
 
 	sprintf(G,"~ECHOF 1\r");//turning of the ECHO from ESC
 	i=0;
@@ -242,6 +244,8 @@ void UserMain( void* pd ){
 
 	initTIMERS(timer2);
 	while(1){
+		//printf("%d\n",commandstatus);
+
 		TotalTime=timer2->readTime();
 
 		if(FiftyHzTaskFlag==0){
@@ -262,6 +266,7 @@ void UserMain( void* pd ){
 				DSPIStart(3,IMU_command,IMU4_raw,24,NULL);//IMU3
 				while(!DSPIdone(3)){/*iprintf("DSPI3done state=%s\n",(DSPIdone(3))?"true":"false");*/};
 
+				//printf("Z-Accel=%d\n",IMU4_raw[5]);
 				j=0;
 				IMU3_sum=0;IMU4_sum=0;
 				for(j=0;j<24;j++){
@@ -270,6 +275,7 @@ void UserMain( void* pd ){
 				}
 
 				if(IMU3_sum!=IMU3_sump && IMU4_sum!=IMU4_sump){
+
 					IMU_data[0]+=(((int32_t)IMU3_raw[2]<<24|(int32_t)IMU3_raw[3]<<16|(int32_t)IMU3_raw[4]<<8|(int32_t)IMU3_raw[5])-((int32_t)IMU4_raw[2]<<24|(int32_t)IMU4_raw[3]<<16|(int32_t)IMU4_raw[4]<<8|(int32_t)IMU4_raw[5]))/2;//X-Accel
 					IMU_data[1]+=(((int32_t)IMU3_raw[6]<<24|(int32_t)IMU3_raw[7]<<16|(int32_t)IMU3_raw[8]<<8|(int32_t)IMU3_raw[9])-((int32_t)IMU4_raw[6]<<24|(int32_t)IMU4_raw[7]<<16|(int32_t)IMU4_raw[8]<<8|(int32_t)IMU4_raw[9]))/2;//Y-Accel
 					IMU_data[2]+=(((int32_t)IMU3_raw[10]<<24|(int32_t)IMU3_raw[11]<<16|(int32_t)IMU3_raw[12]<<8|(int32_t)IMU3_raw[13])+((int32_t)IMU4_raw[10]<<24|(int32_t)IMU4_raw[11]<<16|(int32_t)IMU4_raw[12]<<8|(int32_t)IMU4_raw[13]))/2;//Z-Accel
@@ -281,6 +287,7 @@ void UserMain( void* pd ){
 
 				else{
 					if(IMU3_sum==IMU3_sump){
+
 						IMU_data[0]+=((int32_t)IMU3_raw[2]<<24|(int32_t)IMU3_raw[3]<<16|(int32_t)IMU3_raw[4]<<8|(int32_t)IMU3_raw[5]);//X-Accel
 						IMU_data[1]+=((int32_t)IMU3_raw[6]<<24|(int32_t)IMU3_raw[7]<<16|(int32_t)IMU3_raw[8]<<8|(int32_t)IMU3_raw[9]);//Y-Accel
 						IMU_data[2]+=((int32_t)IMU3_raw[10]<<24|(int32_t)IMU3_raw[11]<<16|(int32_t)IMU3_raw[12]<<8|(int32_t)IMU3_raw[13]);//Z-Accel
@@ -290,6 +297,7 @@ void UserMain( void* pd ){
 					}
 
 					if(IMU4_sum==IMU4_sump){
+
 						IMU_data[0]+=-((int32_t)IMU4_raw[2]<<24|(int32_t)IMU4_raw[3]<<16|(int32_t)IMU4_raw[4]<<8|(int32_t)IMU4_raw[5]);//X-Accel
 						IMU_data[1]+=-((int32_t)IMU4_raw[6]<<24|(int32_t)IMU4_raw[7]<<16|(int32_t)IMU4_raw[8]<<8|(int32_t)IMU4_raw[9]);//Y-Accel
 						IMU_data[2]+=((int32_t)IMU4_raw[10]<<24|(int32_t)IMU4_raw[11]<<16|(int32_t)IMU4_raw[12]<<8|(int32_t)IMU4_raw[13]);//Z-Accel
@@ -301,6 +309,7 @@ void UserMain( void* pd ){
 
 				IMU3_sump=IMU3_sum;
 				IMU4_sump=IMU4_sum;
+				k++;
 			}
 
 			IMU_data[0]=IMU_data[0]/20;
@@ -319,7 +328,9 @@ void UserMain( void* pd ){
 			Navcomp_send_buff[3]=(uint8_t)(NB_counter & 0x00FF);
 			NB_counter++;
 
+			//printf("%g\n",0.00025*IMU_data[2]/65536);
 			//getting time in ms
+
 
 			sprintf(time_ms,"%lf",TotalTime);
 			Navcomp_send_buff[6]=time_ms[0];
